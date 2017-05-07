@@ -9,7 +9,7 @@
 # GitHub settings:
 
 url                      : "http://localhost:4000"
-baseurl                  : "/ioos_jekyll_theme"
+baseurl                  : "/documentation-theme-jekyll"
 
 repository               : "mwenrgen/documentation-theme-jekyll"
 
