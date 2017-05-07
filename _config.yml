@@ -104,3 +104,17 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 
 # needed for sitemap.xml file only
 url: http://idratherbewriting.com
+
+# added settings for IOOS:
+url                      : "https://mwengren.github.io"
+baseurl                  : "/documentation-theme-jekyll"
+
+repository               : "mwengren/documentation-theme-jekyll"
+
+#Setup/config for 'ioos_jekyll_theme' git submodule:
+source                   : .
+destination              : _site
+plugins_dir              : documentation-theme-jekyll/_plugins
+layouts_dir              : documentation-theme-jekyll/_layouts
+data_dir                 : _data
+includes_dir             : documentation-theme-jekyll/_includes
