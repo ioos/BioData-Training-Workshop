@@ -1,4 +1,4 @@
-repository: tomjohnson1492/documentation-theme-jekyll
+repository: "mwengren/documentation-theme-jekyll"
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -15,7 +15,7 @@ company_name: US IOOS
 github_editme_path: ioos/documentation-theme-jekyll
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-disqus_shortname: idrbwjekyll
+#disqus_shortname: idrbwjekyll
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
 host: 127.0.0.1
@@ -24,15 +24,21 @@ host: 127.0.0.1
 port: 4000
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
+# Reading Files
+include:
+  - .htaccess
+  #- _pages
 exclude:
   - .idea/
   - .gitignore
   - Gemfile*
+  - documentation-theme-jekyll/pages
+  - documentation-theme-jekyll/posts
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Jekyll documentation theme
 
-feedback_email: tomjohnson1492@gmail.com
+feedback_email: data.ioos@noaa.gov
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -59,6 +65,13 @@ kramdown:
 collections:
   tooltips:
     output: false
+  docs:
+    output: true
+    # using /docs/:name causes many link/path failures in hard-coded paths or values
+    #  written into the templates (search, nav menu, etc).  Instead just output :name
+    #permalink: /docs/:name
+    permalink: :name
+
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -66,6 +79,15 @@ defaults:
     scope:
       path: ""
       type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+  -
+    scope:
+      path: ""
+      type: "docs"
     values:
       layout: "page"
       comments: true
@@ -104,7 +126,7 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: http://idratherbewriting.com
+#url: http://idratherbewriting.com
 
 # added settings for IOOS:
 url                      : "https://mwengren.github.io"

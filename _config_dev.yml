@@ -11,12 +11,12 @@
 url                      : "http://localhost:4000"
 baseurl                  : "/documentation-theme-jekyll"
 
-repository               : "mwengren/documentation-theme-jekyll"
+#repository               : "mwengren/documentation-theme-jekyll"
 
 #Setup/config for 'ioos_jekyll_theme' git submodule:
-source                   : .
-destination              : _site
-plugins_dir              : documentation-theme-jekyll/_plugins
-layouts_dir              : documentation-theme-jekyll/_layouts
-data_dir                 : _data
-includes_dir             : documentation-theme-jekyll/_includes
+#source                   : .
+#destination              : _site
+#plugins_dir              : documentation-theme-jekyll/_plugins
+#layouts_dir              : documentation-theme-jekyll/_layouts
+#data_dir                 : _data
+#includes_dir             : documentation-theme-jekyll/_includes
