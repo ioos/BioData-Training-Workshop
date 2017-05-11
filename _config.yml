@@ -1,22 +1,14 @@
-repository: "mwengren/documentation-theme-jekyll"
-
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
 topnav_title: IOOS Jekyll Documentation
 # this appears on the top navigation bar next to the home button
 
-site_title: IOOS Jekyll Documentation Theme
+site_title: IOOS <Repository Name> Documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: US IOOS
 # this appears in the footer
-
-github_editme_path: ioos/documentation-theme-jekyll
-# if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
-
-#disqus_shortname: idrbwjekyll
-# if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
 host: 127.0.0.1
 # the preview server used. Leave as is.
@@ -33,7 +25,15 @@ exclude:
   - .gitignore
   - Gemfile*
   - documentation-theme-jekyll/pages
-  - documentation-theme-jekyll/posts
+  #- documentation-theme-jekyll/posts
+  - documentation-theme-jekyll/Dockerfile
+  - documentation-theme-jekyll/Gemfile
+  - documentation-theme-jekyll/Gemfile.lock
+  - documentation-theme-jekyll/search.json
+  - documentation-theme-jekyll/update.sh
+  - documentation-theme-jekyll/pdf-*
+  #- documentation-theme-jekyll/
+
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Jekyll documentation theme
@@ -70,7 +70,7 @@ collections:
     # using /docs/:name causes many link/path failures in hard-coded paths or values
     #  written into the templates (search, nav menu, etc).  Instead just output :name
     #permalink: /docs/:name
-    permalink: :name
+    permalink: :name:output_ext
 
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
@@ -125,14 +125,18 @@ sidebars:
 description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
 # the description is used in the feed.xml file
 
-# needed for sitemap.xml file only
-#url: http://idratherbewriting.com
+#disqus_shortname: idrbwjekyll
+# if you're using disqus for comments, add the shortname here. if not, leave this value blank.
+
 
 # added settings for IOOS:
-url                      : "https://mwengren.github.io"
+url                      : "https://ioos.github.io"
 baseurl                  : "/documentation-theme-jekyll"
 
-repository               : "mwengren/documentation-theme-jekyll"
+repository               : "ioos/documentation-theme-jekyll"
+
+github_editme_path       : ioos/documentation-theme-jekyll
+# if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #Setup/config for 'ioos_jekyll_theme' git submodule:
 source                   : .
