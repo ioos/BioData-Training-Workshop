@@ -9,7 +9,7 @@
 # GitHub settings:
 
 url                      : "http://localhost:4000"
-baseurl                  : "/sos-guidelines"
+baseurl                  : "/sos-guidelines-jekyll"
 
 #repository               : "mwengren/documentation-theme-jekyll"
 

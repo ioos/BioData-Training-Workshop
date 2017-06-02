@@ -131,11 +131,11 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 
 # added settings for IOOS:
 url                      : "https://ioos.github.io"
-baseurl                  : "/sos-guidelines"
+baseurl                  : "/sos-guidelines-jekyll"
 
 repository               : "ioos/documentation-theme-jekyll"
 
-github_editme_path       : abirger/sos-guideline
+github_editme_path       : abirger/sos-guidelines-jekyll
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #Setup/config for 'ioos_jekyll_theme' git submodule:
