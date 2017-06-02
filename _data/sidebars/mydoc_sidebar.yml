@@ -24,7 +24,7 @@ entries:
     folderitems:
 
     - title: Overview
-      url: /sos-guidelines/sos-wsdd-1-0.html#overview
+      url: /sos-guidelines-jekyll/sos-wsdd-1-0.html#overview
       output: web, pdf
       type: web, pdf
 
@@ -33,37 +33,37 @@ entries:
     folderitems:
 
     - title: OGC SOS Implementation Standards
-      url: /sos-guidelines/sos-wsdd-1-0.html#ogc-sos-implementation-standards
+      url: /sos-guidelines-jekyll/sos-wsdd-1-0.html#ogc-sos-implementation-standards
       output: web, pdf
       type: web, pdf
 
     - title: NetCDF Climate and Forecast Metadata Convention
-      url: /sos-guidelines/sos-wsdd-1-0.html#netcdf-climate-and-forecast-metadata-convention
+      url: /sos-guidelines-jekyll/sos-wsdd-1-0.html#netcdf-climate-and-forecast-metadata-convention
       output: web, pdf
       type: web, pdf
 
     - title: IOOS Convention and SOS Templates
-      url: /sos-guidelines/sos-wsdd-1-0.html#ioos-convention-and-sos-templates
+      url: /sos-guidelinesjekyll/sos-wsdd-1-0.html#ioos-convention-and-sos-templates
       output: web, pdf
       type: web, pdf
 
     - title: Coordinate System Axis Order
-      url: /sos-guidelines/sos-wsdd-1-0.html#coordinate-system-axis-order
+      url: /sos-guidelines-jekyll/sos-wsdd-1-0.html#coordinate-system-axis-order
       output: web, pdf
       type: web, pdf
 
     - title: Namespaces
-      url: /sos-guidelines/sos-wsdd-1-0.html#namespaces
+      url: /sos-guidelines-jekyll/sos-wsdd-1-0.html#namespaces
       output: web, pdf
       type: web, pdf
 
     - title: Capitalization
-      url: /sos-guidelines/sos-wsdd-1-0.html#capitalization
+      url: /sos-guidelines-jekyll/sos-wsdd-1-0.html#capitalization
       output: web, pdf
       type: web, pdf
 
     - title: Use of URL in HTTP GET and POST Requests
-      url: /sos-guidelines/sos-wsdd-1-0.html#use-of-url-in-http-get-and-post-requests
+      url: /sos-guidelines-jekyll/sos-wsdd-1-0.html#use-of-url-in-http-get-and-post-requests
       output: web, pdf
       type: web, pdf
 
