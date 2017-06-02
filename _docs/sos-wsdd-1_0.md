@@ -34,9 +34,9 @@ The Milestone 1.0 interface is considered a composition of several OGC specifica
 
 The interface is comprised of some operations, parameters and attributes, which are considered mandatory by the specifications and others which are not. This information, referred to as a Profile, includes information on specification extensions (operations, parameters and attributes not included in a specification) and exclusions (operations, parameters and attributes that are not implemented). The following sections describe the IOOS SOS Profile for Milestone 1.0 providing additional detail about parts of the OGC specifications supported by the Milestone 1.0 implementation and how they are used.
 
-## Conformance to Standards and Conventions ##
+## Conformance to Standards and Conventions
 
-### OGC SOS Implementation Standards ###
+### OGC SOS Implementation Standards
 
 [**Figure 1**](#Fig_1) depicts the Unified Modeling Language (UML) diagram for the OGC O&M core model, which specifies the core conformance classes, which are described within the SOS specification.
 
@@ -125,7 +125,7 @@ The OGC SOS interface is based on the OGC Web Service Common specification, thus
   - GetCapabilities
   - DescribeSensor
   - GetObservation
-- Extended and Transactional Profiles operations (optional, out of scope of the Milestone 1.0)
+- Extended and Transactional Profiles operations (optional, out of scope for the Milestone 1.0)
   - RegisterSensor
   - InsertObservation
   - GetResult
@@ -235,7 +235,7 @@ xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/x
 The subsections are described in more details in the following chapters.
 
 
-##### ServiceIdentification #####
+##### ___ServiceIdentification___
 
 This section contains metadata about this specific server, including the title, abstract, keywords, service type, version, fees, and access constraints if any for using this server. No IOOS-specific guidelines and conventions are applicable to this section; it is fully defined by the SOS 1.0.0 standard.
 
@@ -254,7 +254,7 @@ This section contains metadata about this specific server, including the title, 
   </ows:ServiceIdentification>
 ```
 
-##### ServiceProvider #####
+##### ___ServiceProvider___
 
 This section contains metadata about the organization operating this server, including service provider name, site, address, contact information, etc. Similar to the previous section described above, this section does not require following any IOOS-specific conventions; it is fully defined by the SOS 1.0.0 standard.
 
@@ -282,7 +282,7 @@ This section contains metadata about the organization operating this server, inc
   </ows:ServiceProvider>
 ```
 
-##### OperationsMetadata #####
+##### ___OperationsMetadata___
 
 This section contains metadata about the operations specified by this service and implemented by this server, including the URLs, parameters for operation requests. A corresponding section of the IOOS Milestone 1.0 GetCapabilities template is presented below; the template contains just the bare minimum of the required metadata that describes the server operations capability.
 
@@ -366,7 +366,7 @@ In addition tothe SOS v1.0.0 Implementation Specification, the IOOS Convention r
   </ows:OperationsMetadata>
 ```
 
-##### Contents #####
+##### ___Contents___
 
 This section contains the list of all of the observation offerings available from the service, specifically the network offerings and offerings for all affiliated stations/platforms. Each of the `<sos:ObservationOffering>` elements describes a collection of related sensor system observations. However, in order to restrain the response document size and mitigate scalability problems, the IOOS Convention requires that sensor offerings must not be included in a platform offering description, i.e none of the `<sos:ObservationOffering>` elements may include a sensor procedure. In order to get a detailed description of the sensors installed on the platform, a DescribeSensor operation should be used.
 
@@ -1448,6 +1448,7 @@ The outline of the OM-GetObservation template is presented below:
     </om:member>
 </om:ObservationCollection>
 ```
+
 | Input Name | Cardinality | Description |
 | :--- | :---: | :--- |
 | gml:metaDataProperty <br />xlink:title="disclaimer" | 0…1 | Provides a human-readable disclaimer (if required) bounded by \<gml:description\>. |
@@ -1455,8 +1456,8 @@ The outline of the OM-GetObservation template is presented below:
 | om:member | 1…* <br />_**Note: For the elements hereinafter in this table, the cardinality is for each \<om:member\>**_ | A GetObservation response shall contain at least one member observation that reports offerings. All stations corresponding to the same CF feature type (discrete-sampling-geometries) shall be reported in a single \<om:member\> block. Conversely, if the GetObservation request contains more than one feature type, then each feature type shall be reported in a separate member observation block.<br /><br />Member system description generally includes the following sections: <ul><li>Observation description</li><li>Temporal bounds for observations</li><li>List of stations reporting observations</li><li>List of the observed phenomena</li><li>Spatial bounds and other feature-type metadata</li><li>Observation result block</li></ul><br />Single result block may contain values from multiple stations and multiple sensors of the same feature type. |
 | gml:description | 0…1 | A recommended fairly free-form human-readable text that describes observations, including station(s) name and location as well as sensor or procedure information. |
 | om:samplingTime | 1…1 | The samplingTime bounds the time when the result applies to the feature-of-interest, encoded as a TimeInstant or TimePeriod ISO8601 string or using the indeterminatePosition attribute (e.g. 'now'). Currently only UTC (Z) is supported. This time usually required for geospatial analysis of the result. |
-| om:procedure | 1…1 | This element contains the official IOOS identifiers for the platforms in a form of URN that conforms to the [IOOS Conventions for Observing Asset Identifiers]( https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers). <br /><br />The IOOS Convention requires that multiple platforms/stations are listed as members of a single process, e.g.:<br /><pre>\<om:procedure\><br />  \<om:Process\><br />    \<gml:member xlink:href="urn:ioos:station:wmo:41001"/\><br />    \<gml:member xlink:href="urn:ioos:station:wmo:41002"/\><br />  \</om:Process\><br />\</om:procedure\></pre> |
-| om:observedProperty | 1…1 | A description of the phenomena that are being estimated through observation, e.g. "wave", "temperature", "wind", etc. <br />The IOOS Convention requires that<ul><li>This element has a value that matches the value advertized in the Capabilities document.</li><li>The value is a URL corresponding to a Climate and Forecast (CF) Standard Name Parameter Vocabulary (http://mmisw.org/ont/cf/parameter) or IOOS Parameter Vocabulary (e.g.: http://mmisw.org/ont/ioos/parameter/wave) that are currently hosted by the Marine Metadata Interoperability (MMI) project.</li><li>The observed property shall be described in \<om:observedProperty\> as composite phenomenon using \<swe:CompositePhenomenon\> child element, even if just a single property is reported, and that property is not a compositу phenomenon’s constituent: <ul><li>Each \<swe:CompositePhenomenon\> shall have a document-wide unique \<gml:id\> attribute (it is recommended to use just a simple integer counter next to a fixed string). </li><li>Each \<swe:CompositePhenomenon\> shall have a child element \<gml:name\> with a value of any human-readable text string. </li><li>Each \<swe:CompositePhenomenon\> shall always be expanded to the list of the constituent scalar properties. </li><li>The individual scalar properties shall be defined in the IOOS Parameter Vocabulary. </li></ul></li></ul><br />EXAMPLE 1 (multiple scalar properties): <br /><pre>\<om:observedProperty\><br />  \<swe:CompositePhenomenon dimension="4" gml:id="observedproperties1"\><br />      \<gml:name\>Response Observed Properties\</gml:name\><br />      \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/\><br />      \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/\><br />      \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_gust"/\><br />      \<swe:component xlink:href="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen"/\><br />  \</swe:CompositePhenomenon\><br />\</om:observedProperty\></pre><br />EXAMPLE 2 (single scalar property): <br /><pre>\<om:observedProperty\><br />    \<swe:CompositePhenomenon dimension="1" gml:id="observedproperties1"\><br />        \<gml:name\>Response Observed Properties\</gml:name\><br />        \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/\><br />    \</swe:CompositePhenomenon\><br />\</om:observedProperty\></pre> |
+| om:procedure | 1…1 | This element contains the official IOOS identifiers for the platforms in a form of URN that conforms to the [IOOS Conventions for Observing Asset Identifiers]( https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers). <br /><br />The IOOS Convention requires that multiple platforms/stations are listed as members of a single process, e.g.: <br/><br/> {::nomarkdown} <pre> \<om:procedure\><br />  \<om:Process\><br/>    \<gml:member xlink:href="urn:ioos:station:wmo:41001"/\><br />    \<gml:member xlink:href="urn:ioos:station:wmo:41002"/\><br />  \</om:Process\><br />\</om:procedure\></pre> {:/} <br/> <br/>|
+| om:observedProperty | 1…1 | A description of the phenomena that are being estimated through observation, e.g. "wave", "temperature", "wind", etc. <br />The IOOS Convention requires that {::nomarkdown} <ul><li>This element has a value that matches the value advertized in the Capabilities document.</li><li>The value is a URL corresponding to a Climate and Forecast (CF) Standard Name Parameter Vocabulary (http://mmisw.org/ont/cf/parameter) or IOOS Parameter Vocabulary (e.g.: http://mmisw.org/ont/ioos/parameter/wave) that are currently hosted by the Marine Metadata Interoperability (MMI) project.</li><li>The observed property shall be described in \<om:observedProperty\> as composite phenomenon using \<swe:CompositePhenomenon\> child element, even if just a single property is reported, and that property is not a compositу phenomenon’s constituent: <ul><li>Each \<swe:CompositePhenomenon\> shall have a document-wide unique \<gml:id\> attribute (it is recommended to use just a simple integer counter next to a fixed string). </li><li>Each \<swe:CompositePhenomenon\> shall have a child element \<gml:name\> with a value of any human-readable text string. </li><li>Each \<swe:CompositePhenomenon\> shall always be expanded to the list of the constituent scalar properties. </li><li>The individual scalar properties shall be defined in the IOOS Parameter Vocabulary. </li></ul></li></ul>{:/}<br />EXAMPLE 1 (multiple scalar properties): <br /><pre>\<om:observedProperty\><br />  \<swe:CompositePhenomenon dimension="4" gml:id="observedproperties1"\><br />      \<gml:name\>Response Observed Properties\</gml:name\><br />      \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/\><br />      \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/\><br />      \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_gust"/\><br />      \<swe:component xlink:href="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen"/\><br />  \</swe:CompositePhenomenon\><br />\</om:observedProperty\></pre><br />EXAMPLE 2 (single scalar property): <br /><pre>\<om:observedProperty\><br />    \<swe:CompositePhenomenon dimension="1" gml:id="observedproperties1"\><br />        \<gml:name\>Response Observed Properties\</gml:name\><br />        \<swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/\><br />    \</swe:CompositePhenomenon\><br />\</om:observedProperty\></pre> |
 | om:featureOfInterest | 1…1 | Encompasses all spatial and feature-type response metadata assotiated with the observations of the same CF Feature Type (e.g., _**timeSeries**_, _**timeSeriesProfile**_, etc). IOOS Convention requires that all metadata properties associated with one feature type are aggregated in a single child element \<gml:FeatureCollection\>:<br /><pre>\<om:featureOfInterest\><br />    \<gml:FeatureCollection\><br />        \<gml:metaDataProperty/\><br />        \<gml:boundedBy/\><br />        \<gml:location/\><br />    \</gml:FeatureCollection\><br />\</om:featureOfInterest\> |
 | _gml:metaDataProperty_ | 1…1 | Contains the name and codeSpace values for the CF Feature Type: <br /><pre>\<gml:metaDataProperty\><br />  \<gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries"><br />     timeSeries<br />  \</gml:name\><br />\</gml:metaDataProperty\> |
 | _gml:boundedBy_ | 1…1 | Defines a geographic (lat/lon) Bounding Box of the featureOfInterest. |
