@@ -21,6 +21,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
+    ffi (1.9.18-x86-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     github-pages (136)
@@ -171,6 +172,8 @@ GEM
       mini_portile2 (~> 2.1.0)
     nokogiri (1.7.1-x64-mingw32)
       mini_portile2 (~> 2.1.0)
+    nokogiri (1.7.1-x86-mingw32)
+      mini_portile2 (~> 2.1.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.14.0)
@@ -198,10 +201,11 @@ GEM
 PLATFORMS
   ruby
   x64-mingw32
+  x86-mingw32
 
 DEPENDENCIES
   github-pages
   wdm (>= 0.1.0)
 
 BUNDLED WITH
-   1.14.3
+   1.15.0

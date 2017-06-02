@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
+  product: IOOS SOS WSDD 1.0
+  version: 
   folders:
 
   - title:
@@ -19,30 +19,53 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Overview
+  - title: Service Interfaces
     output: web, pdf
     folderitems:
 
-    - title: Get started
-      url: /index.html
+    - title: Overview
+      url: /sos-guidelines/sos-wsdd-1-0.html#overview
       output: web, pdf
-      type: homepage
+      type: web, pdf
 
-    - title: Introduction
-      url: /mydoc_introduction.html
-      output: web, pdf
+  - title: Conformance to Standards and Conventions
+    output: web, pdf
+    folderitems:
 
-    - title: Supported features
-      url: /mydoc_supported_features.html
+    - title: OGC SOS Implementation Standards
+      url: /sos-guidelines/sos-wsdd-1-0.html#ogc-sos-implementation-standards
       output: web, pdf
+      type: web, pdf
 
-    - title: About the theme author
-      url: /mydoc_about.html
+    - title: NetCDF Climate and Forecast Metadata Convention
+      url: /sos-guidelines/sos-wsdd-1-0.html#netcdf-climate-and-forecast-metadata-convention
       output: web, pdf
+      type: web, pdf
 
-    - title: Support
-      url: /mydoc_support.html
+    - title: IOOS Convention and SOS Templates
+      url: /sos-guidelines/sos-wsdd-1-0.html#ioos-convention-and-sos-templates
       output: web, pdf
+      type: web, pdf
+
+    - title: Coordinate System Axis Order
+      url: /sos-guidelines/sos-wsdd-1-0.html#coordinate-system-axis-order
+      output: web, pdf
+      type: web, pdf
+
+    - title: Namespaces
+      url: /sos-guidelines/sos-wsdd-1-0.html#namespaces
+      output: web, pdf
+      type: web, pdf
+
+    - title: Capitalization
+      url: /sos-guidelines/sos-wsdd-1-0.html#capitalization
+      output: web, pdf
+      type: web, pdf
+
+    - title: Use of URL in HTTP GET and POST Requests
+      url: /sos-guidelines/sos-wsdd-1-0.html#use-of-url-in-http-get-and-post-requests
+      output: web, pdf
+      type: web, pdf
 
   - title: Release Notes
     output: web, pdf
