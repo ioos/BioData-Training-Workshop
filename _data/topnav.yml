@@ -25,7 +25,7 @@ topnav_dropdowns:
     - title: IOOS SOS Guidelines
       folderitems:
         - title: Web Service Description Document (WSDD)
-          url: /sos-wsdd-1-0.html.html
+          url: /sos-wsdd-1-0.html
         - title: IOOS SOS 1.0 Templates
           url: /p1_landing_page.html
         - title: IOOS SOS 1.0 Compliance and Interoperability Tests
