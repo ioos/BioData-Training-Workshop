@@ -1,14 +1,17 @@
-+++
-draft = false
-title = "IOOS SOS v1.0 OM GetObservation Template"
-description = ""
-type = "post"
-date = 2014-08-04T08:09:56Z
-weight = "6"
-+++
+---
+title: GetObservation Response Template
+tags: [formatting]
+keywords: notes, tips, cautions, warnings, admonitions
+last_updated: July 3, 2016
+summary: Template for a generic (independent of feature type) GetObservation response.
+sidebar: product1_sidebar
+toc: false
+#permalink: sos-wsdd-github-notoc.html
 
-_Template for a generic (independent of feature type) GetObservation response. The result block in this template is empty; see SWE templates for guidance on the result block._ 
-<!--more-->
+---
+
+> **NOTE: This is a generic template with empty result block; for details, see specific Result Block templates.** 
+
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>

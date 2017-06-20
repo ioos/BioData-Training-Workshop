@@ -1,14 +1,15 @@
-+++
-draft = false
-title = "IOOS SOS v1.0 SWE-MultiStation-TimeSeries Template"
-description = ""
-type = "post"
-date = 2014-08-04T08:09:56Z
-weight = "7"
-+++
+---
+title: SWE Data Record Template - Multiple Stations / TimeSeries
+tags: [formatting]
+keywords: notes, tips, cautions, warnings, admonitions
+last_updated: July 3, 2016
+summary: Template for a SWE Data Record's static and dynamic fields for multiple stations with multiple sensors
+sidebar: product1_sidebar
+toc: false
+#permalink: sos-wsdd-github-notoc.html
 
-_Template for a SWE Data Record's static and dynamic fields for multiple stations with multiple sensors_
-<!--more-->
+---
+
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>

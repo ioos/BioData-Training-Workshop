@@ -2,7 +2,7 @@
 title: Introduction to Guidelines for IOOS SOS 1.0
 keywords: sample homepage
 tags: [getting_started]
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 toc: false
 #permalink: index.html
 summary: This brief description summarizes the content of the Guidelines. The other topics on this site provide additional information and detail about working with all aspects of the IOOS SOS 1.0.

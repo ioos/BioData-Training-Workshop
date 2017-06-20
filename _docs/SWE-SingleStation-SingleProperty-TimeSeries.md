@@ -1,14 +1,15 @@
-+++
-draft = false
-title = "IOOS SOS v1.0 SWE-SingleStation-SingleProperty-TimeSeries Template"
-description = ""
-type = "post"
-date = 2014-08-04T08:09:56Z
-weight = "9"
-+++
+---
+title: SWE Data Record Template - Single Station / TimeSeries
+tags: [formatting]
+keywords: notes, tips, cautions, warnings, admonitions
+last_updated: July 3, 2016
+summary: Template for a SWE Data Record's static and dynamic fields for a single station with a single sensor
+sidebar: product1_sidebar
+toc: false
+#permalink: sos-wsdd-github-notoc.html
 
-_Template for a SWE Data Record's static and dynamic fields for a single station with a single sensor_
-<!--more-->
+---
+
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>

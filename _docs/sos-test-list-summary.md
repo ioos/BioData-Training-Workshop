@@ -4,17 +4,17 @@ tags: [formatting]
 keywords: bla, bla, bla 
 last_updated: May 31, 2017
 summary: List of OGC CITE general and IOOS-specific tests for IOOS SOS 1.0
-sidebar: mydoc_sidebar
+sidebar: product2_sidebar
+toc: false
 #permalink: sos-test-list-github-notoc-summary.html
 ---
 
+<!--
 * TOC
 {:toc}
+-->
 
-_This document describes a collection of tests that have to be run in order to ensure a required level of compliance with IOOS SOS Profile 1.0 (IOOS Convention), and official OGC SOS 1.0.0 specification._
-<!--more-->
-
-* * * * *
+This document describes a collection of tests that have to be run in order to ensure a required level of compliance with IOOS SOS Profile 1.0 (IOOS Convention), and official OGC SOS 1.0.0 specification.
 
 The collection includes both OGC Standard and IOOS Profile compliance tests. The goal of OGC compliance tests is to ensure that the service is to a certain extent compliant with the OGC specifications. The tests are essentially the same as the official OGC CITE test set for SOS 1.0.0; however, some tests were marked out as optional for the current phase of IOOS SOS development, e.g. verification of exception report messages. 
 
@@ -24,8 +24,10 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 
 
 
-# OWS Common Tests 
-## owsTests:ows-main 
+## OWS Common Tests 
+
+### owsTests:ows-main 
+
 **(_Run test group for GetCapabilities requests using the GET method._)**
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
@@ -44,7 +46,7 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 |**owsTests:ows-OWS.GetCapabilities-Sections.2**|The response to a GetCapabilities request that includes a sections parameter listing optional elements _ServiceIdentification_ and _OperationsMetadata_ shall include only the requested elements in the response entity `http://SOS-server-URL/sos?service#SOS&request#GetCapabilities&sections#ServiceIdentification,OperationsMetadata`. Pass if the response is schema valid and includes only the requested optional elements.| **R** |
 |**owsTests:ows-OWS.GetCapabilities-AcceptFormats.1**|The response to a GetCapabilities request containing an _AcceptFormats_ parameter specifying a supported format must include a response entity that corresponds to the requested media type.  Examples: (1)`http://SOS-server-URL/sos?service#SOS&request#GetCapabilities&acceptformats#text/xml` and (2)`http://SOS-server-URL/sos?service#SOS&request#GetCapabilities&acceptformats#application/zip`.  Pass if the response is schema valid and _outputFormat_ equals requested media type.| **O** |
 
-# General SOS Tests 
+## General SOS Tests 
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -52,12 +54,12 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 |**sos:general-SOS.General-ValidResponse.1**|A response is a valid response for the SOS. This general assertion is tested by all other tests, so there is nothing specific to test now.| **N/A** |
 
 
-# Core SOS Tests 
+## Core SOS Tests 
 **_A request for a valid capabilities document is made with the optional “acceptversions” parameter omitted, and a response is validated with the schema. Further tests are performed on the GetCapabilities response only if the response passes schema validation._**
 
-## GetCapabilities Tests 
+### GetCapabilities Tests 
 
-### OGC General Tests
+#### OGC General Tests
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -75,7 +77,7 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 | | | |
 
 
-### IOOS-specific Tests
+#### IOOS-specific Tests
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -96,9 +98,9 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 | | | |
 | | | |
 
-## DescribeSensor Tests
+### DescribeSensor Tests
 
-### OGC General Tests
+#### OGC General Tests
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -108,7 +110,7 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 |**describeSensor:core-SOS.DescribeSensor-ResponseMatchingProcedure.1**|The unique identifier in the response document matches the procedure URN specified in the request.| **R** |
 | | | |
 
-### IOOS-specific Tests
+#### IOOS-specific Tests
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -131,11 +133,11 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 |**describeSensor:IOOS-SOS.DescribeSensor- ResponseContainsValidOperationsMetadataProperty.17**|SensorML document for a single station provides a description of at least one sensor that is located at the station (platform), and for each sensor a ‘sensorID’ and a list of the properties observed by this sensor are provided.| **R** |
 
 
-## GetObservation Tests
+### GetObservation Tests
 
 **_All GetObservation tests use “POST” method, and URL obtained from the GetCapabilities response._**
 
-### OGC General Tests
+#### OGC General Tests
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -159,7 +161,7 @@ The IOOS SOS Profile tests have originated from the official OGC CITE test set f
 |**getObservation:core-SOS.GetObservation-ResponseMatchingResponseFormatData.1**|The format of the response data matches the format supplied in the _responseFormat_ parameter of the request.| **R** |
 | | | |
 
-### IOOS-specific Tests
+#### IOOS-specific Tests
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
