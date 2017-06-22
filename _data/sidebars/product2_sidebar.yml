@@ -2,9 +2,9 @@
 
 entries:
 - title: sidebar
-#  product: List of SOS Tests
+  product: IOOS SOS Compliance and Interoperability Tests
 #  levels: three
-  version: 
+  version: 1.0 
 
   folders:
   
@@ -22,6 +22,10 @@ entries:
     output: web, pdf
 
     folderitems:
+
+    - title: Introduction
+      url: /sos-test-list-summary.html
+      output: web, pdf
 
     - title: OWS Common Tests
       url: /sos-test-list-summary.html#ows-common-tests

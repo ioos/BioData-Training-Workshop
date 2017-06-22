@@ -27,6 +27,6 @@ topnav_dropdowns:
         - title: Web Service Description Document (WSDD)
           url: /sos-wsdd-1-0.html
         - title: IOOS SOS 1.0 Templates
-          url: //sos-getcapabilities.html
+          url: /sos-getcapabilities.html
         - title: IOOS SOS 1.0 Compliance and Interoperability Tests
           url: /sos-test-list-summary.html
