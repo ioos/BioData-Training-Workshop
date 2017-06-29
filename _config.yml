@@ -84,6 +84,7 @@ defaults:
       comments: true
       search: true
       sidebar: home_sidebar
+      topnav: topnav
   -
     scope:
       path: ""
@@ -102,6 +103,7 @@ defaults:
       comments: true
       search: true
       tooltip: true
+      topnav: topnav
 
   -
     scope:
