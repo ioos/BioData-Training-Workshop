@@ -94,6 +94,8 @@ defaults:
       comments: true
       search: true
       sidebar: home_sidebar
+      topnav: topnav-test
+
   -
     scope:
       path: ""
@@ -103,7 +105,6 @@ defaults:
       comments: true
       search: true
       tooltip: true
-      topnav: topnav
 
   -
     scope:
@@ -114,6 +115,7 @@ defaults:
       comments: true
       search: true
       sidebar: home_sidebar
+      topnav: topnav
 
 # these are defaults used for the frontmatter for these file types
 

@@ -24,9 +24,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Overview
-      url: /sos-wsdd-1-0.html#overview
-      output: web, pdf
+    - 
+
+
+#    - title: Overview
+#      url: /sos-wsdd-1-0.html#overview
+#      output: web, pdf
 
   - title: Conformance to Standards and Conventions
     output: web, pdf

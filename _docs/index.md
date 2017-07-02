@@ -3,6 +3,7 @@ title: Introduction to Guidelines for IOOS SOS 1.0
 keywords: sample homepage
 tags: [getting_started]
 sidebar: home_sidebar
+topnav: topnav
 toc: false
 #permalink: index.html
 summary: This brief description summarizes the content of the Guidelines. The other topics on this site provide additional information and detail about working with all aspects of the IOOS SOS 1.0.
@@ -32,4 +33,4 @@ The Web Service Description Document (WSDD) provides a description of a Sensor O
 ### IOOS SOS 1.0 Compliance and Interoperability Tests
 
 This document describes a collection of tests that have to be run in order to ensure a required level of compliance with IOOS SOS Profile 1.0 (IOOS Convention), and official OGC SOS 1.0.0 specification.
- 
+
