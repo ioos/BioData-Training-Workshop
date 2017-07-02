@@ -94,7 +94,7 @@ defaults:
       comments: true
       search: true
       sidebar: home_sidebar
-      topnav: topnav-test
+      topnav: topnav
 
   -
     scope:
