@@ -45,11 +45,11 @@ topnav_dropdowns:
 ##          external_url: http://stackoverflow.com/questions/tagged/jekyll
 ##        - title: Jekyll on my blog
 ##          external_url: http://idratherbewriting.com/category-jekyll/
-    - title: IOOS SOS Guidelines
-      folderitems:
-        - title: Web Service Description Document (WSDD)
-          url: /sos-wsdd-1-0.html
-        - title: IOOS SOS 1.0 Templates
-          url: /sos-getcapabilities.html
-        - title: IOOS SOS 1.0 Compliance and Interoperability Tests
-          url: /sos-test-list-summary.html
+#    - title: IOOS SOS Guidelines
+#      folderitems:
+#        - title: Web Service Description Document (WSDD)
+#          url: /sos-wsdd-1-0.html
+#        - title: IOOS SOS 1.0 Templates
+#          url: /sos-getcapabilities.html
+#        - title: IOOS SOS 1.0 Compliance and Interoperability Tests
+#          url: /sos-test-list-summary.html

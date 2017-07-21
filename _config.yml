@@ -1,7 +1,7 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: IOOS SOS Guidelines
+topnav_title: IOOS SOS Guidelines Home
 # this appears on the top navigation bar next to the home button
 
 site_title: IOOS GitHub Documentation

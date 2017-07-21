@@ -4,7 +4,8 @@ tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
 summary: Template for a SWE Data Record's static and dynamic fields for a station with profiling sensors
-sidebar: product1_sidebar
+#sidebar: product1_sidebar
+sidebar: mydoc_sidebar
 toc: false
 #permalink: sos-wsdd-github-notoc.html
 

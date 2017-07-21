@@ -1,5 +1,5 @@
 ---
-title: IOOS SOS v1.0 WSDD
+title: IOOS SOS WSDD 1.0
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
@@ -13,10 +13,10 @@ toc: false
 <!--
 * TOC
 {:toc}
--->
+  -->
 
 
-## Overview 
+# **Overview**{: style="color: crimson"} 
 
 This Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which are encoded in XML and included in the SWE Common Data Model.
 
@@ -30,9 +30,9 @@ The Milestone 1.0 interface is considered a composition of several OGC specifica
 
 The interface is comprised of some operations, parameters and attributes, which are considered mandatory by the specifications and others which are not. This information, referred to as a Profile, includes information on specification extensions (operations, parameters and attributes not included in a specification) and exclusions (operations, parameters and attributes that are not implemented). The following sections describe the IOOS SOS Profile for Milestone 1.0 providing additional detail about parts of the OGC specifications supported by the Milestone 1.0 implementation and how they are used.
 
-## Conformance to Standards and Conventions
+# **Conformance to Standards and Conventions**{: style="color: crimson"}
 
-### OGC SOS Implementation Standards
+## **OGC SOS Implementation Standards**{: style="color: crimson"}
 
 [**Figure 1**](#Fig_1) depicts the Unified Modeling Language (UML) diagram for the OGC O&M core model, which specifies the core conformance classes, which are described within the SOS specification.
 
@@ -45,23 +45,23 @@ As the SOS 2.0 standard has been approved as an official OGC standard while Mile
 
 The subsequent sections provide more detail on the service interfaces, including information on data types, messages, operations, and interface descriptions.
 
-### NetCDF Climate and Forecast Metadata Convention ###
+## **NetCDF Climate and Forecast Metadata Convention**{: style="color: crimson"}
 
 The Climate and Forecast (CF) Conventions introduce the standard ways for naming and description of feature types, data components, dimensions, variables and attributes, coordinate systems definition, axis order, etc. The CF Conventions were originally framed as a standard for data written in netCDF format, with model-generated climate forecast data in mind. However, it turned out to be equally applicable to observational datasets presented in various other formats. The IOOS has adopted the CF 1.6 Conventions for both 52⁰North and ncSOS implementations in order to provide SWE encodings for the feature types that are relevant for the IOOS community. In IOOS SOS implementations, the CF Conventions are used for description of data quantities (such as CF standard names, physical descriptions, code spaces, UoMs, etc.) as well as data location in space and time.
 
-### IOOS Convention and SOS Templates ###
+## **IOOS Convention and SOS Templates**{: style="color: crimson"}
 
 To facilitate the practical implementation of the OGC SOS, IOOS has started the development of a series of Templates that explicitly define the IOOS SOS operation responses for the CF feature types. Within Milestone 1.0 timeframe, the templates have only been developed for “point”, “timeSeries”, and “timeSeriesProfile” feature types ([https://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0](https://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0?state=open)); the templates for other feature types are planned for Milestone 2.0. The templates are intended as a mandatory guidance for all developers of IOOS-compliant SOS applications.
 
 The Milestone 1.0 templates fully conform to the OGC SOS 1.0.0 Implementation Standard; however, in some “grey areas” where the SOS 1.0.0 is vague and does not provide sufficient guidance, it has been refined with a special IOOS Convention. The IOOS Convention contains additional constraints, definitions, requirements and “best practice” sort of recommendations that SOS 1.0.0 lacks; for future transition, the Convention follows SOS 2.0 requirements and definitions wherever they have been considered applicable, and do not contradict the SOS 1.0.0 specification. The provisions of the IOOS Convention are captured in the IOOS SOS Templates, and described further in this document.
 
-### Coordinate System Axis Order ###
+## **Coordinate System Axis Order**{: style="color: crimson"}
 
 Historically, there was considerable confusion regarding axis order in GML documents, and coordinate reference systems. This confusion started with the introduction of the very first version of theOGC WMS, where axis “x” (longitude) preceeded axis “y” (latitude), while coordinate reference systems defined the opposite order of axis. After some discussion, it was agreed that if CRS is explicitly defined in the service interface or payload, then coordinate values shall be listed in the axis order specified by the referred CRS ([OGC 06-135r1 “Specification best practices](http://portal.opengeospatial.org/files/?artifact_id=17566)”).
 
 For IOOS SOS implementations, the CRS reference procedure is defined in OGC 06-121r3 “OGC Web Services Common Specification”, and additionally specified by the IOOS Convention. As the EPSG::4326 CRS is required to identify a station horizontal coordinates, the axis order must match the EPSG::4326 definition, i.e. latitude must precede longitude. The vertical coordinate must always be listed after the horizontal ones, and explicitly follow the definition of the vertical CRS.
 
-### Namespaces ###
+## **Namespaces**{: style="color: crimson"}
 
 The XML type references in the subsequent sections make use of XML namespace prefixes to fully qualify their namespaces. The map of prefixes to standardized namespaces is:
 
@@ -80,7 +80,7 @@ Note that an IOOS-compliant SOS service shall conform to the following specific 
 -   In GetObservation, the `<swe:>` and `<swe2:>` prefixes must present, as both SWE Common v1.0 and v2.0 are used in this operation, and the prefixes refer to different versions of SWE Common (see list above).
 -   In both GetCapabilities and GetObservation, the `<gml:>` prefix may omit reference to a version number, as shown above (just because GML 3.1.1 has been a default version for the O&M 1.0 schema).
 
-### Capitalization ###
+## **Capitalization**{: style="color: crimson"}
 
 The use of the upper and lower cases in SOS response documents and requests is defined by the OGC 06-121r9 “OGC Web Services Common Standard”, clauses 11.5.2 and 11.6.2. To extend and augment the OGC assertions, IOOS Convention require the following:
 
@@ -95,7 +95,7 @@ The IOOS Convention stipulates for the following exceptions:
 -   labels containing the short version of an identifier or definition URI that contains underscores keep their original case (e.g. air_temperature, station_12, etc);
 -   identifier values and terms from established vocabularies (e.g. [http://mmisw.org/ont/cf/parameter/air_temperature](http://mmisw.org/ont/cf/parameter/air_temperature) or `urn:ioos:station:RA_authority:station_name`) keep their original (vocabulary) case.
 
-### Use of URL in HTTP GET and POST Requests ###
+## **Use of URL in HTTP GET and POST Requests**{: style="color: crimson"}
 
 HTTP supports two request methods: GET and POST. In a GET method, request parameters are transmitted as part of the service URL, and in a POST method, request parameters are transmitted in the body of the POST message.
 
@@ -113,7 +113,7 @@ For HTTP POST operation, a URL does not require additional parameters to be appe
 
 **```http://SERVERNAME:[PORT]/SOS-WEBAPP/sos```**
 
-## Operations ##
+# **Operations**{: style="color: crimson"}
 
 The OGC SOS interface is based on the OGC Web Service Common specification, thus, it has shares structures and data types of service requests with the other OGC Web Services. In the case of SOS, the operation signature is constrained by the observation schema, as it defines the response model. The SOS v1.0 defines three operational profiles:
 
@@ -146,13 +146,13 @@ Erroneous requests detected by the server result in a response containing an XML
 
 Examples of the consumer requests and SOS server responses are shown in subsequent sections. Unless something different is specified, the encoding samples have been taken from the set of [IOOS SOS Milestone 1.0 templates](https://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0?state=open).
 
-### GetCapabilities ###
+## **GetCapabilities**{: style="color: crimson"}
 
 GetCapabilities operation provides the interface for any client to access metadata about a specific service, which in this case is SOS. This operation allows clients to retrieve service metadata about a specific service instance, including metadata about the tightly-coupled data served. In addition to more generic capabilities response elements such as filter options, the SOS GetCapabilities returns a list of so called Offerings, which are groupings of available observations described by their feature of interest, procedure, observed property, temporal coverage and the like. This allows the user application to clearly identify the types and quality of data that can be requested from this service.
 
 Please note, that SOS in version 1.0 does not restrict creation of observation offerings. On the other hand, SOS 2.0 is more specific and defines that each observation offering is limited to be associated with exactly one procedure, which can be a network, station, or sensor. The U.S. IOOS has made a decision to imply that limitation starting at Milestone 1.0 with SOS v1.0; this not only solves the issue of the SOS 1.0 with ambiguous groupings of observations to offerings but also ensures the continuity of the Milestones.
 
-#### GetCapabilities Request ####
+### **GetCapabilities Request**{: style="color: crimson"}
 
 GetCapabilities request may be sent to the server as HTTP/GET or HTTP/POST. HTTP/GET request passes parameters to the server in the HTTP URL with a number of key-value pairs (KVP) of input parameters, and HTTP/POST request sends an XML document to the server, that may also be KVP-encoded. A request to perform GetCapabilities should follow the structure as depicted in the [**Figure 3**](#Fig_3) and table below.
 
@@ -198,7 +198,7 @@ service="SOS" updateSequence="">
 </sos:GetCapabilities>
 ```
 
-#### GetCapabilities Response ####
+### **GetCapabilities Response**{: style="color: crimson"}
 
 The response to a GetCapabilities request is an XML encoded document that conforms to the [SOS 1.0.0 Implementation Specification [OGC 06-009r6]](http://portal.opengeospatial.org/files/?artifact_id=26667), and illustrates the characteristics of the SOS system by providing a comprehensive information about coordinate reference system (CRS), spatial or temporal filtering and other information about sensors, feature of interest, and response format. The OGC specification is constrained by the IOOS Convention that on one hand prescribes a certain way of use for some optional components, and on the other hand – facilitates the future acceptance of the SOS 2.0. At any rate, the IOOS Convention does not violate OGC specification’s requirements.
 
@@ -231,7 +231,7 @@ xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/x
 The subsections are described in more details in the following chapters.
 
 
-##### ___ServiceIdentification___
+#### **ServiceIdentification**{: style="color: crimson"}
 
 This section contains metadata about this specific server, including the title, abstract, keywords, service type, version, fees, and access constraints if any for using this server. No IOOS-specific guidelines and conventions are applicable to this section; it is fully defined by the SOS 1.0.0 standard.
 
@@ -250,7 +250,7 @@ This section contains metadata about this specific server, including the title, 
   </ows:ServiceIdentification>
 ```
 
-##### ___ServiceProvider___
+#### **ServiceProvider**{: style="color: crimson"}
 
 This section contains metadata about the organization operating this server, including service provider name, site, address, contact information, etc. Similar to the previous section described above, this section does not require following any IOOS-specific conventions; it is fully defined by the SOS 1.0.0 standard.
 
@@ -278,7 +278,7 @@ This section contains metadata about the organization operating this server, inc
   </ows:ServiceProvider>
 ```
 
-##### ___OperationsMetadata___
+#### **OperationsMetadata**{: style="color: crimson"}
 
 This section contains metadata about the operations specified by this service and implemented by this server, including the URLs, parameters for operation requests. A corresponding section of the IOOS Milestone 1.0 GetCapabilities template is presented below; the template contains just the bare minimum of the required metadata that describes the server operations capability.
 
@@ -362,7 +362,7 @@ In addition tothe SOS v1.0.0 Implementation Specification, the IOOS Convention r
   </ows:OperationsMetadata>
 ```
 
-##### ___Contents___
+#### **Contents**{: style="color: crimson"}
 
 This section contains the list of all of the observation offerings available from the service, specifically the network offerings and offerings for all affiliated stations/platforms. Each of the `<sos:ObservationOffering>` elements describes a collection of related sensor system observations. However, in order to restrain the response document size and mitigate scalability problems, the IOOS Convention requires that sensor offerings must not be included in a platform offering description, i.e none of the `<sos:ObservationOffering>` elements may include a sensor procedure. In order to get a detailed description of the sensors installed on the platform, a DescribeSensor operation should be used.
 
@@ -597,7 +597,7 @@ Even more details are depicted in the sample below, which presents a Contents pa
   </sos:Contents>
 ```
 
-### DescribeSensor ###
+## **DescribeSensor**{: style="color: crimson"}
 
 A **DescribeSensor** is a simple core SOS operation that returns an XML Document associated with one or more sensors, platforms or networks. It provides metadata about sensors and the observation collected by these sensors. All the information of sensor characteristics is encoded into the SensorML standard.
 
@@ -605,7 +605,7 @@ With some sophisticated sensors or sensor-reach platforms and networks, the meta
 
 The following sections illustrate DescribeSensor HTTP/GET and HTTP/POST requests, provides the list of the request parameters and description for the DescribeSensor operation response.
 
-#### DescribeSensor Request ####
+### **DescribeSensor Request**{: style="color: crimson"}
 
 A DescribeSensor request may be sent to the server as HTTP/GET or HTTP/POST. While HTTP/POST request sends an XML document to the server, HTTP/GET request passes parameters to the server in the HTTP URL with a number of key-value pairs (KVP) of input parameters. A request to perform DescribeSensor operation should follow the structure that is described in this section.
 
@@ -647,7 +647,7 @@ http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?request=DescribeSensor&service=SOS&ve
 ```
 
 
-#### DescribeSensor Response ####
+### **DescribeSensor Response**{: style="color: crimson"}
 
 The response to a DescribeSensor request is a [Sensor Model Language (SensorML](http://www.opengeospatial.org/standards/sensorml)) document that describes the sensor system. In some cases, a DescribeSensor response may be quite voluminous; for example, if description of the network has been requested, and the response returns the document that contains detailed information not just about the network itself, but all network platforms and all sensors installed on each platform. A UML diagram  of such an all-inclusive DescribeSensor document is depicted in [**Figure 6**](#Fig_6) followed by the annotated outline of the document.
 
@@ -763,199 +763,7 @@ The response to a DescribeSensor request is a [Sensor Model Language (SensorML](
 
 In order to decrease the size of the DescribeSensor document, and limit the volume of the detailed information returned, IOOS recognizes 3 separate types of the DescribeSensor documents. For Milestone 1.0, the IOOS SOS is required to provide documents describing network and individual platform, while the description of individual sensor is optional.
 
-##### Network of platforms/stations #####
-
-A mandatory DescribeSensor response for a network of platforms/stations shall return:
-
--   information on the IOOS Template version
--   network description
--   search keywords
--   network identifiers, such as
-  -   networkID
-  -   short name
-  -   long name (optional)
--   relevant contact information for this specific network
--   list of platforms of the network with their identifiers
--   list of offerings for the network
--   time range for observations
--   list of observed properties for the network
-
-The template for a generic DescribeSensor document for network is shown below. The template is independent of feature types, and presents just enough metadata to determine what additional descriptions are needed. The specifics of some elements’ use in the network template are discussed in details later.
-
-```XML
-<sml:SensorML 
-    xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
-    xmlns:gml="http://www.opengis.net/gml" 
-    xmlns:swe="http://www.opengis.net/swe/1.0.1" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.opengis.net/sensorML/1.0.1 http://schemas.opengis.net/sensorML/1.0.1/sensorML.xsd" 
-    version="1.0.1">
-    <sml:capabilities name="ioosServiceMetadata">
-        <swe:SimpleDataRecord>
-            <swe:field name="ioosTemplateVersion">
-                <swe:Text definition=”http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0”>
-                    <swe:value>1.0</swe:value>
-                </swe:Text>
-            </swe:field>
-        </swe:SimpleDataRecord>
-    </sml:capabilities> 
-    <sml:member>
-        <sml:System>
-            <gml:description>Collection of all station assets available via the NANOOS SOS service</gml:description>
-            <gml:name>urn:ioos:network:nanoos:all</gml:name>
-            <gml:boundedBy>
-                <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                    <gml:lowerCorner>32.7 -75.0</gml:lowerCorner>
-                    <gml:upperCorner>34.7 -72.0</gml:upperCorner>
-                </gml:Envelope>
-            </gml:boundedBy> 
-            <sml:identification>
-                <sml:IdentifierList>
-                    <sml:identifier name="networkID">
-                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/networkID">
-                            <sml:value>urn:ioos:network:nanoos:all</sml:value>
-                        </sml:Term>
-                    </sml:identifier>
-                    <sml:identifier name="shortName">
-                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/shortName">
-                            <sml:value>NANOOS SOS station assets collection</sml:value>
-                        </sml:Term>
-                    </sml:identifier>
-                    <sml:identifier name="longName">
-                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/longName">
-                            <sml:value>Collection of all station assets available via the NANOOS SOS service</sml:value>
-                        </sml:Term>
-                    </sml:identifier>
-                </sml:IdentifierList>
-            </sml:identification>
-            <sml:classification>
-                <sml:ClassifierList>
-                    <sml:classifier name="publisher">
-                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/publisher">
-                            <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
-                            <sml:value>NANOOS</sml:value>
-                        </sml:Term>
-                    </sml:classifier>
-                    <sml:classifier name="parentNetwork">
-                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/parentNetwork">
-                            <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
-                            <sml:value>NANOOS</sml:value>
-                        </sml:Term>
-                    </sml:classifier>
-                </sml:ClassifierList>
-            </sml:classification>
-            <sml:capabilities name="observationTimeRange">
-                <swe:DataRecord>
-                    <swe:field name="observationTimeRange">
-                        <swe:TimeRange definition="http://mmisw.org/ont/ioos/swe_element_type/observationTimeRange">
-                            <swe:value>2008-04-28T08:00:00.000Z 2012-12-27T19:00:00.000Z</swe:value>
-                        </swe:TimeRange>
-                    </swe:field>
-                </swe:DataRecord>
-            </sml:capabilities>     
-            <sml:contact>
-                <sml:ContactList>
-                    <sml:member xlink:role="http://mmisw.org/ont/ioos/definition/operator">
-                        <sml:ResponsibleParty>
-                            <sml:organizationName>PNW Buoys</sml:organizationName>
-                            <sml:contactInfo>
-                                <sml:address>
-                                    <sml:deliveryPoint>1007 Balch Blvd.</sml:deliveryPoint>
-                                    <sml:city>Fremont</sml:city>
-                                    <sml:administrativeArea>WA</sml:administrativeArea>
-                                    <sml:postalCode>98195</sml:postalCode>
-                                    <sml:country>USA</sml:country>
-                                    <sml:electronicMailAddress>contact@buoys.com</sml:electronicMailAddress>
-                                </sml:address>
-                                <sml:onlineResource xlink:href="http://pnw.buoyoperator.org"/>
-                            </sml:contactInfo>
-                        </sml:ResponsibleParty>
-                    </sml:member>
-                    <sml:member xlink:role="http://mmisw.org/ont/ioos/definition/publisher">
-                        <sml:ResponsibleParty>
-                            <sml:organizationName>NANOOS</sml:organizationName>
-                            <sml:contactInfo>
-                                <sml:address>
-                                    <sml:country>USA</sml:country>
-                                    <sml:electronicMailAddress>mayorga@apl.washington.edu</sml:electronicMailAddress>
-                                </sml:address>
-                                <sml:onlineResource xlink:href="http://nanoos.org"/>
-                            </sml:contactInfo>
-                        </sml:ResponsibleParty>
-                    </sml:member>
-                </sml:ContactList>
-            </sml:contact>
-            <sml:components>
-                <sml:ComponentList>          
-                    <sml:component name="wmo_41001">
-                        <sml:System>
-                            <sml:identification>
-                                <sml:IdentifierList>
-                                    <sml:identifier name="stationID">
-                                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/stationID">
-                                            <sml:value>urn:ioos:station:wmo:41001</sml:value>
-                                        </sml:Term>
-                                    </sml:identifier>
-                                    <sml:identifier name="shortName">
-                                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/shortName">
-                                            <sml:value>WMO 41001 Buoy, Cape Hatteras</sml:value>
-                                    <sml:identifier name="longName">
-                                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/longName">
-                                            <sml:value>urn:ioos:station:wmo:41001 buoy station, 150 NM East of Cape Hatteras</sml:value>
-                                        </sml:Term>
-                                    </sml:identifier>
-                                </sml:IdentifierList>
-                            </sml:identification>
-                            <sml:capabilities name="observationTimeRange">
-                                <swe:DataRecord>
-                                    <swe:field name="observationTimeRange">
-                                        <swe:TimeRange definition="http://mmisw.org/ont/ioos/swe_element_type/observationTimeRange">
-                                            <swe:value>2006-02-12T00:00:00.000Z 2013-04-21T00:00:00.000Z</swe:value>
-                                        </swe:TimeRange>
-                                    </swe:field>
-                                </swe:DataRecord>
-                            </sml:capabilities>
-                            <sml:location>
-                                <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                                    <gml:pos>34.7 -72.73</gml:pos>
-                                </gml:Point>
-                            </sml:location>
-                            <sml:outputs>
-                                <sml:OutputList>
-                                    <sml:output name="Sea Water Temperature">
-                                        <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
-                                    </sml:output>
-                                    <sml:output name="Dissolved Oxygen">
-                                        <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/dissolved_oxygen"/>
-                                    </sml:output>
-                                </sml:OutputList>
-                            </sml:outputs>
-                        </sml:System>
-                    </sml:component>
-                </sml:ComponentList>
-            </sml:components>
-        </sml:System>
-    </sml:member>
-</sml:SensorML>
-```
-
-The IOOS Convention provides more detailed guidance to some SensorML elements’ implementation in the template; such elements are listed in the table below, and their specifics are explained as well:
-
-| Input Name | Cardinality | Description |
-| :--- | :---: | :--- |
-| sml:capabilities<br />name="ioosServiceMetadata" | 1…1 | Provides information of the IOOS template version. |
-| sml:member|1…1<br /><br />_**Note: For the elements hereinafter in this table, the cardinality is for each \<sml:member\>**_ | The element that bounds the description of the network of platforms that is specified in the “procedure” element of the DescribeSensor request. SensorML document contains only one <member> element because only one “procedure” parameter is allowed in SOS DescribeSensor request. Member system description generally includes the following sections: <br />&nbsp; &nbsp; &nbsp;• Name & Description<br />&nbsp; &nbsp; &nbsp;• Temporal & Spatial Bounds<br />&nbsp; &nbsp; &nbsp;• Identifiers<br />&nbsp; &nbsp; &nbsp;• Classifiers<br />&nbsp; &nbsp; &nbsp;• Contacts<br />&nbsp; &nbsp; &nbsp;• Components (platforms/stations that belong to the network)|
-| gml:boundedBy | 1…1 | Depicts spatial bounds of the network segment that is described in the document. All platforms that are located within the bounded segment must be listed in the \<sml:components\> section of the document. |
-| sml:identification | 1…1 | In this template provides identity and alias information for the network itself (in \<sml:member/System\> section), and for all component platforms (in \<sml:component/System\> sections). <br />The _**networkID**_, _**shortName**_ and _**longName**_ are required for the network, and for the component platform, just _**stationID**_ and _**shortName**_ are mandatory. <br />The other appropriate identification information is optional but its presentation is strongly encouraged. <br /> A WMO ID is an optional identifier for now but it is recommended to specify it for each platform when it is available.|
-| sml:classification | 1…1 | In this template specifies classification values that describe the content of the network offering with terms defined in external vocabularies. The reference to at least one parent network with IOOS codespace and RA Acronym value is required, e.g.: <br />{::nomarkdown}<pre>&lt;sml:classifier name="parentNetwork"&gt;<br />    &lt;sml:Term definition="http://mmisw.org/ont/ioos/definition/parentNetwork"&gt;<br />        &lt;sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/&gt;<br />        &lt;sml:value>NANOOS</sml:value&gt;<br />    &lt;/sml:Term&gt;<br />&lt;/sml:classifier&gt;</pre>{:/} |
-| sml:capabilities <br /> name="observationTimeRange" | 1…1 | Describes the valid time range over which observations from a whole network or a component platform exist, as opposed to the \<sml:validTyme\>. |
-| sml:contact | 0…1 | Lists all relevant contacts for the network. The mandatory contacts are _**Publisher**_ and _**Operator**_ but any other relevant contact may be described here. <br /><br />It is strongly recommended to represent any reference to external resource using an “xlink:href” attribute in the following manner: <br /><br />`<sml:contact xlink:href="http://sdf.ndbc.noaa.gov"/>`, or<br />`<sml:onlineResource xlink:href="http://pnw.buoyoperator.org"/>` <br /><br />IOOS Convention requires only \<sml:country\> and \<sml:electronicMailAddress\> for the contact address. However, it is strongly recommended to provide as many details for contact as possible, e.g.<br />{::nomarkdown}<pre>&lt;sml:address&gt;<br />    &lt;sml:deliveryPoint/&gt;<br />    &lt;sml:city/&gt; <br />    &lt;sml:administrativeArea/&gt; <br />    &lt;sml:postalCode/&gt;<br />    &lt;sml:country/&gt; <br />    &lt;sml:electronicMailAddress/&gt;<br />&lt;/sml:address&gt;</pre>{:/} |
-| sml:components | 1…1 | Lists all platforms in the network offering that are located within the spatial segment defined in the `<gml:boundedBy>` element. |
-| sml:component | 1…* | Describes each individual platform from the list. The following elements and associated attributes are required for each platform: <br />{::nomarkdown}<ul><li><b>&lt;sml:identification&gt;</b> <br />to indicate <i>stationID</i>, <i>shortName</i> and <i>longName</i> (optionally) for the specific platform; an indication of a _wmoID_ is strongly recommended as well;</li><li><b>&lt;sml:capabilities  name="observationTimeRange"&gt;</b> <br />to indicate observation time range;</li><li><b>&lt;sml:location/gml:Point&gt;</b> <br />to specify the 2D geographic location of the fixed platform (always in EPSG::4326);</li><li><b>&lt;sml:outputs&gt;</b> <br />to specify the properties observed by the platform</li></ul>{:/}|
-
-
-##### Platform/Station #####
+#### **Platform/Station**{: style="color: crimson"}
 
 A mandatory **DescribeSensor** response for a specific platform/station shall return:
 
@@ -1276,7 +1084,199 @@ The IOOS Convention provides more specific guidance to some SensorML elements’
 | sml:component | 1…* | Describes each individual sensor from the component list. The sensor name should be a human readable label.<br /><br />The following 2 elements are mandatory for each sensor:{::nomarkdown}<ul><li><b>&lt;sml:identification&gt;</b> <br />to indicate <i>sensorID</i> for the specific sensor;</li><li><b>&lt;sml:outputs&gt;</b> <br />to specify the list of all properties observed by the sensor.</li></ul>{:/}<br />The other 2 elements are optional but strongly recommended for each sensor:{::nomarkdown}<ul><li><b>&lt;sml:description&gt;</b> <br />to briefly describe the sensor in a human-readable form; </li><li><b>&lt;sml:documentation&gt;</b> <br />to specify the external resources for human consumption about this sensor and the observation data it produces.</li></ul>{:/} |
 
 
-##### Sensor #####
+#### **Network of platforms/stations**{: style="color: crimson"}
+
+A mandatory DescribeSensor response for a network of platforms/stations shall return:
+
+-   information on the IOOS Template version
+-   network description
+-   search keywords
+-   network identifiers, such as
+  -   networkID
+  -   short name
+  -   long name (optional)
+-   relevant contact information for this specific network
+-   list of platforms of the network with their identifiers
+-   list of offerings for the network
+-   time range for observations
+-   list of observed properties for the network
+
+The template for a generic DescribeSensor document for network is shown below. The template is independent of feature types, and presents just enough metadata to determine what additional descriptions are needed. The specifics of some elements’ use in the network template are discussed in details later.
+
+```XML
+<sml:SensorML 
+    xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
+    xmlns:gml="http://www.opengis.net/gml" 
+    xmlns:swe="http://www.opengis.net/swe/1.0.1" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.opengis.net/sensorML/1.0.1 http://schemas.opengis.net/sensorML/1.0.1/sensorML.xsd" 
+    version="1.0.1">
+    <sml:capabilities name="ioosServiceMetadata">
+        <swe:SimpleDataRecord>
+            <swe:field name="ioosTemplateVersion">
+                <swe:Text definition=”http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0”>
+                    <swe:value>1.0</swe:value>
+                </swe:Text>
+            </swe:field>
+        </swe:SimpleDataRecord>
+    </sml:capabilities> 
+    <sml:member>
+        <sml:System>
+            <gml:description>Collection of all station assets available via the NANOOS SOS service</gml:description>
+            <gml:name>urn:ioos:network:nanoos:all</gml:name>
+            <gml:boundedBy>
+                <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                    <gml:lowerCorner>32.7 -75.0</gml:lowerCorner>
+                    <gml:upperCorner>34.7 -72.0</gml:upperCorner>
+                </gml:Envelope>
+            </gml:boundedBy> 
+            <sml:identification>
+                <sml:IdentifierList>
+                    <sml:identifier name="networkID">
+                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/networkID">
+                            <sml:value>urn:ioos:network:nanoos:all</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                    <sml:identifier name="shortName">
+                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/shortName">
+                            <sml:value>NANOOS SOS station assets collection</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                    <sml:identifier name="longName">
+                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/longName">
+                            <sml:value>Collection of all station assets available via the NANOOS SOS service</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                </sml:IdentifierList>
+            </sml:identification>
+            <sml:classification>
+                <sml:ClassifierList>
+                    <sml:classifier name="publisher">
+                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/publisher">
+                            <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
+                            <sml:value>NANOOS</sml:value>
+                        </sml:Term>
+                    </sml:classifier>
+                    <sml:classifier name="parentNetwork">
+                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/parentNetwork">
+                            <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
+                            <sml:value>NANOOS</sml:value>
+                        </sml:Term>
+                    </sml:classifier>
+                </sml:ClassifierList>
+            </sml:classification>
+            <sml:capabilities name="observationTimeRange">
+                <swe:DataRecord>
+                    <swe:field name="observationTimeRange">
+                        <swe:TimeRange definition="http://mmisw.org/ont/ioos/swe_element_type/observationTimeRange">
+                            <swe:value>2008-04-28T08:00:00.000Z 2012-12-27T19:00:00.000Z</swe:value>
+                        </swe:TimeRange>
+                    </swe:field>
+                </swe:DataRecord>
+            </sml:capabilities>     
+            <sml:contact>
+                <sml:ContactList>
+                    <sml:member xlink:role="http://mmisw.org/ont/ioos/definition/operator">
+                        <sml:ResponsibleParty>
+                            <sml:organizationName>PNW Buoys</sml:organizationName>
+                            <sml:contactInfo>
+                                <sml:address>
+                                    <sml:deliveryPoint>1007 Balch Blvd.</sml:deliveryPoint>
+                                    <sml:city>Fremont</sml:city>
+                                    <sml:administrativeArea>WA</sml:administrativeArea>
+                                    <sml:postalCode>98195</sml:postalCode>
+                                    <sml:country>USA</sml:country>
+                                    <sml:electronicMailAddress>contact@buoys.com</sml:electronicMailAddress>
+                                </sml:address>
+                                <sml:onlineResource xlink:href="http://pnw.buoyoperator.org"/>
+                            </sml:contactInfo>
+                        </sml:ResponsibleParty>
+                    </sml:member>
+                    <sml:member xlink:role="http://mmisw.org/ont/ioos/definition/publisher">
+                        <sml:ResponsibleParty>
+                            <sml:organizationName>NANOOS</sml:organizationName>
+                            <sml:contactInfo>
+                                <sml:address>
+                                    <sml:country>USA</sml:country>
+                                    <sml:electronicMailAddress>mayorga@apl.washington.edu</sml:electronicMailAddress>
+                                </sml:address>
+                                <sml:onlineResource xlink:href="http://nanoos.org"/>
+                            </sml:contactInfo>
+                        </sml:ResponsibleParty>
+                    </sml:member>
+                </sml:ContactList>
+            </sml:contact>
+            <sml:components>
+                <sml:ComponentList>          
+                    <sml:component name="wmo_41001">
+                        <sml:System>
+                            <sml:identification>
+                                <sml:IdentifierList>
+                                    <sml:identifier name="stationID">
+                                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/stationID">
+                                            <sml:value>urn:ioos:station:wmo:41001</sml:value>
+                                        </sml:Term>
+                                    </sml:identifier>
+                                    <sml:identifier name="shortName">
+                                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/shortName">
+                                            <sml:value>WMO 41001 Buoy, Cape Hatteras</sml:value>
+                                    <sml:identifier name="longName">
+                                        <sml:Term definition="http://mmisw.org/ont/ioos/definition/longName">
+                                            <sml:value>urn:ioos:station:wmo:41001 buoy station, 150 NM East of Cape Hatteras</sml:value>
+                                        </sml:Term>
+                                    </sml:identifier>
+                                </sml:IdentifierList>
+                            </sml:identification>
+                            <sml:capabilities name="observationTimeRange">
+                                <swe:DataRecord>
+                                    <swe:field name="observationTimeRange">
+                                        <swe:TimeRange definition="http://mmisw.org/ont/ioos/swe_element_type/observationTimeRange">
+                                            <swe:value>2006-02-12T00:00:00.000Z 2013-04-21T00:00:00.000Z</swe:value>
+                                        </swe:TimeRange>
+                                    </swe:field>
+                                </swe:DataRecord>
+                            </sml:capabilities>
+                            <sml:location>
+                                <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                                    <gml:pos>34.7 -72.73</gml:pos>
+                                </gml:Point>
+                            </sml:location>
+                            <sml:outputs>
+                                <sml:OutputList>
+                                    <sml:output name="Sea Water Temperature">
+                                        <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
+                                    </sml:output>
+                                    <sml:output name="Dissolved Oxygen">
+                                        <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/dissolved_oxygen"/>
+                                    </sml:output>
+                                </sml:OutputList>
+                            </sml:outputs>
+                        </sml:System>
+                    </sml:component>
+                </sml:ComponentList>
+            </sml:components>
+        </sml:System>
+    </sml:member>
+</sml:SensorML>
+```
+
+The IOOS Convention provides more detailed guidance to some SensorML elements’ implementation in the template; such elements are listed in the table below, and their specifics are explained as well:
+
+| Input Name | Cardinality | Description |
+| :--- | :---: | :--- |
+| sml:capabilities<br />name="ioosServiceMetadata" | 1…1 | Provides information of the IOOS template version. |
+| sml:member|1…1<br /><br />_**Note: For the elements hereinafter in this table, the cardinality is for each \<sml:member\>**_ | The element that bounds the description of the network of platforms that is specified in the “procedure” element of the DescribeSensor request. SensorML document contains only one <member> element because only one “procedure” parameter is allowed in SOS DescribeSensor request. Member system description generally includes the following sections: <br />&nbsp; &nbsp; &nbsp;• Name & Description<br />&nbsp; &nbsp; &nbsp;• Temporal & Spatial Bounds<br />&nbsp; &nbsp; &nbsp;• Identifiers<br />&nbsp; &nbsp; &nbsp;• Classifiers<br />&nbsp; &nbsp; &nbsp;• Contacts<br />&nbsp; &nbsp; &nbsp;• Components (platforms/stations that belong to the network)|
+| gml:boundedBy | 1…1 | Depicts spatial bounds of the network segment that is described in the document. All platforms that are located within the bounded segment must be listed in the \<sml:components\> section of the document. |
+| sml:identification | 1…1 | In this template provides identity and alias information for the network itself (in \<sml:member/System\> section), and for all component platforms (in \<sml:component/System\> sections). <br />The _**networkID**_, _**shortName**_ and _**longName**_ are required for the network, and for the component platform, just _**stationID**_ and _**shortName**_ are mandatory. <br />The other appropriate identification information is optional but its presentation is strongly encouraged. <br /> A WMO ID is an optional identifier for now but it is recommended to specify it for each platform when it is available.|
+| sml:classification | 1…1 | In this template specifies classification values that describe the content of the network offering with terms defined in external vocabularies. The reference to at least one parent network with IOOS codespace and RA Acronym value is required, e.g.: <br />{::nomarkdown}<pre>&lt;sml:classifier name="parentNetwork"&gt;<br />    &lt;sml:Term definition="http://mmisw.org/ont/ioos/definition/parentNetwork"&gt;<br />        &lt;sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/&gt;<br />        &lt;sml:value>NANOOS</sml:value&gt;<br />    &lt;/sml:Term&gt;<br />&lt;/sml:classifier&gt;</pre>{:/} |
+| sml:capabilities <br /> name="observationTimeRange" | 1…1 | Describes the valid time range over which observations from a whole network or a component platform exist, as opposed to the \<sml:validTyme\>. |
+| sml:contact | 0…1 | Lists all relevant contacts for the network. The mandatory contacts are _**Publisher**_ and _**Operator**_ but any other relevant contact may be described here. <br /><br />It is strongly recommended to represent any reference to external resource using an “xlink:href” attribute in the following manner: <br /><br />`<sml:contact xlink:href="http://sdf.ndbc.noaa.gov"/>`, or<br />`<sml:onlineResource xlink:href="http://pnw.buoyoperator.org"/>` <br /><br />IOOS Convention requires only \<sml:country\> and \<sml:electronicMailAddress\> for the contact address. However, it is strongly recommended to provide as many details for contact as possible, e.g.<br />{::nomarkdown}<pre>&lt;sml:address&gt;<br />    &lt;sml:deliveryPoint/&gt;<br />    &lt;sml:city/&gt; <br />    &lt;sml:administrativeArea/&gt; <br />    &lt;sml:postalCode/&gt;<br />    &lt;sml:country/&gt; <br />    &lt;sml:electronicMailAddress/&gt;<br />&lt;/sml:address&gt;</pre>{:/} |
+| sml:components | 1…1 | Lists all platforms in the network offering that are located within the spatial segment defined in the `<gml:boundedBy>` element. |
+| sml:component | 1…* | Describes each individual platform from the list. The following elements and associated attributes are required for each platform: <br />{::nomarkdown}<ul><li><b>&lt;sml:identification&gt;</b> <br />to indicate <i>stationID</i>, <i>shortName</i> and <i>longName</i> (optionally) for the specific platform; an indication of a _wmoID_ is strongly recommended as well;</li><li><b>&lt;sml:capabilities  name="observationTimeRange"&gt;</b> <br />to indicate observation time range;</li><li><b>&lt;sml:location/gml:Point&gt;</b> <br />to specify the 2D geographic location of the fixed platform (always in EPSG::4326);</li><li><b>&lt;sml:outputs&gt;</b> <br />to specify the properties observed by the platform</li></ul>{:/}|
+
+
+#### **Sensor**{: style="color: crimson"}
 
 The IOOS SOS Milestone 1.0 does not require a provision of DescribeSensor documents for individual sensors. However, if an SOS server offers these documents nevertheless, the corresponding DescribeSensor response should return:
 
@@ -1308,11 +1308,11 @@ If the DescribeSensor document for individual sensor is provided, the IOOS Conve
 | sml:outputs | 1…* | Describes the specific results of the measurement of the input physical phenomena, e.g. Wind speed, Wind direction, etc. |
 
 
-### GetObservation ###
+## **GetObservation**{: style="color: crimson"}
 
 A **GetObservation** operation queries SOS to retrieve observation data structured according to the Observation and Measurement specification. Upon receiving a GetObservation request, a SOS shall either satisfy the request or return an exception report. The GetObservation operations provides observations based on the setting of filters that includes timing, processes, phenomena, feature of interest, and other parameters of the O&M model.
 
-#### GetObservation Request ####
+### **GetObservation Request**{: style="color: crimson"}
 
 A **GetObservation** request contains one or more elements that constrain the observations to be retrieved from a Sensor Observation Service. Each GetObservation query element has mandatory attributes of service and version. The mandatory version element attribute must correspond to the specific service interface version negotiated between the service and client during the service binding process. The required service attribute explicitly must be “SOS”.
 
@@ -1378,7 +1378,7 @@ http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?service=SOS&version=1.0.0&request=Get
 </sos:GetObservation>
 ```
 
-#### GetObservation Response ####
+### **GetObservation Response**{: style="color: crimson"}
 
 A **GetObservation** response returns a collection of observations. Each observation is composed of metadata, description of the phenomena being returned (parameter names, units of measure, reference systems) and values.
 
@@ -1394,7 +1394,7 @@ Since the common metadata parts of any GetObservation response are practically t
 
 Only critical templates’ components are discussed hereinafter just in order to limit the size of the document; however, all necessary measures were taken to ensure that template description completeness has not suffered. At any rate, the templates are well commented, and can provide a lot of needed information themselves.
 
-##### OM-GetObservation Template #####
+#### **OM-GetObservation Template**{: style="color: crimson"}
 
 The outline of the OM-GetObservation template is presented below:
 
@@ -1452,7 +1452,7 @@ The outline of the OM-GetObservation template is presented below:
 | om:member | 1…* <br />_**Note: For the elements hereinafter in this table, the cardinality is for each \<om:member\>**_ | A GetObservation response shall contain at least one member observation that reports offerings. All stations corresponding to the same CF feature type (discrete-sampling-geometries) shall be reported in a single \<om:member\> block. Conversely, if the GetObservation request contains more than one feature type, then each feature type shall be reported in a separate member observation block.<br /><br />Member system description generally includes the following sections: {::nomarkdown}<ul><li>Observation description</li><li>Temporal bounds for observations</li><li>List of stations reporting observations</li><li>List of the observed phenomena</li><li>Spatial bounds and other feature-type metadata</li><li>Observation result block</li></ul>{:/}<br />Single result block may contain values from multiple stations and multiple sensors of the same feature type. |
 | gml:description | 0…1 | A recommended fairly free-form human-readable text that describes observations, including station(s) name and location as well as sensor or procedure information. |
 | om:samplingTime | 1…1 | The samplingTime bounds the time when the result applies to the feature-of-interest, encoded as a TimeInstant or TimePeriod ISO8601 string or using the indeterminatePosition attribute (e.g. 'now'). Currently only UTC (Z) is supported. This time usually required for geospatial analysis of the result. |
-| om:procedure | 1…1 | This element contains the official IOOS identifiers for the platforms in a form of URN that conforms to the [IOOS Conventions for Observing Asset Identifiers]( https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers). <br /><br />The IOOS Convention requires that multiple platforms/stations are listed as members of a single process, e.g.: <br/><br/>`<om:procedure>`<br /> &nbsp;&nbsp;`<om:Process>`<br/> &nbsp;&nbsp;&nbsp;`<gml:member xlink:href="urn:ioos:station:wmo:41001"/>`<br />    &nbsp;&nbsp;&nbsp;`<gml:member xlink:href="urn:ioos:station:wmo:41002"/>`<br /> &nbsp;&nbsp;`</om:Process>`<br />`</om:procedure>` <br/> <br/>|
+| om:procedure | 1…1 | This element contains the official IOOS identifiers for the platforms in a form of URN that conforms to the [IOOS Conventions for Observing Asset Identifiers]( https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers). <br /><br />The IOOS Convention requires that multiple platforms/stations are listed as members of a single process, e.g.:<br /> {::nomarkdown}<pre>&lt;om:procedure&gt;<br />  &lt;om:Process&gt;<br />    &lt;gml:member xlink:href="urn:ioos:station:wmo:41001"/&gt;<br />    &lt;gml:member xlink:href="urn:ioos:station:wmo:41002"/&gt;<br />  &lt;/om:Process&gt;<br />&lt;/om:procedure&gt;</pre>{:/}|
 | om:observedProperty | 1…1 | A description of the phenomena that are being estimated through observation, e.g. "wave", "temperature", "wind", etc. <br />The IOOS Convention requires that {::nomarkdown} <ul><li>This element has a value that matches the value advertized in the Capabilities document.</li><li>The value is a URL corresponding to a Climate and Forecast (CF) Standard Name Parameter Vocabulary (http://mmisw.org/ont/cf/parameter) or IOOS Parameter Vocabulary (e.g.: http://mmisw.org/ont/ioos/parameter/wave) that are currently hosted by the Marine Metadata Interoperability (MMI) project.</li><li>The observed property shall be described in &lt;om:observedProperty&gt; as composite phenomenon using &lt;swe:CompositePhenomenon&gt; child element, even if just a single property is reported, and that property is not a compositу phenomenon’s constituent: <ul><li>Each &lt;swe:CompositePhenomenon&gt; shall have a document-wide unique &lt;gml:id&gt; attribute (it is recommended to use just a simple integer counter next to a fixed string). </li><li>Each &lt;swe:CompositePhenomenon&gt; shall have a child element &lt;gml:name&gt; with a value of any human-readable text string. </li><li>Each &lt;swe:CompositePhenomenon&gt; shall always be expanded to the list of the constituent scalar properties. </li><li>The individual scalar properties shall be defined in the IOOS Parameter Vocabulary. </li></ul></li></ul>{:/}<br />**EXAMPLE 1 (multiple scalar properties)**: <br />{::nomarkdown}<pre>&lt;om:observedProperty&gt;<br />  &lt;swe:CompositePhenomenon dimension="4" gml:id="observedproperties1"&gt;<br />      &lt;gml:name&gt;Response Observed Properties&lt;/gml:name&gt;<br />      &lt;swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/&gt;<br />      &lt;swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/&gt;<br />      &lt;swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_gust"/&gt;<br />      &lt;swe:component xlink:href="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen"/&gt;<br />  &lt;/swe:CompositePhenomenon&gt;<br />&lt;/om:observedProperty&gt;</pre>{:/}<br /> **EXAMPLE 2 (single scalar property)**: <br />{::nomarkdown}<pre>&lt;om:observedProperty&gt;<br />    &lt;swe:CompositePhenomenon dimension="1" gml:id="observedproperties1"&gt;<br />        &lt;gml:name&gt;Response Observed Properties&lt;/gml:name&gt;<br />        &lt;swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/&gt;<br />    &lt;/swe:CompositePhenomenon&gt;<br />&lt;/om:observedProperty&gt;</pre>{:/} |
 | om:featureOfInterest | 1…1 | Encompasses all spatial and feature-type response metadata assotiated with the observations of the same CF Feature Type (e.g., _**timeSeries**_, _**timeSeriesProfile**_, etc). IOOS Convention requires that all metadata properties associated with one feature type are aggregated in a single child element \<gml:FeatureCollection\>:<br />{::nomarkdown}<pre>&lt;om:featureOfInterest&gt;<br />    &lt;gml:FeatureCollection&gt;<br />        &lt;gml:metaDataProperty/&gt;<br />        &lt;gml:boundedBy/&gt;<br />        &lt;gml:location/&gt;<br />    &lt;/gml:FeatureCollection&gt;<br />&lt;/om:featureOfInterest&gt;</pre>{:/} |
 | _gml:metaDataProperty_ | 1…1 | Contains the name and codeSpace values for the CF Feature Type: <br />{::nomarkdown}<pre>&lt;gml:metaDataProperty&gt;<br />  &lt;gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries"><br />     timeSeries<br />  &lt;/gml:name&gt;<br />&lt;/gml:metaDataProperty&gt;</pre>{:/} |
@@ -1462,7 +1462,7 @@ The outline of the OM-GetObservation template is presented below:
 
 
 
-##### SWE-GetObservation Template #####
+#### **SWE-GetObservation Template**{: style="color: crimson"}
 
 The OGC SWE Common Data Model Encoding Standard v2.0 allows data components to be used as a data container as well as a data descriptor, where container defines metadata of a data set and includes the actual property values (“inline” values), while data descriptor defines metadata of a data set but does not include the actual data values. However, the Standard prohibits mixing of both guises in a single data component entity. For example, a single DataArray cannot contain both inline values and block-encoded values. Therefore, the IOOS Convention requires a Result block to include a root DataRecord composed of two basic fields – “stations” and “observationData”. The field "stations" forms a “static” part of the GetObservation response Result block that encompasses all invariable data for all stations and sensors, whereas the field “observationData” draws up a “dynamic” part that encloses observation values varying from sensor to sensor. All data components in the static block must be used as data containers and encoded inline, while the data components in the dynamic block must be used only as data descriptors, and contain a DataArray with block-encoded values:
 
@@ -1526,7 +1526,7 @@ In a similar manner, an abbreviated station ID is composed of the authority and
 
 <br />
 
-###### Static Data Block ######
+##### **Static Data Block**{: style="color: crimson"}
 
 The static information for all stations and sensors in GetObservation response is encompassed within the field “stations” of the root DataRecord element. Each DataRecord’s field may recursively enclose an unlimited number of DataRecords, which makes the static data block a pretty complex structure of nested DataRecords in case of multiple stations and/or sensors, as shown in [**Figure 8**](#Fig_8).
 
@@ -1658,7 +1658,7 @@ The following fragment of the IOOS Milestone 1.0 Template illustrates just that 
 ```
 <br />
 
-###### _Common QA/QC information_ ######
+##### _Common QA/QC information_{: style="color: crimson"}
 
 It has been a long-standing IOOS’ goal to implement the principles of Quality Assurance of Real Time Ocean Data (QARTOD) in the IOOS SOS, and the IOOS Convention has taken a first step in that direction by providing a guidance (based on the best practices of the IOOS data providers like NDBC) of reporting QA/QC information in the Milestone 1.0 templates. However, since the QARTOD has yet to develop the authoritative QA/QC procedures for all IOOS observed properties and feature types, the IOOS Convention provisions are not mandatory at the moment, and Milestone 1.0 templates should be considered as sort of “best practices” recommendations, mostly based on the NDBC’s system of pre-defined QA/QC flags (tockens).
 
@@ -1692,7 +1692,7 @@ The static data block in GetObservations document may include any common QA/QC i
 
 <br />
 
-###### _Profiling sensor specifics_ ######
+##### _Profiling sensor specifics_{: style="color: crimson"}
 
 For profiling sensor, just the indication of the sensor’s upward or downward shift relative to the platform position is not sufficient, and the IOOS Convention provides for more precise description of sensor’s position and orientation, including description of bins and depths for binned profile sensors. Although the Convention does not require a full description of a sensor’s orientation, the Convention strongly encourages the indication of this information for all vertical profiling sensors (e.g. ADCP).
 
@@ -1845,7 +1845,7 @@ For non-binned profiling sensors, the IOOS Convention requires a description of 
 </swe2:field>
 ```
 
-###### Dynamic Data Block (Sensor Observations) ######
+##### **Dynamic Data Block (Sensor Observations)**{: style="color: crimson"}
 
 The dynamic data block contains all measurements made by sensors and any other dynamic data (e.g. location for mobile sensors) from each sensor requested in GetObservation operation. In conformity with the OGC SWE Common Data Model Encoding Standard v2.0, the dynamic block must not contain any inline encoded data.
 
@@ -2047,7 +2047,7 @@ The IOOS Convention requires that, in contrast to the \<swe2:TextEncoding\> elem
 </swe2:values>
 ```
 
-###### _Observation-specific QA/QC information_ ######
+##### _Observation-specific QA/QC information_{: style="color: crimson"}
 
 The dynamic data block of GetObservation response may contain observation specific QA/QC information, encoded in the same **DataArray** with other observation values.
 
@@ -2182,7 +2182,7 @@ In order to define a composite flag that may have several components with variou
 </swe2:DataArray>
 ```
 
-###### _Profiling sensor observation-specific report_ ######
+##### _Profiling sensor observation-specific report_{: style="color: crimson"}
 
 The dynamic data block for profiling sensor has several important specifics that are stipulated by the ability of the sensor to perform a number of simultaneous observations at multiple points of the vertical axis. In order to provide for encoding of multiple simultaneous observations in one record, the IOOS Convention requires the use of a nested **DataArray** for each profiling sensor description in a **DataChoice** structure.
 
@@ -2275,129 +2275,3 @@ Similar to the non-profiling sensors, the sensor names used in the **DataChoice*
 
 
 
-# GLOSSARY #
-   
-Term | Definition
-:-----| :--------
-Consumers| In this document, “Consumers” refer to any systems that need to obtain weather data from SOS and connect via a web service interface.
-Service|The IT realization of some self-contained business functionality. An implementation – independent reusable operational function that may be discovered as self-describing interfaces, and invoked using open standard protocols across networks. 
-Service Discovery | The processes through which a service consumer may search for and find services, (generally done by providing criteria to search for against a corpus of service metadata which service providers have provided to describe their services).
-Service Oriented  Architecture (SOA) | A paradigm for organizing and utilizing distributed capabilities of services to clients that may be under the control of different ownership domains.  SOA provides a uniform means to offer, discover, interact with and use capabilities to produce desired effects consistent with measurable preconditions and expectations
-Service Registration | The registering process for the agreed service.
-Service Registry | An enabling infrastructure service that uses a formal registration process to store, catalog, and manage metadata relevant to the services. A registry supports the search, identification, and understanding of resources, as well as query capabilities.
-Stateful Dialogues | Dialogues that have “state” information between participating server and consumer agents to invoke requests and responses.
-Subscribe|To request data via the Broker from a publisher on a particular subject or topic.
-Taxonomy | A collection of controlled vocabulary terms organized into a hierarchical structure or categorization. Each term in taxonomy is in one or more parent-child relationships to other terms in the taxonomy.
-Observation | A value measured at given time instant (e.g. value: 0.2, time: 08-11-2012 12:12), and represented according to the O&M standard data model.
-Procedure | A process that indicates who provide the observations. For SOS this is generally the sensor, but may also be a generic process that leads to some observations and is represented as SensorML standard data model.
-Observed Property | A physical phenomenon that is observed (e.g. phenomenon: water temperature), and is represented with a Uniform Resource Identifier (URI) composed by colon separated text according to the `<om:observedProperty>` element of the O&M standard.
-Feature of Interest | A feature that relates to the observations, and represented according to the `<om:featureOfInterest>` element of the O&M standard. For in-situ observation, the feature of interest is the instrument (sensor) location, while for remote observation it is the location of the target.
-Offering | A collection of sensors used to conveniently group them up (e.g. network:all, network:all-temperature, sensor:watertemp, etc.) and is represented as `<sos:ObservationOffering>` element of the SOS standard.
-
-
-# ACRONYMS #
-
-Acronym|Definition
- :----- |:-----
-ADCP|Acoustic Doppler Current Profiler
-ANSI|American National Standards Institute
-ASCII|American Standard Code for Information Interchange
-BBOX|Bounding Box
-CF|Climate and Forecast
-CO-OPS|Center for Operational Oceanographic Products and Services
-CRS|Coordinate Reference System
-CSV|Comma-Separated Values
-DCP|Distributed Computing Platform
-DMAC|Data Management and Communication
-DQA|Data Quality Assurance or Data Quality Assessment
-ENU|East, North, Up directions
-EPSG|European Petroleum Survey Group
-EQC|Equivalent Quality Control or Environmental Quality Commission 
-GEOSS|Global Earth Observation System of Systems
-GML|Geography Markup Language
-GMT|Greenwich Mean Time
-GPS|Global Positioning System
-HTML|HyperText Markup Language
-HTTP|HyperText Transfer Protocol
-HTTPS|HyperText Transfer Protocol Secure
-ID|Identifyer
-IGLD|International Great Lakes Datum
-INCITS|InterNational Committee for Information Technology Standards
-IOOS|Integrated Ocean Observing System
-IP|Internet Protocol
-ISO|International Organization for Standardization
-IT|Information Technology
-JSON|JavaScript Object Notation
-KVP|Key-Value Pair
-LF|Line Feed
-LST|Local Sidereal Time
-MHHW|Mean Higher High Water
-MMI|Marine Metadata Interoperability
-MSL|Mean Sea Level
-NAVD|North American Vertical Datum
-NDBC|National Data Buoy Center
-NetCDF|Network Common Data Format
-NOAA|National Oceanic and Atmospheric Administration
-NODC|National Oceanographic Data Center
-NWS|National Weather Service
-OASIS|Organization for the Advancement of Structured Information Standards
-OGC|Open Geospatial Consortium
-OM|Observations and Measurements
-OMO|One-Minute Observation
-PNW|Pacific Northwest
-PSU|Pressure Switch Unit
-QA|Quality Assurance
-QARTOD|Quality Assurance of Real Time Ocean Data
-QC|Quality Control
-RA|Regional Assotiation
-RDBMS|Relational Database Management System 
-SOA|Service-Oriented Architecture
-SOAP|Simple Object Access Protocol
-SOS|Sensor Observation Service
-SWE|Senesor Web Enablement
-TBA|To be added
-TBD|To be developed
-TLS|Transport Layer Security
-TR|Technical Report
-TSV|Tab-Separated Values
-UML|Unified Modeling Language
-URI|Uniform Resource Identifyer
-URL|Uniform Resource Locator
-URN|Uniform Resource Name
-US|United States
-USA|United States of America
-UTC|Coordinated Universal Time
-WAN|Wide Access Network
-WARP|Weather and Radar Processor
-WCS|Web Coverage Service
-WFS|Web Feature Service
-WGS|World Geodetic System
-WMO|World Meteorological Organization
-WMS|Web Map Service
-WSDD|Web Service Description Document
-WSDL|Web Service Description Language
-WSN|Web Services Notification
-WSRD|Web Service Requirements Document
-XML|eXtensible Markup Language
-
-
-
-# APPLICABLE DOCUMENTS #
-
-| #  | Name and Location  |
-| :---: | :--- |
-| 1 | OpenGIS Geography Markup Language (GML) Encoding Standard Version 3.1, Open Geospatial Consortium (OGC), February 2004. [http://www.opengeospatial.org/standards/gml](http://www.opengeospatial.org/standards/gml) |
-| 2 | OpenGIS Sensor Model Language (SensorML) Implementation Specification Version 1.0.0, Open Geospatial Consortium (OGC), July 2007 [http://www.opengeospatial.org/standards/sensorml](http://www.opengeospatial.org/standards/sensorml) |
-| 3 | OpenGIS Filter Encoding 2.0 Encoding Standard Version 2.0.0, Open Geospatial Consortium, International Organization for Standards (ISO) 19143:2010, November 2010. [http://www.opengeospatial.org/standards/filter](http://www.opengeospatial.org/standards/filter)|
-| 4 | OpenGIS Geography Markup Language (GML) Encoding Standard Version 3.2.1, Open Geospatial Consortium (OGC), August 2007. [http://www.opengeospatial.org/standards/gml](http://www.opengeospatial.org/standards/gml) |
-| 5 | OpenGIS Sensor Observation Service (SOS) Implementation Standard Version 1.0.0, Open Geospatial Consortium, October 2007, OGC 06-009r6. [http://www.opengeospatial.org/standards/sos](http://www.opengeospatial.org/standards/sos) |
-| 6 | OpenGIS Sensor Observation Service (SOS) Implementation Standard Version 2.0, Open Geospatial Consortium, April 2012, OGC 12-006. [http://www.opengeospatial.org/standards/sos](http://www.opengeospatial.org/standards/sos) |
-| 7 | OpenGIS Network Common Data Form (NetCDF) Core Encoding Standard Version 1.0, Open Geospatial Consortium, April 2011. [http://www.opengeospatial.org/standards/netcdf](http://www.opengeospatial.org/standards/netcdf) |
-| 8 | OpenGIS Web Services Common Standard Version 2.0, Open Geospatial Consortium, April 2010. [http://www.opengeospatial.org/standards/common](http://www.opengeospatial.org/standards/common) |
-| 9 | Web Services Description Language (WSDL) Version 1.1, W3C Note, March 2001 [http://www.w3.org/TR/wsdl](http://www.w3.org/TR/wsdl) |
-| 10 | NetCDF Climate and Forecast (CF) Metadata Conventions Version 1.6, December 2011,  [http://cf-pcmdi.llnl.gov/documents](http://cf-pcmdi.llnl.gov/documents) |
-| 11 | CF Conventions Standard Name Table, Version 25, July 2013,  [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/25/cf-standard-name-table.html](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/25/cf-standard-name-table.html) |
-| 12 | NetCDF Feature Type Templates, National Oceanographic Data Center (NODC) [http://www.nodc.noaa.gov/data/formats/netcdf/#templatesexamples](http://www.nodc.noaa.gov/data/formats/netcdf/#templatesexamples) |
-| 13 | OpenGIS SWE Common Data Model Encoding Standard Version 2.0.0, Open Geospatial Consortium (OGC), January 2011 [http://www.opengeospatial.org/standards/swecommon](http://www.opengeospatial.org/standards/swecommon) |
-
-* * * * *
