@@ -29,176 +29,154 @@ entries:
 #      url: /sos-guidelines-jekyll/index.html
 #      output: web
 
-  - title: "IOOS SOS 1.0: Introduction"
+  - title: "Service Description for IOOS SOS 1.0"
     output: web, pdf
 
     folderitems:
 
-    - title: Overview
+    - title: Introduction
       url: /sos-wsdd-1-0.html#overview
-      output: web
-
-  - title: "IOOS SOS 1.0: Conformance to Standards and Conventions"
-    output: web, pdf
-
-    folderitems:
-
-    - title: OGC SOS Implementation Standards
-      url: /sos-wsdd-1-0.html#conformance-to-standards-and-conventions
-      output: web
-
-    - title: NetCDF Climate and Forecast Metadata Convention
-      url: /sos-wsdd-1-0.html#netcdf-climate-and-forecast-metadata-convention
-      output: web
-
-    - title: IOOS Convention and SOS Templates
-      url: /sos-wsdd-1-0.html#ioos-convention-and-sos-templates
-      output: web
-
-    - title: Coordinate System Axis Order
-      url: /sos-wsdd-1-0.html#coordinate-system-axis-order
-      output: web
-
-    - title: Namespaces
-      url: /sos-wsdd-1-0.html#namespaces
-      output: web
-
-    - title: Capitalization
-      url: /sos-wsdd-1-0.html#capitalization
-      output: web
-
-    - title: Use of URL in HTTP GET and POST Requests
-      url: /sos-wsdd-1-0.html#use-of-url-in-http-get-and-post-requests
-      output: web
-
-  - title: "IOOS SOS 1.0: General Information"
-    output: web, pdf
-
-    folderitems:
-
-    - title: Service Operations Overview
-      url: /sos-wsdd-1-0.html#operations
-      output: web
-      
-  - title: "IOOS SOS 1.0: GetCapabilities"
-    output: web, pdf
-
-    folderitems:
-
-    - title: GetCapabilities Request
-      url: /sos-wsdd-1-0.html#getcapabilities-request
-      output: web
-
-    - title: "GetCapabilities Response: Overview"
-      url: /sos-wsdd-1-0.html#getcapabilities-response
-      output: web
-
-    - title: "GetCapabilities Response: ServiceIdentification Section"
-      url: /sos-wsdd-1-0.html#serviceidentification
-      output: web
-
-    - title: "GetCapabilities Response: ServiceProvider Section"
-      url: /sos-wsdd-1-0.html#serviceprovider
-      output: web
-
-    - title: "GetCapabilities Response: OperationsMetadata Section"
-      url: /sos-wsdd-1-0.html#operationsmetadata
-      output: web
-
-    - title: "GetCapabilities Response: Contents Section"
-      url: /sos-wsdd-1-0.html#contents
-      output: web
-
-  - title: "IOOS SOS 1.0: DescribeSensor"
-    output: web, pdf
-    folderitems:
-
-    - title: DescribeSensor Request
-      url: /sos-wsdd-1-0.html#describesensor-request
-      output: web
-
-    - title: "DescribeSensor Response: Overview"
-      url: /sos-wsdd-1-0.html#describesensor-response
-      output: web
-
-    - title: DescribeSensor Response for Platform/Station
-      url: /sos-wsdd-1-0.html#platformstation
-      output: web
-
-    - title: DescribeSensor Response for Network of Platforms/Stations
-      url: /sos-wsdd-1-0.html#network-of-platformsstations
-      output: web
-
-    - title: DescribeSensor Response for Sensor
-      url: /sos-wsdd-1-0.html#sensor
-      output: web
-
-#                    Static Data Block
-#                        Common QA/QC information
-#                        Profiling sensor specifics
-#                    Dynamic Data Block (Sensor Observations)
-#                        Observation-specific QA/QC information
-#                        Profiling sensor observation-specific report
-
-  - title: "IOOS SOS 1.0: GetObservation"
-    output: web, pdf
-
-    folderitems:
-
-    - title: GetObservation Request
-      url: /sos-wsdd-1-0.html#getobservation-request
-      output: web
-
-    - title: "GetObservation Response: Overview"
-      url: /sos-wsdd-1-0.html#getobservation-response
-      output: web
-
-    - title: "GetObservation Response: OM Part"
-      url: /sos-wsdd-1-0.html#om-getobservation-template
-      output: web
-
-    - title: "GetObservation Response: SWE Part"
-      url: /sos-wsdd-1-0.html#swe-getobservation-template
       output: web
 
       subfolders:
 
-      - title: Static Data Block
+      - title: "Conformance to Standards and Conventions"
         output: web, pdf
 
         subfolderitems:
 
-        - title: General Structure
+        - title: OGC SOS Implementation Standards
+          url: /sos-wsdd-1-0.html#conformance-to-standards-and-conventions
+          output: web
+
+        - title: NetCDF Climate and Forecast Metadata Convention
+          url: /sos-wsdd-1-0.html#netcdf-climate-and-forecast-metadata-convention
+          output: web
+
+        - title: IOOS Convention and SOS Templates
+          url: /sos-wsdd-1-0.html#ioos-convention-and-sos-templates
+          output: web
+
+        - title: Coordinate System Axis Order
+          url: /sos-wsdd-1-0.html#coordinate-system-axis-order
+          output: web
+
+        - title: Namespaces
+          url: /sos-wsdd-1-0.html#namespaces
+          output: web
+
+        - title: Capitalization
+          url: /sos-wsdd-1-0.html#capitalization
+          output: web
+
+        - title: Use of URL in HTTP GET and POST Requests
+          url: /sos-wsdd-1-0.html#use-of-url-in-http-get-and-post-requests
+          output: web
+
+    - title: Service Operations Overview
+      url: /sos-wsdd-1-0.html#operations
+      output: web
+
+      subfolders:
+      
+      - title: "GetCapabilities"
+        output: web, pdf
+
+        subfolderitems:
+
+        - title: Request
+          url: /sos-wsdd-1-0.html#getcapabilities-request
+          output: web
+
+        - title: "Response: Overview"
+          url: /sos-wsdd-1-0.html#getcapabilities-response
+          output: web
+
+        - title: "Response: ServiceIdentification"
+          url: /sos-wsdd-1-0.html#serviceidentification
+          output: web
+
+        - title: "Response: ServiceProvider"
+          url: /sos-wsdd-1-0.html#serviceprovider
+          output: web
+
+        - title: "Response: OperationsMetadata"
+          url: /sos-wsdd-1-0.html#operationsmetadata
+          output: web
+
+        - title: "Response: Contents"
+          url: /sos-wsdd-1-0.html#contents
+          output: web
+
+      - title: "DescribeSensor"
+        output: web, pdf
+
+        subfolderitems:
+
+        - title: Request
+          url: /sos-wsdd-1-0.html#describesensor-request
+          output: web
+
+        - title: "Response: Overview"
+          url: /sos-wsdd-1-0.html#describesensor-response
+          output: web
+
+        - title: Response for Single Platform/Station
+          url: /sos-wsdd-1-0.html#platformstation
+          output: web
+
+        - title: Response for Network of Platforms/Stations
+          url: /sos-wsdd-1-0.html#network-of-platformsstations
+          output: web
+
+        - title: Response for Sensor
+          url: /sos-wsdd-1-0.html#sensor
+          output: web
+
+      - title: "GetObservation"
+        output: web, pdf
+
+        subfolderitems:
+
+        - title: Request
+          url: /sos-wsdd-1-0.html#getobservation-request
+          output: web
+
+        - title: "Response: Overview"
+          url: /sos-wsdd-1-0.html#getobservation-response
+          output: web
+
+        - title: "Response: Common OM Part"
+          url: /sos-wsdd-1-0.html#om-getobservation-template
+          output: web
+
+        - title: "Response: SWE Part - Overview"
+          url: /sos-wsdd-1-0.html#swe-getobservation-template
+          output: web
+
+        - title: "Response: SWE Part - Static Data Block"
           url: /sos-wsdd-1-0.html#static-data-block
           output: web
 
-        - title: Common QA/QC information
+        - title: "Response: SWE Part - Common QA/QC"
           url: /sos-wsdd-1-0.html#common-qaqc-information
           output: web
 
-        - title: Profiling Sensor Specifics
+        - title: "Response: SWE Part - Profiling Sensor Specifics"
           url: /sos-wsdd-1-0.html#profiling-sensor-specifics
           output: web
 
-      - title: Dynamic Data Block (Sensor Observations)
-        output: web, pdf
-
-        subfolderitems:
-
-        - title: General Structure
+        - title: "Response: SWE Part - Dynamic Data Block"
           url: /sos-wsdd-1-0.html#dynamic-data-block-sensor-observations
           output: web
 
-        - title: Observation-specific QA/QC information
+        - title: "Response: SWE Part - Observation-specific QA/QC"
           url: /sos-wsdd-1-0.html#observation-specific-qaqc-information
           output: web
 
-        - title: Profiling Sensor Specifics
+        - title: "Response: SWE Part - Profiling Sensor Specifics"
           url: /sos-wsdd-1-0.html#profiling-sensor-observation-specific-report
           output: web
-
-  - title: =========
-    output: web
 
   - title: XML Templates for IOOS SOS v1.0
     output: web, pdf
@@ -220,10 +198,6 @@ entries:
     - title: "GetObservation Response: Common OM Metadata Block"
       url: /om-getobservation.html
       output: web
-
-#    - title: Result Block - TimeSeries
-#      url:
-#      output: web
 
       subfolders:
 
@@ -257,55 +231,52 @@ entries:
           url: /swe-singlestation-timeseriesprofile-qc.html
           output: web, pdf
 
-  - title: =========
-    output: web
-
-  - title: IOOS SOS Tests
+  - title: Compliance and Interoperability Tests for IOOS SOS v1.0
     output: web, pdf
 
     folderitems:
 
     - title: Introduction
       url: /sos-test-list-summary.html
-      output: web, pdf
+      output: web
 
     - title: OWS Common Tests
       url: /sos-test-list-summary.html#ows-common-tests
-      output: web, pdf
+      output: web
 
     - title: General SOS Tests
       url: /sos-test-list-summary.html#general-sos-tests
-      output: web, pdf
+      output: web
 
     - title: Core SOS Tests
       url: /sos-test-list-summary.html#core-sos-tests
-      output: web, pdf
+      output: web
 
       subfolders:
 
       - title: GetCapabilities Tests
-        output: web, pdf
+        output: web
         subfolderitems:
 
         - title: General OGC Tests
           url: /sos-test-list-summary.html#ogc-general-tests
-          output: web, pdf
+          output: web
 
         - title: IOOS-specific Tests
           url: /sos-test-list-summary.html#ioos-specific-tests
-          output: web, pdf
+          output: web
 
       - title: DescribeSensor Tests
-        output: web, pdf
+        output: web
         subfolderitems:
 
         - title: General OGC Tests
           url: /sos-test-list-summary.html#ogc-general-tests-1
-          output: web, pdf
+          output: web
 
         - title: IOOS-specific Tests
           url: /sos-test-list-summary.html#ioos-specific-tests-1
-          output: web, pdf
+          output: web
 
       - title: GetObservation Tests
         output: web, pdf
@@ -313,14 +284,11 @@ entries:
 
         - title: General OGC Tests
           url: /sos-test-list-summary.html#ogc-general-tests-2
-          output: web, pdf
+          output: web
 
         - title: IOOS-specific Tests
           url: /sos-test-list-summary.html#ioos-specific-tests-2
-          output: web, pdf
-
-  - title: =========
-    output: web
+          output: web
 
   - title: Reference Information
     output: web, pdf
