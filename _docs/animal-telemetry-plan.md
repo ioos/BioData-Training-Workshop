@@ -178,7 +178,7 @@ The following are recommendations for how U.S. IOOS can integrate ATN efforts in
 
 **This document should always be referenced as follows:**
 
-[Moustahfid H., M. Weise, S. Simmons, B. Block, K. Holland, J. Ault, J. Kocik, D. Costa, S. T. Lindley, B. Mate, S. Hayes, C. M. Holbrook, A. Seitz, M. Arendt, J. Payne, B. Mahmoudi, C. Alexander, P. Moore, J. Price, D. Wilson. 2014. Meeting our Nation’s needs for biological and environmental monitoring: Strategic plan and recommendations for a National Telemetry Network (ATN) through U.S. IOOS. U.S. Department of Commerce, NOAA Technical Memorandum NMFS, NOAA-TM-NMFS-SWFSC-534, 7 p.](https://github.com/abirger/animal-telemetry/blob/master/doc/national_atn_sp_draft_final1.pdf?raw=true)
+[Moustahfid H., M. Weise, S. Simmons, B. Block, K. Holland, J. Ault, J. Kocik, D. Costa, S. T. Lindley, B. Mate, S. Hayes, C. M. Holbrook, A. Seitz, M. Arendt, J. Payne, B. Mahmoudi, C. Alexander, P. Moore, J. Price, D. Wilson. 2014. Meeting our Nation’s needs for biological and environmental monitoring: Strategic plan and recommendations for a National Telemetry Network (ATN) through U.S. IOOS. U.S. Department of Commerce, NOAA Technical Memorandum NMFS, NOAA-TM-NMFS-SWFSC-534, 7 p.](https://github.com/ioos/animal-telemetry-jekyll/blob/gh-pages/_docs/national_atn_sp_draft_final1.pdf)
 
 
 
