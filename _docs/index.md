@@ -1,37 +1,20 @@
 ---
-title: Introduction to Guidelines for IOOS SOS 1.0
-keywords: sample homepage
-tags: [getting_started]
+title: "ABOUT: National Animal Telemetry Network"
+keywords: homepage
+tags: [getting_started, about, overview]
 #sidebar: home_sidebar
 sidebar: mydoc_sidebar
 topnav: topnav
 toc: false
 #permalink: index.html
-summary: This brief description summarizes the content of the Guidelines. The other topics on this site provide additional information and detail about working with all aspects of the IOOS SOS 1.0.
+summary: A national ATN through the U.S. Integrated Ocean Observing System (U.S. IOOS) will integrate a range of operational telemetry technologies that enable monitoring of a host of aquatic life over multiple temporal and spatial scales.
 ---
 
-## IOOS SOS Application Profile
 
-U.S. IOOS distributes ocean observations using the OGC Sensor Observation Service. To support this effort U.S. IOOS has developed a profile of SOS v1.0 (henceforth IOOS SOS v1.0) that includes specific behaviors for the SOS interface and for the output formats delivered in response to the three operations of the SOS Core Profile.
-The GitHub repository contains documentation of the IOOS SOS v1.0 profile, example templates for the responses, and information on two reference implementations developed to support the IOOS SOS v1.0 profile. To facilitate the practical implementation of the SOS, IOOS has developed the IOOS Application Profile (AP) for SOS, which includes a series of operation templates, controlled vocabularies, IOOS Conventions for SOS Implementation, and a set of tests for IOOS SOS implementations.
+Animal telemetry is the science of elucidating the movements and behavior of animals as they move through the world’s oceans, coastal rivers, estuaries and great lakes. Animal telemetry devices (“tags”) yield detailed data regarding animal responses to the coupled ocean-atmosphere and physical environment through which they are moving. This can be done in near-real time, or by use of archival tags in which the data are stored or later transmitted to an array of sensors or satellites. 
 
-### IOOS SOS 1.0 WSDD
+Animal species tagged have ranged from 6-gram salmon smolts to 150-ton whales. Detailed observations of animal movements and behavior in relation to critical habitats in their aquatic environment have significantly improved our understanding of ecosystem function and dynamics. These observations are critical for sustaining populations, conserving biodiversity and implementing ecosystem-based management through an increased understanding of ecosystem structures, functions, and processes, as well as, their importance to ecosystem services and values. Sensors carried by animals have recently come of age and deliver high resolution physical oceanographic data at relatively low costs. Animals are particularly adept at helping scientists identify critical habitats, spawning locations, and important oceanographic features (e.g., fronts, eddies and upwelling areas). They also provide important insights into regions of the oceans that are difficult and expensive to monitor (e.g., offshore environments, Arctic). 
 
-The Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.
+Animal telemetry observations can inform federal and state resource managers through improved spatial models of animal dynamics, and improve the basis of conservation and sustainable-use fishery management policies. A national Animal Telemetry Network (ATN) will provide exciting and important short and long-term benefits, including enhancing fisheries and ecosystem-based management, filling oceanographic knowledge gaps and improving ocean modeling and forecasting, and advancing many of the National Ocean Policy (NOP) Implementation Plan priority objectives.
 
-### IOOS SOS 1.0 Templates
-
- * GetCapabilities: A template for generic (independent of feature type) GetCapabilities response.
- * DescribeSensor-Network: A template for generic (independent of feature type) SensorML DescribeSensor response (network of stations)
- * DescribeSensor-Station: A template for generic (independent of feature type) SensorML DescribeSensor response (single station)
- * OM GetObservation: A template for a generic (independent of feature type) GetObservation response (the result block in this template is empty; see SWE templates for guidance on the result block)
-* SWE-SingleStation-SingleProperty-TimeSeries: A template for SWE Data Record’s static and dynamic fields (single station with a single sensor)
- * SWE-SingleStation-TimeSeriesProfile: A template for SWE Data Record’s static and dynamic fields (a station with profiling sensors)
- * SWE-SingleStation-TimeSeriesProfile-QC: A template for SWE Data Record’s static and dynamic fields (a station with profiling sensors including quality elements for some quantities)
- * SWE-MultiStation-TimeSeries: A template for SWE Data Record’s static and dynamic fields (multiple stations with a variety of sensors)
- * SWE-MultiStation-TimeSeries-QC: A template for SWE Data Record’s static and dynamic fields (multiple stations with a variety of sensors including quality elements for some quantities)
-
-### IOOS SOS 1.0 Compliance and Interoperability Tests
-
-This document describes a collection of tests that have to be run in order to ensure a required level of compliance with IOOS SOS Profile 1.0 (IOOS Convention), and official OGC SOS 1.0.0 specification.
 
