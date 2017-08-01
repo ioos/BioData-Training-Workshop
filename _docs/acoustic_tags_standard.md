@@ -9,10 +9,10 @@ toc: false
 summary:  Data and metadata template to use for sharing acoustic, archival and satellite telemetry data between organizations.
 ---
 
-
+ <!-- 
 * TOC
 {:toc}
- <!-- -->
+-->
 
 
 # **Introduction**
@@ -188,7 +188,7 @@ project_id | Project ID. | required | numeric | Foreign key to project table |
 device_type | Type of device, can only take the following values: _**archival**_, _**pop-up**_, _**satellite**_, _**acoustic tag**_, or _**acoustic receiver**_ | required | text | Controlled vocabulary implemented via a check constraint | 
 manufacturer | Name of manufacturer. | required | text | Controlled vocabulary implemented via a check constraint | 
 model_name | Model name. | required | text | Controlled vocabulary implemented via a check constraint | 
-serial_number | Device serial number. | required | text | The combination of _**`manufacturer`, _**`model_name`, and _**`serial_number`**_ must be unique. | 
+serial_number | Device serial number. | required | text | The combination of _**`manufacturer`**_, _**`model_name`**_, and _**`serial_number`**_ must be unique. | 
 code_map | For acoustic tags only (_e.g._ **‘A69-9002’**). Additional database constraints can be generated based on this value since some code maps are pingers only and some are sensors only [https://github.com/aodn/aatams/issues/240 - issuecomment-214596557](https://github.com/aodn/aatams/issues/240#issuecomment-214596557).
 optional | text | Not null if _**`device_type`**_ = _**`acoustic tag`**_ | 
 ping_code | For acoustic tags only. | optional | numeric | Not null if _**`device_type`**_ = _**`acoustic tag`**_ | 
