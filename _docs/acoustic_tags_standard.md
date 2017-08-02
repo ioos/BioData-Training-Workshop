@@ -164,12 +164,15 @@ This menu option will be available to unregistered users but data availability m
 
 # **3. Database schema: tables and relationships**
 
-<!-- ![Relational_database_diagram](animal-telemetry-jekyll/database1.jpg){:height="600"} -->
+<!-- ![Relational_database_diagram](./database1.jpg){:height="100"} -->
 
+ <a href="./database1.jpg"><img alt="thumb" src="./database-small.jpg"></a> 
 
-<img src="/animal-telemetry-jekyll/database1.jpg" height="800">
+<!-- <img src="./database1.jpg" height="800"> -->
+(click for full-size image)
+{: style="color:blue; font-size: 80%; text-align: center;"}
 
-<a name="Fig_1"></a>_**Figure 1: Database schema showing the content of each table and their relationships. Metadata, monitoring, and data tables are shown in the green, orange, and red dashed rectangle respectively. Foreign key relationships from the  `receiver_deployment_recovery` and `animal_release_recovery` to the `users` table are not represented to improve readability.**_
+<a name="Fig_1"></a>_**<br>Figure 1: Database schema showing the content of each table and their relationships. Metadata, monitoring, and data tables are shown in the green, orange, and red dashed rectangle respectively. Foreign key relationships from the  `receiver_deployment_recovery` and `animal_release_recovery` to the `users` table are not represented to improve readability.**_
 
 <br><br>
 
