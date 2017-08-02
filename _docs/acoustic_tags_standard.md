@@ -9,7 +9,7 @@ toc: false
 summary:  Data and metadata template to use for sharing acoustic, archival and satellite telemetry data between organizations.
 ---
 
- <!-- 
+<!-- 
 * TOC
 {:toc}
 -->
@@ -166,7 +166,7 @@ This menu option will be available to unregistered users but data availability m
 
 <!-- ![Relational_database_diagram](./database1.jpg){:height="100"} -->
 
- <a href="./database1.jpg"><img alt="thumb" src="./database-small.jpg"></a> 
+ <a href="./database1.jpg"><img alt="thumb" src="../database-small.jpg"></a> 
 
 <!-- <img src="./database1.jpg" height="800"> -->
 (click for full-size image)
