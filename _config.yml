@@ -139,7 +139,7 @@ baseurl                  : "/animal-telemetry-jekyll"
 
 repository               : "abirger/documentation-theme-jekyll"
 
-github_editme_path       : abirger/animal-telemetry-jekyll
+github_editme_path       : "abirger/animal-telemetry-jekyll/blob/gh-pages/_docs"
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #Setup/config for 'ioos_jekyll_theme' git submodule:
