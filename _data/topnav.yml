@@ -1,10 +1,10 @@
 ## Topnav single links
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
-topnav:
-- title: Topnav
-  items:
-    - title: IOOS Documentation Portal
-      external_url: http://ioos.github.io/
+#topnav:
+#- title: Topnav
+#  items:
+#    - title: IOOS Documentation Portal
+#      external_url: http://ioos.github.io/
 
 #Topnav dropdowns
 topnav_dropdowns:
@@ -12,6 +12,9 @@ topnav_dropdowns:
   folders:
     - title: IOOS Documentation & Data Sites
       folderitems:
+        - title: IOOS Documentation Portal
+          external_url: http://ioos.github.io/
+        - ____________________________________
         - title: IOOS Repositories on GitHub
           external_url: https://github.com/ioos
         - ===========================================================
