@@ -5,6 +5,7 @@ search: exclude
 ---
 
 [
+{% comment %}
 {% for page in site.pages %}
 {% unless page.search == "exclude" %}
 {
@@ -12,7 +13,8 @@ search: exclude
 "tags": "{{ page.tags }}",
 "keywords": "{{page.keywords}}",
 "url": "{{ page.url | remove: "/"}}",
-"summary": "{{page.summary | strip }}"
+"summary": "{{page.summary | strip }}",
+"body": "{{ page.content | strip_html | strip_newlines | replace: '\', '\\\\' | replace: '"', '\\"' | replace: '	', '    '  }}",
 }
 {% unless forloop.last and site.posts.size < 1 %},{% endunless %}
 {% endunless %}
@@ -25,11 +27,13 @@ search: exclude
 "tags": "{{ post.tags }}",
 "keywords": "{{post.keywords}}",
 "url": "{{ post.url | remove: "/" }}",
-"summary": "{{post.summary | strip }}"
+"summary": "{{post.summary | strip }}",
+"body": "{{ post.content | strip_html | strip_newlines | replace: '\', '\\\\' | replace: '"', '\\"' | replace: '	', '    '  }}",
 }
 
 {% unless forloop.last and site.docs.size < 1 %},{% endunless %}
 {% endfor %}
+{% endcomment %}
 
 {% for doc in site.docs %}
 
@@ -38,7 +42,8 @@ search: exclude
 "tags": "{{ doc.tags }}",
 "keywords": "{{doc.keywords}}",
 "url": "{{ doc.url | remove: "/" }}",
-"summary": "{{doc.summary | strip }}"
+"summary": "{{doc.summary | strip }}",
+"body": "{{ doc.content | strip_html | strip_newlines | replace: '\', '\\\\' | replace: '"', '\\"' | replace: '	', '    '  }}"
 }
 {% unless forloop.last %},{% endunless %}
 {% endfor %}

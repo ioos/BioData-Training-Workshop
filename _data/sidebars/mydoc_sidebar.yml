@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Animal Telemetry Documentation
-  levels: three
+  product: "The text that appear on top of the side menu"
+  levels: two
   version: 
   folders:
 
@@ -20,197 +20,66 @@ entries:
       output: pdf
       type: frontmatter
 
-#  - title: IOOS SOS Application Profile 1.0
-#    output: web
-#
-#    folderitems:
-#
-#    - title: Introduction to Guidelines for IOOS SOS 1.0
-#      url: /animal-telemetry-jekyll/index.html
-#      output: web
-
-  - title: "National Animal Telemetry Network"
-    output: web, pdf
-
-    folderitems:
-
-    - title: Introduction
-      url: /index.html
-      output: web
-
-  - title: "IOOS AAT Data Project: Improving Access to AAT Observations"
-    url: /aat-data-ioostech-wiki.html
+# Always visible folder name that contains top-level menu items with links to 1st document/page
+  - title: "Homepage [First Document]"
     output: web
 
     folderitems:
 
-    - title: Introduction and Objectives
-      url: /aat-data-ioostech-wiki.html#introduction-and-objectives
+# Top-level menu item #1
+    - title: "Homepage Header 1"
+# A link to the 1st rendered document; consists of '/'+'markdown-document-name'+'.html'[+'#'+'any-header-or-other-anchor-on-the-page'
+      url: /index.html#header-1
       output: web
 
-    - title: Principal Project Stakeholders
-      url: /aat-data-ioostech-wiki.html#principal-project-stakeholders-and-other-partners
+    - title: "Homepage Header 2"
+      url: /index.html#header-2
       output: web
 
-    - title: Project Documentation
-      url: /aat-data-ioostech-wiki.html#project-documentation-and-reports
+    - title: "Homepage Header 3"
+      url: /index.html#header-3
       output: web
 
-    - title: Project Data Services
-      url: /aat-data-ioostech-wiki.html#project-data-services
-      output: web
-
-    - title: AAT Metadata Convention
-      url: /aat-data-ioostech-wiki.html#aat-metadata-convention
-      output: web
-
-    - title: Other Resources
-      url: /aat-data-ioostech-wiki.html#other-resources
-      output: web
-
-  - title: "Strategic Plan and Recommendations for a National ATN through U.S. IOOS"
+#Always visible folder name that contains top-level menu items with links to 2nd document/page
+  - title: "Second document"
     output: web
 
     folderitems:
 
-    - title: "Animal Telemetry: What is it?"
-      url: /animal-telemetry-plan.html#animal-telemetry-what-is-it
+#A link to the 2nd rendered document; consists of '/'+'markdown-document-name'+'.html'[+'#'+'any-header-or-other-anchor-on-the-page', e.g. '
+    - title: "Second Document Header 1"
+      url: /doc-template.html#header-1
       output: web
 
-    - title: "Animal Telemetry: Why is it significant?"
-      url: /animal-telemetry-plan.html#animal-telemetry-why-is-significant
-      output: web
-
-    - title: "Vision and Value of a National ATN through U.S. IOOS"
-      url: /animal-telemetry-plan.html#vision-and-value-of-a-national-animal-telemetry-network-atn-through-us-ioos
-      output: web
-
-    - title: "Integrating ATN into U.S. IOOS"
-      url: /animal-telemetry-plan.html#integrating-atn-into-us-ioos
-      output: web
-
-    - title: "Recommendations"
-      url: /animal-telemetry-plan.html#recommendations
-      output: web
-
-    - title: "Reference Information"
-      url: /animal-telemetry-plan.html#reference-information
-      output: web
-
-  - title: Data Exchange Standard for Acoustic, Archival and Satellite Tags, Version 1.0
-    output: web
-
-    folderitems:
-
-    - title: "Introduction"
-      url: /acoustic-tags-standard.html#introduction
-      output: web
-
-    - title: "Database schema design"
-      url: /acoustic-tags-standard.html#1-database-schema-design
-      output: web
-
-    - title: "Discussion"
-      url: /acoustic-tags-standard.html#2-discussion
-      output: web
-
-    - title: "Database schema: tables and relationships"
-      url: /acoustic-tags-standard.html#3-database-schema-tables-and-relationships
+    - title: "Second Document Header 2"
+      url: /doc-template.html#header-2
       output: web
 
       subfolders:
 
-      - title: "Metadata tables"
+# A subfolder name that contains sub-level menu items with links to 2nd document/page
+      - title: "Sub-headers"
         output: web
 
         subfolderitems:
 
-        - title: "Device"
-          url: /acoustic-tags-standard.html#device
+        - title: "Sub-header #1"
+          url: /doc-template.html#sub-header-1
           output: web
 
-        - title: "Instruments"
-          url: /acoustic-tags-standard.html#instruments
+        - title: "Sub-header #2"
+          url: /doc-template.html#sub-header-2
           output: web
 
-        - title: "Installation station"
-          url: /acoustic-tags-standard.html#installation-station
+        - title: "Sub-header #3"
+          url: /doc-template.html#sub-header-3
           output: web
 
-        - title: "Receiver deployment and recovery"
-          url: /acoustic-tags-standard.html#receiver-deployment-and-recovery
+        - title: "Sub-header #4"
+          url: /doc-template.html#sub-header-4
           output: web
 
-        - title: "Surgery"
-          url: /acoustic-tags-standard.html#surgery
-          output: web
-
-        - title: "Animal release and recovery"
-          url: /acoustic-tags-standard.html#animal-relese-and-recovery
-          output: web
-
-        - title: "Animal"
-          url: /acoustic-tags-standard.html#animal
-          output: web
-
-        - title: "Species"
-          url: /acoustic-tags-standard.html#species
-          output: web
-
-        - title: "Animal measurement"
-          url: /acoustic-tags-standard.html#animal-measurement
-          output: web
-
-        - title: "Project"
-          url: /acoustic-tags-standard.html#project
-          output: web
-
-        - title: "Data center"
-          url: /acoustic-tags-standard.html#data-center
-          output: web
-
-        - title: "Users"
-          url: /acoustic-tags-standard.html#users
-          output: web
-
-        - title: "Project role"
-          url: /acoustic-tags-standard.html#project-role
-          output: web
-
-      - title: "Monitoring tables"
-        output: web
-
-        subfolderitems:
-
-        - title: "Activity log"
-          url: /acoustic-tags-standard.html#activity-log
-          output: web
-
-        - title: "Uploaded files"
-          url: /acoustic-tags-standard.html#uploaded-files
-          output: web
-
-      - title: "Data tables"
-        output: web
-
-        subfolderitems:
-
-        - title: "GPS locations"
-          url: /acoustic-tags-standard.html#gps-locations
-          output: web
-
-        - title: "Argos locations"
-          url: /acoustic-tags-standard.html#argos-locations
-          output: web
-
-        - title: "GLS locations"
-          url: /acoustic-tags-standard.html#gls-locations
-          output: web
-
-        - title: "Acoustic detections"
-          url: /acoustic-tags-standard.html#acoustic-detections
-          output: web
-
-    - title: "Reference Information"
-      url: /acoustic-tags-standard.html#4-reference-information
+    - title: "Second Document Header 3"
+      url: /doc-template.html#header-3
       output: web
+
