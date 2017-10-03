@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 topnav: topnav
 toc: false
 #permalink: index.html
-summary: This is a Markdown document that will be rendered as the site Home page 
+summary: This is a Markdown document that will be rendered as the site 2nd page 
 ---
 
 
