@@ -1,5 +1,5 @@
 ---
-title: "HOMEPAGE [First Document]"
+title: "HOMEPAGE"
 keywords: homepage
 tags: [getting_started, about, overview]
 #sidebar: home_sidebar
@@ -12,6 +12,14 @@ summary: IOOS Biological Data Workshop Home page
 
 
 ## Emilio header 1
+
+Relevant IOOS "Bio DMAC" documentation and web sites:
+- [Biological Data Services](https://ioos.github.io/biological-data-services/)
+- [Data Services for Animal Telemetry](http://ioos.github.io/animal-telemetry/)
+- [Marine Biodiversity Observation Network (MBON)](https://ioos.noaa.gov/project/bio-data/)
+- [MBON Portal](https://mbon.ioos.us/)
+- [Animal Telemetry Network (ATN)](https://ioos.noaa.gov/project/atn/)
+- [ATN Portal](http://oceanview.pfeg.noaa.gov/ATN/)
 
 UFF-DA. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. 
 
