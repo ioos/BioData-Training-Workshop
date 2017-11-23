@@ -21,7 +21,7 @@ entries:
       type: frontmatter
 
 # Always visible folder name that contains top-level menu items with links to 1st document/page
-  - title: "Homepage [First Document]"
+  - title: "Homepage"
     output: web
 
     folderitems:
@@ -36,9 +36,10 @@ entries:
       url: /index.html#header-2
       output: web
 
-    - title: "Homepage Header 3"
-      url: /index.html#header-3
+    - title: "Emilio Header 3"
+      url: /index.html#emilio-header-3
       output: web
+
 
 #Always visible folder name that contains top-level menu items with links to 2nd document/page
   - title: "Second document"
