@@ -34,8 +34,8 @@ entries:
       url: /index.html#workshop-overview
       output: web
 
-    - title: "Agenda and Venue"
-      url: /index.html#agenda-and-venue
+    - title: "Agenda, Venue and Lodging"
+      url: /index.html#agenda-venue-and-lodging
       output: web
 
     - title: "Relevant Resources"
