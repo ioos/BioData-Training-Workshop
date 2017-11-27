@@ -22,10 +22,10 @@ Organized by [IOOS](https://ioos.noaa.gov/), [NANOOS](http://nanoos.org) and [OB
 This workshop builds on the successful partnership between IOOS and the Ocean Biogeographic Information System (OBIS-USA) to develop a community of practice around the management and analysis of marine biological data.  It will provide hands-on training in a computer lab setting and is intended to educate participants on the benefits, goals, technology and process to standardize biological data (and associated physical or chemical data), make it accessible via OBIS and IOOS (including the MBON Portal).  The workshop will also expose participants to OBIS, IOOS and MBON applications for using those data.
 
 ### This 2-day workshop will cover:
-1. IOOS and OBIS standards and tools for biological data
-2. Web services for data access
-3. Darwin Core, WoRMS (taxonomy) and metadata standards
-4. Hands-on data exercises
+- IOOS and OBIS standards and tools for biological data
+- Web services for data access
+- Darwin Core, WoRMS (taxonomy) and metadata standards
+- Hands-on data exercises
 
 ### What Participants Need for Workshop
 1. Laptop computer
@@ -39,11 +39,11 @@ This workshop builds on the successful partnership between IOOS and the Ocean Bi
 4. Participate in the pre-Workshop Webex (1-2 weeks prior to training) 
 
 ### Outcomes
-1. Expand the IOOS and OBIS network of collaborators
-2. Improve marine biogeographic data quality
-3. Increase awareness of standards and best practices for marine biological data
-4. Increase amount of marine biological data published through IOOS and OBIS 
-5. Increase availability of marine biological data for science, species conservation and ecosystem-based management 
+- Expand the IOOS and OBIS network of collaborators
+- Improve marine biogeographic data quality
+- Increase awareness of standards and best practices for marine biological data
+- Increase amount of marine biological data published through IOOS and OBIS 
+- Increase availability of marine biological data for science, species conservation and ecosystem-based management 
 
 
 ## Agenda and Venue
