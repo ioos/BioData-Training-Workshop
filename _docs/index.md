@@ -1,5 +1,5 @@
 ---
-title: "HOMEPAGE"
+title: "U.S. Integrated Ocean Observing System (IOOS) Biological Data Training Workshop"
 keywords: homepage
 tags: [getting_started, about, overview]
 sidebar: mydoc_sidebar
@@ -10,8 +10,7 @@ toc: false
 summary: IOOS Biological Data Workshop Home page 
 ---
 
-**U.S. Integrated Ocean Observing System ([IOOS](https://ioos.noaa.gov/)) Biological Data Training Workshop**    
-Thursday, February 8 – Friday, February 9, 2018    
+**Thursday, February 8 – Friday, February 9, 2018**    
 University of Washington, Seattle, Washington 
 
 Organized by [IOOS](https://ioos.noaa.gov/), [NANOOS](http://nanoos.org) and [OBIS-USA](https://www1.usgs.gov/csas/obis-usa/)
@@ -46,11 +45,32 @@ This workshop builds on the successful partnership between IOOS and the Ocean Bi
 - Increase availability of marine biological data for science, species conservation and ecosystem-based management 
 
 
-## Agenda and Venue
+## Agenda, Venue and Lodging
 
 Full Schedule: [IOOS BioData Training Draft Agenda - Google Docs](https://docs.google.com/document/d/18sH6xi31OzBe2_Q_IOFcIU4ZlwpHYDa8zm7GdKNQ-BY/edit#heading=h.pmrvh5fmdhgd)
 
 The workshop will take place at the [University of Washington eScience Institute](http://escience.washington.edu/), Seattle, WA.
+
+### Lodging
+
+A block of rooms at a special rate has been reserved at:    
+**[Residence Inn – Seattle University District](http://www.marriott.com/hotels/travel/seaud-residence-inn-seattle-university-district/)**    
+4501 12th Ave NE    
+Seattle, WA 98105
+
+Use [this link for reservations at the special event rate](http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=UW%20Biological%20Data%20Training%20Workshop%5ESEAUD%60BDTBDTA%60179.00%60USD%60false%603%602/7/18%602/10/18%601/8/18&app=resvlink&stop_mobi=yes)
+
+Other convenient hotels in the University District, if the room block at the Residence Inn is no longer available:
+
+[University Inn](http://www.universityinnseattle.com)   
+4140 Roosevelt Way NE   
+Seattle, WA  98105   
+800-733-3855    
+
+[Watertown Hotel](http://www.watertownseattle.com )   
+4242 Roosevelt Way NE   
+Seattle, WA 98105   
+866-944-4242   
 
 
 ## Relevant Resources
