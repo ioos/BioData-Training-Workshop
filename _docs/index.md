@@ -76,8 +76,6 @@ Seattle, WA 98105
 ## Relevant Resources
 
 ### IOOS
-- [Biological Data Services](https://ioos.github.io/biological-data-services/)
-  - [IOOS Biological Data Services Enrollment Procedure](https://ioos.github.io/biological-data-services/biological-data-procedure.html). (These materials are *probably* going to be deprecated. Including the link here for reference, for now)
 - [Data Services for Animal Telemetry](http://ioos.github.io/animal-telemetry/)
 - [Marine Biodiversity Observation Network (MBON)](https://ioos.noaa.gov/project/bio-data/)
 - [MBON Portal](https://mbon.ioos.us/)
