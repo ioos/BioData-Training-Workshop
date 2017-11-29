@@ -20,7 +20,7 @@ Organized by [IOOS](https://ioos.noaa.gov/), [NANOOS](http://nanoos.org) and [OB
 
 This workshop builds on the successful partnership between the U.S. Integrated Ocean Observing System (IOOS) and the Ocean Biogeographic Information System (OBIS-USA) to develop a community of practice around the management and analysis of marine biological data.  It will provide hands-on training in a computer lab setting and is intended to educate participants on the benefits, goals, technology and process to standardize biological data (and associated physical or chemical data), make it accessible via OBIS and IOOS (including the MBON Portal).  The workshop will also expose participants to OBIS, IOOS and MBON applications for using those data.
 
-### This 2-day workshop will cover:
+### Scope
 - IOOS and OBIS standards and tools for biological data
 - Web services for data access
 - Darwin Core, WoRMS (taxonomy) and metadata standards
@@ -76,12 +76,12 @@ Seattle, WA 98105
 ## Relevant Resources
 
 ### IOOS
-- [Data Services for Animal Telemetry](http://ioos.github.io/animal-telemetry/)
 - [Marine Biodiversity Observation Network (MBON)](https://ioos.noaa.gov/project/bio-data/)
-- [MBON Portal](https://mbon.ioos.us/)
-- [MBON Explorer](http://mbon.marine.usf.edu/)
-- [Animal Telemetry Network (ATN)](https://ioos.noaa.gov/project/atn/)
-- [ATN Portal](http://oceanview.pfeg.noaa.gov/ATN/)
+  - [MBON Portal](https://mbon.ioos.us/)
+  - [MBON Explorer](http://mbon.marine.usf.edu/)
+- [Data Services for Animal Telemetry](http://ioos.github.io/animal-telemetry/)
+  - [Animal Telemetry Network (ATN)](https://ioos.noaa.gov/project/atn/)
+  - [ATN Portal](http://oceanview.pfeg.noaa.gov/ATN/)
 
 ### OBIS
 - [OBIS-USA](https://www1.usgs.gov/csas/obis-usa/)
