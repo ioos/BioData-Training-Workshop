@@ -26,17 +26,6 @@ This workshop builds on the successful partnership between the U.S. Integrated O
 - Darwin Core, WoRMS (taxonomy) and metadata standards
 - Hands-on data exercises
 
-### What Participants Need for Workshop
-1. Laptop computer
-2. Biological Data set with associated physical/chemical data
-3. Knowledge of Python or R programming languages
-
-### Workshop Participant Pre-work
-1. Review [OBIS online Darwin Core Course](http://classroom.oceanteacher.org/course/view.php?id=311)
-2. Review [Darwin Core Documentation](http://www.iobis.org/manual/darwincore/) that will be sent out before the meeting
-3. Advise organizers on what dataset you will be working with during the training
-4. Participate in the pre-Workshop Webex (1-2 weeks prior to training) 
-
 ### Outcomes
 - Expand the IOOS and OBIS network of collaborators
 - Improve marine biogeographic data quality
@@ -44,33 +33,7 @@ This workshop builds on the successful partnership between the U.S. Integrated O
 - Increase amount of marine biological data published through IOOS and OBIS 
 - Increase availability of marine biological data for science, species conservation and ecosystem-based management 
 
-
-## Agenda, Venue and Lodging
-
-Full Schedule: [IOOS BioData Training Draft Agenda - Google Docs](https://docs.google.com/document/d/18sH6xi31OzBe2_Q_IOFcIU4ZlwpHYDa8zm7GdKNQ-BY/edit#heading=h.pmrvh5fmdhgd)
-
-The workshop will take place at the [University of Washington eScience Institute](http://escience.washington.edu/), Seattle, WA.
-
-### Lodging
-
-A block of rooms at a special rate has been reserved at:    
-**[Residence Inn – Seattle University District](http://www.marriott.com/hotels/travel/seaud-residence-inn-seattle-university-district/)**    
-4501 12th Ave NE    
-Seattle, WA 98105
-
-Use [this link for reservations at the special event rate](http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=UW%20Biological%20Data%20Training%20Workshop%5ESEAUD%60BDTBDTA%60179.00%60USD%60false%603%602/7/18%602/10/18%601/8/18&app=resvlink&stop_mobi=yes)
-
-Other convenient hotels in the University District, if the room block at the Residence Inn is no longer available:
-
-[University Inn](http://www.universityinnseattle.com)   
-4140 Roosevelt Way NE   
-Seattle, WA  98105   
-800-733-3855    
-
-[Watertown Hotel](http://www.watertownseattle.com )   
-4242 Roosevelt Way NE   
-Seattle, WA 98105   
-866-944-4242   
+See the [Workshop Details and Instructions](https://ioos.github.io/BioData-Training-Workshop/workshop.html) page for additional information about the workshop, including the location, hotels, and workshop preparations.
 
 
 ## Relevant Resources
