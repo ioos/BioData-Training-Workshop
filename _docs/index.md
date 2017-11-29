@@ -37,6 +37,13 @@ See the [Workshop Details and Instructions page](https://ioos.github.io/BioData-
 - Increase availability of marine biological data for science, species conservation and ecosystem-based management 
 
 
+## Organizers
+
+This workshop is supported by [IOOS](https://ioos.noaa.gov/) and organized by [IOOS](https://ioos.noaa.gov/), [NANOOS](http://nanoos.org) and [OBIS-USA](https://www1.usgs.gov/csas/obis-usa/). 
+
+**Planning team:** Jennifer Bosch (IOOS), Gabrielle Canonico (IOOS), Emilio Mayorga (NANOOS / UW) and Abigail Benson (OBIS-USA / USGS)
+
+
 ## Relevant Resources
 
 ### IOOS
