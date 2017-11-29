@@ -22,6 +22,7 @@ This workshop builds on the successful partnership between the U.S. Integrated O
 
 See the [Workshop Details and Instructions page](https://ioos.github.io/BioData-Training-Workshop/workshop.html) for additional information about the workshop, including the location, hotels, and workshop preparations.
 
+
 ### Scope
 - IOOS and OBIS standards and tools for biological data
 - Web services for data access
