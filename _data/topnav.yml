@@ -12,16 +12,18 @@ topnav_dropdowns:
   folders:
     - title: IOOS Documentation & Data Sites
       folderitems:
-        - title: IOOS Documentation Portal
-          external_url: http://ioos.github.io/
-        - ____________________________________
-        - title: IOOS Repositories on GitHub
+        - title: "<b>IOOS Documentation Portal</b>"
+          external_url: https://ioos.github.io/
+        - title: <b>IOOS Repositories on GitHub</b>
           external_url: https://github.com/ioos
-        - ===========================================================
+        - 
+        - 
         - title: DMAC Implementation Guidelines for Data Providers
           external_url: https://ioos.noaa.gov/data/contribute-data/
-        - title: IOOS Biological Data Services
-          external_url: https://ioos.github.io/biological-data-services/
+#        - title: IOOS Biological Data Services
+#          external_url: https://ioos.github.io/biological-data-services/
+#        - title: IOOS Biological Data Services
+#          external_url: https://ioos.github.io/BioData-Training-Workshop/
         - title: IOOS CF-netCDF Guidelines
           external_url: https://ioos.github.io/ioos-netcdf/
         - title: IOOS Compliance Checker on GitHub 
@@ -48,16 +50,3 @@ topnav_dropdowns:
           external_url: https://ioos.github.io/sos-guidelines/
         - title: Passive Acoustics Metadata
           external_url: https://ioos.github.io/passive-acoustics/
-
-##        - title: Jekyll on Stack Overflow
-##          external_url: http://stackoverflow.com/questions/tagged/jekyll
-##        - title: Jekyll on my blog
-##          external_url: http://idratherbewriting.com/category-jekyll/
-#    - title: IOOS SOS Guidelines
-#      folderitems:
-#        - title: Web Service Description Document (WSDD)
-#          url: /sos-wsdd-1-0.html
-#        - title: IOOS SOS 1.0 Templates
-#          url: /sos-getcapabilities.html
-#        - title: IOOS SOS 1.0 Compliance and Interoperability Tests
-#          url: /sos-test-list-summary.html
