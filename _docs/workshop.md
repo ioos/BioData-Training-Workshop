@@ -13,7 +13,7 @@ summary: IOOS Biological Data Workshop details and instructions
 
 ## Workshop Content Details
 
-The objective of this training workshop is to educate participants in the benefits, goals, technology and process to make biological data resources (and associated physical or chemical data) available in a format that can be ingested by OBIS and the MBON Portal. It will also expose participants to OBIS, IOOS and MBON tools for using those data.
+This first IOOS Biological Data Training Workshop is in collaboration with U.S. OBIS, IOC’s OceanTeacher Global Academy, and OBIS international. The objective of this training workshop is to educate participants in the benefits, goals, technology and process to make biological data resources (and associated physical or chemical data) available in a format that can be ingested by OBIS and the MBON Portal. It will also expose participants to OBIS, IOOS and MBON tools for using those data.
 
 ### Agenda
 [Draft Overview Agenda - Google Docs](https://docs.google.com/a/noaa.gov/document/d/1gQzTUutlpNqpCXCNzrIbMvmqyNbu5P2RxbkEQ2OdcDU/edit?usp=sharing)
