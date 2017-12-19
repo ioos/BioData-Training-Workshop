@@ -63,3 +63,7 @@ Seattle, WA  98105
 4242 Roosevelt Way NE   
 Seattle, WA 98105   
 866-944-4242   
+
+## Transportation to Portland, OR from Seattle, WA
+
+The [BoltBus.com](https://www.boltbus.com/) company offers service between Seattle, WA and Portland, OR 
