@@ -45,7 +45,7 @@ This workshop is supported by [IOOS](https://ioos.noaa.gov/) and organized by [I
 
 ## Relevant Resources
 
-**[2018 Instructors and Registered participants](https://docs.google.com/a/noaa.gov/spreadsheets/d/1x-8EIXKkEquwA3A7a8OzadrefYXPOUUAaPyKQ1KunHY/edit?usp=sharing)**
+**[2018 Instructors and Registered Participants](https://docs.google.com/a/noaa.gov/spreadsheets/d/1x-8EIXKkEquwA3A7a8OzadrefYXPOUUAaPyKQ1KunHY/edit?usp=sharing)**
 
 ### IOOS
 - [Marine Biodiversity Observation Network (MBON)](https://ioos.noaa.gov/project/bio-data/)
