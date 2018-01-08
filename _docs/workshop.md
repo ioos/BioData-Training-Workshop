@@ -25,7 +25,7 @@ This first IOOS Biological Data Training Workshop is in collaboration with U.S. 
 
 ### Workshop Participant Pre-work
 1. Review [OBIS online Darwin Core Course](http://classroom.oceanteacher.org/course/view.php?id=315)
-2. Review [Darwin Core Documentation](http://www.iobis.org/manual/darwincore/) that will be sent out before the meeting
+2. Review [Darwin Core Documentation](http://www.iobis.org/manual/darwincore/)
 3. Advise organizers on what dataset you will be working with during the training
 4. Participate in the pre-Workshop Webex (1-2 weeks prior to training) 
 
