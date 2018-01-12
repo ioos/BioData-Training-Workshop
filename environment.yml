@@ -1,0 +1,18 @@
+name: iooswkshp
+channels:
+- conda-forge
+dependencies:
+- python=3.6
+- requests
+- seaborn
+- scipy
+- xarray
+- folium
+- geopandas
+- gdal=2.2
+- owslib
+- ulmo
+# Jupyter notebook
+- ipykernel
+- jupyter
+- nb_conda_kernels
