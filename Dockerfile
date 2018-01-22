@@ -16,11 +16,6 @@ USER root
 
 # Install Python 3 packages
 RUN conda env create --file /home/$NB_USER/environment.yml && \
-    conda install -c conda-forge --quiet --yes \
-    'nb_conda_kernels' \
-    'ipykernel' \
-    'ipywidgets' && \
-    conda clean -tipsy && \
     # Activate ipywidgets extension in the environment that runs the notebook server
     jupyter nbextension enable --py widgetsnbextension --sys-prefix;
 
