@@ -29,8 +29,7 @@ for (type in names(packages)){
     pkgs_install       <- setdiff(pkgs, packages_installed)
     owner_repo_install <- owner_repo[pkgs %in% pkgs_install]
   } else {
-    pkgs         <- packages[[type]]
-    pkgs_install <- setdiff(pkgs, packages_installed)
+    pkgs_install <- setdiff(packages[[type]], packages_installed)
   }
   
   if (length(pkgs_install) == 0 ) next
