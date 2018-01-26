@@ -3,6 +3,7 @@ packages_cran <- c(
   "devtools", 
   "tidyverse", # includes: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats
   "lubridate", "rlang", "magrittr", "glue", "readxl", "rvest",
+  "openxlsx","vegan",
   "RColorBrewer", 
   "rgdal", "proj4", 
   "raster", "rasterVis",
