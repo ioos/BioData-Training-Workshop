@@ -9,7 +9,7 @@ packages_cran <- c(
   "uuid", "finch")
 
 # packages on Github
-packages_github = c(
+packages_github <- c(
   "iobis/obistools", "iobis/robis",
   "ropensci/taxize", "ropensci/taxizesoap")
 
