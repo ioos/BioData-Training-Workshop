@@ -12,12 +12,11 @@ packages_cran <- c(
   "knitr", "rmarkdown", 
   "htmlwidgets", "DT", "dygraphs", "plotly", "leaflet", "crosstalk", "mapview", "mapedit",
   "uuid") 
-  #"finch") # dependent R packages XMLSchema & SSOAP removed from CRAN
 
 # packages on Github
 packages_github <- c(
   "iobis/obistools", "iobis/robis",
-  "ropensci/taxize", "ropensci/taxizesoap")
+  "ropensci/taxize", "ropensci/taxizesoap", "ropensci/finch")
 
 # install CRAN packages if needed
 for (p in packages_cran){
