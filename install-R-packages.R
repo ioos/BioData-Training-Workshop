@@ -3,10 +3,16 @@ packages_cran <- c(
   "devtools", 
   "tidyverse", # includes: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats
   "lubridate", "rlang", "magrittr", "glue", "readxl", "rvest",
-  "rgdal", "raster", "sp", "sf", 
+  "RColorBrewer", 
+  "rgdal", "proj4", 
+  "raster", "rasterVis",
+  "sp", "sf", "rgeos", "geosphere",
+  "mapdata", "maptools",
+  "RNetCDF", "hdf5r", "ncdf4", 
   "knitr", "rmarkdown", 
   "htmlwidgets", "DT", "dygraphs", "plotly", "leaflet", "crosstalk", "mapview", "mapedit",
-  "uuid", "finch")
+  "uuid") 
+  #"finch") # dependent R packages XMLSchema & SSOAP removed from CRAN
 
 # packages on Github
 packages_github <- c(
