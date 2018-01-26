@@ -16,7 +16,8 @@ packages_cran <- c(
 # packages on Github
 packages_github <- c(
   "iobis/obistools", "iobis/robis",
-  "ropensci/taxize", "ropensci/taxizesoap", "ropensci/finch")
+  "ropensci/taxize", "ropensci/finch")
+#  "ropensci/taxizesoap": dependency ‘SSOAP’ is not available
 
 # install CRAN packages if needed
 for (p in packages_cran){
