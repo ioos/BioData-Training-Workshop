@@ -1,40 +1,45 @@
-# packages on CRAN
-packages_cran <- c(
-  "devtools", 
-  "tidyverse", # includes: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats
-  "lubridate", "rlang", "magrittr", "glue", "readxl", "rvest",
-  "openxlsx","vegan",
-  "RColorBrewer", 
-  "rgdal", "proj4", 
-  "raster", "rasterVis",
-  "sp", "sf", "rgeos", "geosphere",
-  "mapdata", "maptools",
-  "RNetCDF", "hdf5r", "ncdf4", 
-  "knitr", "rmarkdown", 
-  "htmlwidgets", "DT", "dygraphs", "plotly", "leaflet", "crosstalk", "mapview", "mapedit",
-  "uuid") 
+packages <- list(
+  CRAN = c(
+    "devtools", 
+    "tidyverse", # includes: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats
+    "lubridate", "rlang", "magrittr", "glue", "readxl", "rvest",
+    "openxlsx","vegan",
+    "RColorBrewer", 
+    "rgdal", "proj4", 
+    "raster", "rasterVis",
+    "sp", "sf", "rgeos", "geosphere",
+    "mapdata", "maptools",
+    "RNetCDF", "hdf5r", "ncdf4", 
+    "knitr", "rmarkdown", 
+    "htmlwidgets", "DT", "dygraphs", "plotly", "leaflet", "crosstalk", "mapview", "mapedit",
+    "uuid"),
+  rOpenSci = c("XMLSchema", "SSOAP"),
+  GitHub = c(
+    "iobis/obistools", "iobis/robis",
+    "ropensci/taxize", "ropensci/taxizesoap",
+    "ropensci/finch"))
+  
+packages_installed <- rownames(installed.packages())
 
-# packages on Github
-packages_github <- c(
-  "iobis/obistools", "iobis/robis",
-  "ropensci/taxize", "ropensci/finch")
-#  "ropensci/taxizesoap": dependency ‘SSOAP’ is not available
-
-# install CRAN packages if needed
-for (p in packages_cran){
-  packages_installed <- rownames(installed.packages())
-  if (!p %in% packages_installed){
-    message("CRAN package ", p, " not found locally. Installing...")
-    install.packages(p)
+for (type in names(packages)){
+  
+  if (type == "GitHub"){
+    owner_repo         <- packages[[type]]
+    pkgs               <- stringr::str_replace(owner_repo, "(.*)/(.*)", "\\2")
+    pkgs_install       <- setdiff(pkgs, packages_installed)
+    owner_repo_install <- owner_repo[pkgs %in% pkgs_install]
+  } else {
+    pkgs         <- packages[[type]]
+    pkgs_install <- setdiff(pkgs, packages_installed)
   }
-}
-
-# install packages from Github if needed
-for (owner_repo in packages_github){
-  packages_installed <- rownames(installed.packages())
-  p <- stringr::str_split(owner_repo, "/", simplify=T)[2]
-  if (!p %in% packages_installed){
-    message("Github package ", owner_repo, " not found locally. Installing...")
-    devtools::install_github(owner_repo)
-  }
+  
+  if (length(pkgs_install) == 0 ) next
+  
+  message(type, " packages to install: ", paste(pkgs_install, collapse=", "))
+  switch(
+    type,
+    CRAN     = install.packages(pkgs_install),
+    rOpenSci = install.packages(pkgs_install, 
+                                repos = c("http://packages.ropensci.org", "http://cran.rstudio.com")),
+    GitHub   = devtools::install_github(owner_repo_install))
 }
