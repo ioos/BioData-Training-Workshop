@@ -1,1 +1,17 @@
-../environment.yml
+name: iooswkshp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - erddapy
+  - folium
+  - gdal=2.2
+  - geopandas
+  - requests
+  - scipy
+  - xarray
+  # Jupyter notebook
+  - ipykernel
+  - jupyter
+  - nb_conda_kernels
+  - xlrd
