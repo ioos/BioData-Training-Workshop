@@ -42,6 +42,9 @@ Data may involve organisms ranging from fish, to invertebrates, phytoplankton an
 
 The workshop will take place at the [University of Washington eScience Institute](http://escience.washington.edu/), Seattle, Washington
 
+Walking Map to the UW eScience Institute from the Residence Inn:
+
+<img src="https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/_docs/images/WalkingDirectionsTo_E_Center.png">
 
 ## Lodging
 
