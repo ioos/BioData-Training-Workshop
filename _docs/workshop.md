@@ -44,7 +44,8 @@ The workshop will take place at the [University of Washington eScience Institute
 
 Walking Map to the UW eScience Institute from the Residence Inn:
 
-<img src="https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/_docs/images/WalkingDirectionsTo_E_Center.png"/>
+![Map directions](./images/WalkingDirectionsTo_E_Center.png)
+
 
 ## Lodging
 
