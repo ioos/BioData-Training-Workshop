@@ -19,9 +19,9 @@ packages <- list(
     "ropensci/taxize", "ropensci/taxizesoap",
     "ropensci/finch"))
   
-packages_installed <- rownames(installed.packages())
-
 for (type in names(packages)){
+  
+  packages_installed <- rownames(installed.packages())
   
   if (type == "GitHub"){
     owner_repo         <- packages[[type]]
