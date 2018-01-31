@@ -44,7 +44,7 @@ The workshop will take place at the [University of Washington eScience Institute
 
 Walking Map to the UW eScience Institute from the Residence Inn:
 
-![Map directions](./images/WalkingDirectionsTo_E_Center.png)
+![Map directions](./images/WalkingDirectionsTo-E-Center.png)
 
 
 ## Lodging
