@@ -40,7 +40,7 @@ Data may involve organisms ranging from fish, to invertebrates, phytoplankton an
 
 ## Venue
 
-The workshop will take place at the [University of Washington eScience Institute](http://escience.washington.edu/), Seattle, Washington
+The workshop will take place at the [University of Washington eScience Institute](http://escience.washington.edu/), Seattle, Washington. The eScience Institute is found on the 6th floor of the Physics / Astronomy Tower (PAT); see this [interactive UW map to find the PAT building.](http://uw.edu/maps/?pat)
 
 Walking Map to the UW eScience Institute from the Residence Inn:
 
