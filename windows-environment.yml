@@ -52,6 +52,7 @@ dependencies:
   - r-rcolorbrewer
   - r-readr
   - r-readxl
+  - r-rerddap
   - r-rgeos
   # - r-grid
   - r-ritis
