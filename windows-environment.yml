@@ -28,6 +28,7 @@ dependencies:
   - r-dygraphs
   - r-finch
   - r-forcats
+  - r-geor
   - r-geosphere
   - r-ggplot2
   - r-glue
@@ -51,6 +52,7 @@ dependencies:
   - r-rcolorbrewer
   - r-readr
   - r-readxl
+  - r-rgeos
   # - r-grid
   - r-ritis
   - r-rlang
