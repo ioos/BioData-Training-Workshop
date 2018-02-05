@@ -16,7 +16,7 @@ summary: IOOS Biological Data Workshop details and instructions
 This first IOOS Biological Data Training Workshop is in collaboration with U.S. OBIS, IOC’s OceanTeacher Global Academy, and OBIS international. The objective of this training workshop is to educate participants in the benefits, goals, technology and process to make biological data resources (and associated physical or chemical data) available in a format that can be ingested by OBIS and the MBON Portal. It will also expose participants to OBIS, IOOS and MBON tools for using those data.
 
 ### Agenda
-[Draft Overview Agenda 12/28/17 - PDF](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/IOOS%20BioData%20Training%20Worshop%20Overview%20Draft%20Agenda_122817%20.pdf)
+[Final Workshop Overview Agenda 02/05/18- PDF](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/IOOS%20BioData%20Training%20Workshop%20Overview%20AgendaFINAL.pdf)
 
 ### What Participants Need for Workshop
 1. Laptop computer
