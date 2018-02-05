@@ -1,0 +1,103 @@
+---
+title: "OBIS tools for QA/QC"
+author: "Samuel Bosch"
+date: "2018-02-09"
+output: 
+  ioslides_presentation:
+    css: obis.css
+    smaller: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(obistools)
+```
+
+## Getting started
+
+Installation
+
+```{r installation, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github('iobis/obistools')
+
+library(obistools)
+```
+
+Help and issues
+
+- Manual: [http://www.iobis.org/manual/processing/](http://www.iobis.org/manual/processing/)
+- Issues: [https://github.com/iobis/obistools/issues](https://github.com/iobis/obistools/issues)
+
+## Check required fields
+
+## Map column names to Darwin Core terms
+
+```{r map_fields}
+data <- data.frame(
+  id = c("cruise_1", "station_1", "station_2", "sample_1", "sample_2", "sample_3", "sample_4", "subsample_1", "subsample_2"),
+  date = c(NA, NA, NA, "2017-01-01", "2017-01-02", "2017-01-03", "2017-01-04", NA, NA),
+  locality = rep("North Sea", 9),
+  lon = c(NA, 2.9, 4.7, NA, NA, NA, NA, NA, NA),
+  lat = c(NA, 54.1, 55.8, NA, NA, NA, NA, NA, NA),
+  stringsAsFactors = FALSE)
+
+mapping <- list(
+  decimalLongitude = "lon", decimalLatitude = "lat",
+  datasetName = "dataset", eventID = "id", eventDate = "date")
+```
+
+[Issue 56: detect_fields](https://github.com/iobis/obistools/issues/56)
+
+---
+```{r map_fields_result, eval=FALSE}
+map_fields(data, mapping)
+```
+```{r map_fields_result_knitr, echo=FALSE}
+knitr::kable(map_fields(data, mapping))
+```
+
+## Taxon matching
+
+## Plot points
+
+## Checking points on land
+
+## Checking depth values
+
+## Check eventID and parentEventID
+
+## Check eventID in an extension
+
+## Flatten event records
+
+## Flatten occurrence and event records
+
+## Calculate centroid and radius for WKT geometries
+
+
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+

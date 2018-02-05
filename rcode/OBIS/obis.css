@@ -1,0 +1,5 @@
+/* disable slide numbering */
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+
