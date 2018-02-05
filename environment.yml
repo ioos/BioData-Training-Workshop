@@ -5,6 +5,7 @@ dependencies:
   - python=3.6
   - erddapy
   - folium
+  - cartopy
   - gdal=2.2
   - geopandas
   - requests
@@ -83,6 +84,7 @@ dependencies:
   - r-tibble
   - r-tidyr
   - r-tidyverse
+  - rpy2
   # - r-tmap
   - r-uuid
   - r-wikidatar
