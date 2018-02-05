@@ -9,7 +9,7 @@ packages <- list(
     "raster", "rasterVis",
     "sp", "sf", "rgeos", "geosphere",
     "mapdata", "maptools",
-    "RNetCDF", "hdf5r", "ncdf4", 
+    "RNetCDF", "hdf5r", "ncdf4","rerddap",
     "knitr", "rmarkdown", 
     "htmlwidgets", "DT", "dygraphs", "plotly", "leaflet", "crosstalk", "mapview", "mapedit",
     "uuid"),
