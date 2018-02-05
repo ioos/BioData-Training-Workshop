@@ -33,23 +33,17 @@ dependencies:
   - r-ggplot2
   - r-glue
   - r-gstat
-  - r-hdf5r
   - r-htmlwidgets
   - r-knitr
   - r-leaflet
   - r-leaflet.extras
-  - r-lidr
   - r-lubridate
   - r-magrittr
   - r-mapdata
-  - r-mapedit
   - r-maptools
-  - r-mapview
   - r-ncdf4
-  - r-obistools
   - r-osmar
   - r-plotly
-  - r-proj4
   - r-purrr
   - r-randomfields
   - r-randomfieldsutils
@@ -59,7 +53,6 @@ dependencies:
   - r-readr
   - r-readxl
   - r-rerddap
-  - r-rgdal
   - r-rgeos
   # - r-grid
   - r-ritis
@@ -68,7 +61,6 @@ dependencies:
   - r-rnetcdf
   - r-robis
   - r-rvest
-  - r-sf
   - r-shiny
   - r-sp
   - r-spacetime
