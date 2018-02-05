@@ -15,3 +15,8 @@ dependencies:
   - jupyter
   - nb_conda_kernels
   - xlrd
+  - pip:
+    - git+https://github.com/sckott/pygbif.git
+    - git+https://github.com/sckott/pytaxize.git
+    - git+https://github.com/sckott/pyobis.git
+    - git+https://github.com/iobis/pyworms.git
