@@ -5,6 +5,7 @@ dependencies:
   - python=3.6
   - erddapy
   - folium
+  - cartopy
   - gdal=2.2
   - geopandas
   - requests
