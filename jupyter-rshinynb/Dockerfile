@@ -23,8 +23,6 @@ ENV NB_UID 1000
 RUN mkdir -p $CONDA_DIR && \
     chown $NB_USER $CONDA_DIR
 
-RUN mkdir /home/${NB_USER}/build_files
-
 USER ${NB_USER}
 
 
@@ -45,7 +43,9 @@ RUN cd /tmp && \
 # Set ENV for all programs...
 ENV PATH ${CONDA_DIR}/bin:${PATH}
 
-COPY . /home/${NB_USER}/build_files
+RUN git clone https://github.com/ioos/BioData-Training-Workshop.git /home/${NB_USER}/build_files
+
+ENV BUILD_FILES /home/${NB_USER}/build_files
 
 # Install Jupyter Notebook and Hub
 RUN $CONDA_DIR/bin/conda install -c conda-forge --quiet --yes \
@@ -55,8 +55,10 @@ RUN $CONDA_DIR/bin/conda install -c conda-forge --quiet --yes \
     'nb_conda_kernels' \
     'ipykernel' \
     'ipywidgets' \
-    && $CONDA_DIR/bin/conda env create --file /home/${NB_USER}/build_files/environment.yml \
+    && $CONDA_DIR/bin/conda env create --file ${BUILD_FILES}/jupyter-rshinynb/environment.yml \
     && $CONDA_DIR/bin/conda clean -tipsy
+
+RUN Rscript ${BUILD_FILES}/install-R-packages.R
 
 ENV HOME /home/${NB_USER}
 WORKDIR ${HOME}
@@ -64,7 +66,6 @@ WORKDIR ${HOME}
 USER root
 
 RUN apt-get update && \
-    apt-get -y install python3-venv python3-dev && \
     apt-get purge && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -107,6 +108,6 @@ RUN chown -R $NB_USER:$NB_UID /etc/jupyter/
 RUN chmod -R +x /usr/local/bin/
 
 # Cleanup
-RUN rm -rf /home/${NB_USER}/build_files
+RUN rm -rf ${BUILD_FILES}
 
 USER $NB_USER
