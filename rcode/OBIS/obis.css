@@ -3,3 +3,8 @@ slides > slide:not(.nobackground):after {
   content: '';
 }
 
+pre {
+  padding: 7px 0 7px 60px;
+  margin-bottom: 15px;
+}
+
