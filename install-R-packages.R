@@ -9,12 +9,13 @@ packages <- list(
     "raster", "rasterVis",
     "sp", "sf", "rgeos", "geosphere",
     "mapdata", "maptools",
-    "RNetCDF", "hdf5r", "ncdf4","rerddap",
+    "RNetCDF", "hdf5r", "ncdf4","rerddap","xtractomatic",
     "knitr", "rmarkdown", 
     "htmlwidgets", "DT", "dygraphs", "plotly", "leaflet", "crosstalk", "mapview", "mapedit",
     "uuid"),
   rOpenSci = c("XMLSchema", "SSOAP"),
   GitHub = c(
+    "rmendels/rerddapXtracto",
     "iobis/obistools", "iobis/robis",
     "ropensci/taxize", "ropensci/taxizesoap",
     "ropensci/finch"))
