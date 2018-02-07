@@ -90,6 +90,8 @@ RUN $CONDA_DIR/bin/pip install --no-cache-dir --upgrade \
     $CONDA_DIR/bin/jupyter nbextension install    --sys-prefix --py nbrsessionproxy && \
     $CONDA_DIR/bin/jupyter nbextension enable     --sys-prefix --py nbrsessionproxy
 
+RUN $CONDA_DIR/bin/pip install git+https://github.com/data-8/nbgitpuller
+
 USER root
 
 EXPOSE 8888
