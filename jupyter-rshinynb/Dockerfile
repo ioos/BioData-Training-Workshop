@@ -82,11 +82,9 @@ RUN echo "$NB_USER ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/notebook
 USER ${NB_USER}
 
 RUN $CONDA_DIR/bin/pip install pip==9.0.1
-RUN ls -la /opt/conda/lib/python3.6/site-packages/ && $CONDA_DIR/bin/pip install --no-cache-dir \
-         git+https://github.com/yuvipanda/nbrsessionproxy.git@66f40d763740096452a88bdc303dda8572d74f65
-RUN $CONDA_DIR/bin/pip install --no-cache-dir --upgrade \
-         git+https://github.com/yuvipanda/nbserverproxy.git@59dc44cdeb7556d00bdd7ec95e349c1fc4b48c28 && \
-    $CONDA_DIR/bin/jupyter serverextension enable --sys-prefix --py nbrsessionproxy && \
+RUN ls -la /opt/conda/lib/python3.6/site-packages/ && $CONDA_DIR/bin/pip install nbrsessionproxy
+
+RUN $CONDA_DIR/bin/jupyter serverextension enable --sys-prefix --py nbrsessionproxy && \
     $CONDA_DIR/bin/jupyter nbextension install    --sys-prefix --py nbrsessionproxy && \
     $CONDA_DIR/bin/jupyter nbextension enable     --sys-prefix --py nbrsessionproxy
 
