@@ -39,7 +39,7 @@ We also recommend to add the following line to your `~/.bashrc` file to make Min
 export PATH=$HOME/miniconda3/bin:$PATH
 ```
 
-## Create the BioData-Training-Workshopenvironment
+## Create the BioData-Training-Workshop environment
 
 Download the [environment.yml](https://raw.githubusercontent.com/ioos/BioData-Training-Workshop/master/environment.yml) file by right clicking with the mouse and choosing `save as...`,
 or, on `OS X` and `Linux`, use these commands to download:
@@ -67,15 +67,14 @@ source activate iooswkshp  # OS X and Linux
 
 ## Exiting the iooswkshp environment
 
-If you want to leave the iooswkshp environment and return to the root environment,
-you can type
+If you want to leave the iooswkshp environment and return to the root environment, you can type
 
 ```bash
 deactivate  # Windows
 source deactivate  # OS X and Linux
 ```
 
-# If Miniconda is not your default python environment...
+## If Miniconda is not your default python environment...
 
 If you choose not to add Miniconda Python Distribution to your `~/.bashrc` or Windows path,
 you must remember to activate the iooswkshp environment every time,
