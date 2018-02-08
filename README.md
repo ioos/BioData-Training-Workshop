@@ -1,21 +1,32 @@
-# BioData-Training-Workshop
-IOOS Biological Data Training Workshop 2018 Materials
+# BioData-Training-Workshop - Python and R resources
+
+R and Python resources for the [IOOS Biological Data Training Workshop (February 2018)](https://ioos.github.io/BioData-Training-Workshop/).
+
+The workshop will rely heavily on R and Python for hands-on exercises and tools. We have set up R and Python instructions and resources to enable participants to set up environments for these programming languages both in participants' computers and on the cloud (via JupyterHub and RStudio). All these resources are accessible here, on this workshop GitHub repository.
+
+*Note:* The [notebooks](https://github.com/ioos/BioData-Training-Workshop/tree/master/notebooks) GitHub repository directory contains a set of relevant, useful Jupyter notebooks that you can run and tweak, locally or on the cloud. These example notebooks cover Python, R and mixed-language cases.**
 
 
-Please see [these instructions](https://github.com/ioos/BioData-Training-Workshop/blob/master/installation.md) for installing the BioData-Training-Workshop conda environment in your computer (NOTE: Python 3)
+## Setting up your local (your computer) Python and R environments
 
-## R
-All of the R packages used in this workshop can be installed via the [RScript](https://github.com/ioos/BioData-Training-Workshop/blob/master/install-R-packages.R). To run the R script do `Rscript install-R-packages.R` . 
+### Python
+Please see [these instructions](https://github.com/ioos/BioData-Training-Workshop/blob/master/installation.md) for installing the BioData-Training-Workshop conda environment in your computer. This conda environment will install:
+- A fully capable Python 3 set of libraries that include packages relevant to the workshop and biological data. 
+- Jupyter Notebooks
+- R and R packages relevant to the workshop and biological data. But note that if you're already an R user and have R installed, you should use your usual R set up, with the additional instructions listed below.
 
-**Note: Within Jupyterhub all R packages is already installed.**
+### R
+Use your own, pre-installed R installation. All of the R packages used in this workshop can be installed via the [RScript](https://github.com/ioos/BioData-Training-Workshop/blob/master/install-R-packages.R). To run the R script, download it, then do `Rscript install-R-packages.R` . 
 
-## JupyterHub
+## Cloud-based R and Python environments
 
-You can find JupyterHub setup for this workshop at https://ioosbiodata.cloudmaven.org. 
+A cloud-based set up has been deployed to support the same capabilities available via the local set ups. This resources is a good option if you don't want to take the extra time required to set up R and/or Python on your computer.
 
-Within Jupyterhub, you can find `iooswkshp` conda environment, which is a full installation of [`environment.yml`](https://github.com/ioos/BioData-Training-Workshop/blob/master/environment.yml). 
+### Python via JupyterHub
+JupyterHub is a server-based version of Jupyter Notebooks that enable running Jupyter notebooks online. The JupyterHub set up for this workshop is found at https://ioosbiodata.cloudmaven.org. You will need to provide us your GitHub handle (account name) for access.
 
-For R users, RStudio is available within the Jupyter Notebook with all of the packages within [`install-R-packages.R
-`](https://github.com/ioos/BioData-Training-Workshop/blob/master/install-R-packages.R) installed.
+Within JupyterHub, select the `iooswkshp` conda environment ("kernel"), which is a full installation of the Python **and R** conda environment [`environment.yml`](https://github.com/ioos/BioData-Training-Workshop/blob/master/environment.yml) used in the local setup.
 
-**Note: Within the [notebooks](https://github.com/ioos/BioData-Training-Workshop/tree/master/notebooks) directory you can run and play with jupyter notebooks locally or on the cloud in JupyterHub.**
+### R via RStudio
+RStudio is available for launching from the JupyterHub interface. It comes with all of the packages within [`install-R-packages.R
+`](https://github.com/ioos/BioData-Training-Workshop/blob/master/install-R-packages.R) already installed.
