@@ -15,6 +15,4 @@ Within Jupyterhub, you can find `iooswkshp` conda environment, which is a full i
 For R users, RStudio is available within the Jupyter Notebook with all of the packages within [`install-R-packages.R
 `](https://github.com/ioos/BioData-Training-Workshop/blob/master/install-R-packages.R) installed.
 
-
-
-THIS REPO HAS SOME USEFUL JUPYTER NOTEBOOKS (AND R NOTEBOOKS?) THAT PEOPLE CAN RUN AND PLAY WITH EITHER LOCALLY OR ON THE CLOUD
+**Note: Within the [notebooks](https://github.com/ioos/BioData-Training-Workshop/tree/master/notebooks) directory you can run and play with jupyter notebooks locally or on the cloud in JupyterHub.**
