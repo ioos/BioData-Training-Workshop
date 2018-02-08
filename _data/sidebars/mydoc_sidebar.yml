@@ -92,3 +92,7 @@ entries:
     - title: "Lodging"
       url: /workshop.html#lodging
       output: web
+
+    - title: "Group Dinner"
+      url: /workshop.html#group-dinner
+      output: web
