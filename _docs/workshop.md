@@ -38,7 +38,9 @@ To get the most out of this hands on workshop you will need to bring a biologica
 Data may involve organisms ranging from fish, to invertebrates, phytoplankton and zooplankton, including HABs observations.
 
 ### Python and R setups and resources for the workshop
-The workshop will rely heavily on R and Python for hands-on exercises and tools. We have set up R and Python instructions and resources to enable participants to set up environments for these programming languages both in participants' computers and on the cloud (via JupyterHub and RStudio). All these resources are found on the workshop GitHub repository at [https://github.com/ioos/BioData-Training-Workshop](https://github.com/ioos/BioData-Training-Workshop). See the [instructions on the README.md file](https://github.com/ioos/BioData-Training-Workshop/blob/master/README.md) for full details.
+The workshop will rely heavily on R and Python for hands-on exercises and tools. We have set up R and Python instructions and resources to enable participants to set up environments for these programming languages both in participants' computers and on [the cloud (via JupyterHub and RStudio)](https://ioosbiodata.cloudmaven.org). All these resources are found on the workshop GitHub repository at [https://github.com/ioos/BioData-Training-Workshop](https://github.com/ioos/BioData-Training-Workshop). See the [instructions on the README.md file](https://github.com/ioos/BioData-Training-Workshop/blob/master/README.md) for full details.
+
+Note for JupyterHub: You will need to have a github username, and your username sent to us to be able to access the Jupyterhub. If you are having trouble accessing Jupyterhub please send an email to landungs@uw.edu with your github username. Thank you.
 
 
 ## Venue
