@@ -1,0 +1,23 @@
+name: iooswkshp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - erddapy
+  - folium
+  - cartopy
+  - gdal=2.2
+  - geopandas
+  - requests
+  - scipy
+  - xarray
+  # Jupyter notebook
+  - ipykernel
+  - jupyter
+  - nb_conda_kernels
+  - xlrd
+  - pip:
+    - git+https://github.com/sckott/pygbif.git
+    - git+https://github.com/sckott/pytaxize.git
+    - git+https://github.com/sckott/pyobis.git
+    - git+https://github.com/iobis/pyworms.git
