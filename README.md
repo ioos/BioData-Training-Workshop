@@ -15,6 +15,8 @@ Please see [these instructions](https://github.com/ioos/BioData-Training-Worksho
 - Jupyter Notebooks
 - R and R packages relevant to the workshop and biological data. But note that if you're already an R user and have R installed, you should use your usual R set up, with the additional instructions listed below.
 
+**If you'd like python only environment, you can install `python-environment.yml`.**
+
 ### R
 
 Use your own, pre-installed R installation. All of the R packages used in this workshop can be installed via the script [install-R-packages.R](https://github.com/ioos/BioData-Training-Workshop/blob/master/install-R-packages.R). The easiest way to execute this code is to paste the following line into the R Console:
