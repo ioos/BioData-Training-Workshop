@@ -4,13 +4,13 @@ R and Python resources for the [IOOS Biological Data Training Workshop (February
 
 The workshop will rely heavily on R and Python for hands-on exercises and tools. We have set up R and Python instructions and resources to enable participants to set up environments for these programming languages both in participants' computers and on the cloud (via JupyterHub and RStudio). All these resources are accessible here, on this workshop GitHub repository.
 
-*Note:* The [notebooks](https://github.com/ioos/BioData-Training-Workshop/tree/master/notebooks) GitHub repository directory contains a set of relevant, useful Jupyter notebooks that you can run and tweak, locally or on the cloud. These example notebooks cover Python, R and mixed-language cases.**
+*Note:* The [notebooks](https://github.com/ioos/BioData-Training-Workshop/tree/master/notebooks) GitHub repository directory contains a set of relevant, useful Jupyter notebooks that you can run and tweak, locally or on the cloud. These example notebooks cover Python, R and mixed-language cases.
 
 
 ## Setting up your local (your computer) Python and R environments
 
 ### Python
-Please see [these instructions](https://github.com/ioos/BioData-Training-Workshop/blob/master/installation.md) for installing the BioData-Training-Workshop conda environment in your computer. This conda environment will install:
+Please see [these instructions](https://github.com/ioos/BioData-Training-Workshop/blob/master/installation.md) for installing `conda` and the BioData-Training-Workshop conda environment in your computer. This conda environment will install:
 - A fully capable Python 3 set of libraries that include packages relevant to the workshop and biological data. 
 - Jupyter Notebooks
 - R and R packages relevant to the workshop and biological data. But note that if you're already an R user and have R installed, you should use your usual R set up, with the additional instructions listed below.
