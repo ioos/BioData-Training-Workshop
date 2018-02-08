@@ -2,6 +2,7 @@ packages <- list(
   CRAN = c(
     "devtools", 
     "tidyverse", # includes: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats
+    "here", "fs",
     "lubridate", "rlang", "magrittr", "glue", "readxl", "rvest",
     "openxlsx","vegan",
     "RColorBrewer", 
