@@ -55,7 +55,7 @@ RUN $CONDA_DIR/bin/conda install -c conda-forge --quiet --yes \
     'nb_conda_kernels' \
     'ipykernel' \
     'ipywidgets' \
-    && $CONDA_DIR/bin/conda env create --file ${BUILD_FILES}/jupyter-rshinynb/environment.yml \
+    && $CONDA_DIR/bin/conda env create --file ${BUILD_FILES}/environment.yml \
     && $CONDA_DIR/bin/conda clean -tipsy
 
 RUN Rscript ${BUILD_FILES}/install-R-packages.R
