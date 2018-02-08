@@ -80,6 +80,10 @@ entries:
           url: /workshop.html#guidance-on-datasets
           output: web
 
+        - title: "Python and R setup"
+          url: /workshop.html#python-and-r-setups-and-resources-for-the-workshop
+          output: web
+
 
     - title: "Venue"
       url: /workshop.html#venue
