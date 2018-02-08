@@ -40,7 +40,7 @@ Data may involve organisms ranging from fish, to invertebrates, phytoplankton an
 
 ## Venue
 
-The workshop will take place at the hotel where most participants are staying:
+The workshop will take place at the hotel where most participants are staying:   
 **[Residence Inn – Seattle University District](http://www.marriott.com/hotels/travel/seaud-residence-inn-seattle-university-district/)**    
 4501 12th Ave NE    
 Seattle, WA 98105
