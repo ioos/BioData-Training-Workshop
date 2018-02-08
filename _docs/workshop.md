@@ -45,9 +45,9 @@ The workshop will take place at the hotel where most participants are staying:
 4501 12th Ave NE    
 Seattle, WA 98105
 
-Please go to **"The Rigger Room"** on the first floor off the lobby. If you're not staying at this hotel, see this [map for directions:](./ResidenceInnHotel-Map.png)
+Please go to **"The Rigger Room"** on the first floor off the lobby. If you're not staying at this hotel, see this ![map for directions:](./ResidenceInnHotel-Map.png)
 
-*(Note that this is a change in venue; previously the meeting was going to be held at the University of Washington eScience Institute.)
+*(Note that this is a change in venue; previously the meeting was going to be held at the University of Washington eScience Institute.)*
 
 ## Lodging
 
