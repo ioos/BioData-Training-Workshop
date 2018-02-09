@@ -2,4 +2,5 @@
 .Rproj.user
 .Rhistory
 .DS_Store
+.*.ipynb
 .ipynb_checkpoints

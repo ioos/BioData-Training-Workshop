@@ -3,19 +3,24 @@ channels:
   - conda-forge
 dependencies:
   - python=3.6
+  - appmode
+  - bqplot
+  - cartopy
   - erddapy
   - folium
-  - cartopy
   - gdal=2.2
   - geopandas
+  - ipyleaflet
+  - nbrsessionproxy
+  - pendulum
   - requests
   - scipy
   - xarray
+  - xlrd
   # Jupyter notebook
   - ipykernel
   - jupyter
   - nb_conda_kernels
-  - xlrd
   # R packages
   - r-base==3.4.1
   - r-irkernel
