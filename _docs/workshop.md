@@ -22,9 +22,9 @@ This first IOOS Biological Data Training Workshop is in collaboration with U.S. 
 [Folder of presentations](https://github.com/ioos/BioData-Training-Workshop/tree/gh-pages/Workshop_Presentations)
 
 Test file access:
-- [pdf](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/Workshop_Presentations/Axiom_MBON%20biological%20workshop%20Feb%202018.pdf)
-- [ppt](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/Workshop_Presentations/Data%20Wrangling%20in%20the%20R%20Tidyverse.pptx)
-- [html](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/Workshop_Presentations/obistools_qaqc.html)
+- [pdf](https://github.com/ioos/BioData-Training-Workshop/raw/gh-pages/Workshop_Presentations/Axiom_MBON%20biological%20workshop%20Feb%202018.pdf)
+- [ppt](https://github.com/ioos/BioData-Training-Workshop/raw/gh-pages/Workshop_Presentations/Data%20Wrangling%20in%20the%20R%20Tidyverse.pptx)
+- [html](https://github.com/ioos/BioData-Training-Workshop/raw/gh-pages/Workshop_Presentations/obistools_qaqc.html)
 
 ### What Participants Need for Workshop
 1. Laptop computer
