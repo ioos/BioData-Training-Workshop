@@ -18,6 +18,9 @@ This first IOOS Biological Data Training Workshop is in collaboration with U.S. 
 ### Agenda
 [Final Workshop Overview Agenda 02/05/18- PDF](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/IOOS%20BioData%20Training%20Workshop%20Overview%20AgendaFINAL.pdf)
 
+### Workshop Presentations
+[Folder of presentations](https://github.com/ioos/BioData-Training-Workshop/tree/gh-pages/Workshop_Presentations)
+
 ### What Participants Need for Workshop
 1. Laptop computer
 2. Biological Data set with associated physical/chemical data
