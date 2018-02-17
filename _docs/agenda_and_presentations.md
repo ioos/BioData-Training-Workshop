@@ -5,7 +5,7 @@ University of Washington, Seattle, Washington
 Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 
 
-++**Final Agenda**++
+**Final Agenda**
 
 ### Day One - Thursday, Feb. 8, 2018
 - 8:30 - 9:30  Introductions and Workshop Overview
@@ -34,7 +34,7 @@ Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 - 10:45 - 11:30  Data Wrangling
 	- Samuel Bosch: [Obistools R notebook as HTML](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/obistools_qaqc.html)
 	- Ben Best, 
-	- Filipe Fernandes [Python Jupyter notebook](http://nbviewer.jupyter.org/format/slides/github/ioos/BioData-Training-Workshop/blob/master/notebooks/intro_errdapy-IOOS.ipynb))
+	- Filipe Fernandes: [Python Jupyter notebook](http://nbviewer.jupyter.org/format/slides/github/ioos/BioData-Training-Workshop/blob/master/notebooks/intro_errdapy-IOOS.ipynb)
 - 11:30 - 12:00  More Hands on
 - *12:00 - 1:00  Lunch (Catered)*
 - 1:00 - 3:00  Data Access, Visualization, and Publication 
