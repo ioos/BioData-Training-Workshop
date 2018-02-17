@@ -6,6 +6,9 @@ The workshop will rely heavily on R and Python for hands-on exercises and tools.
 
 *Note:* The [notebooks](https://github.com/ioos/BioData-Training-Workshop/tree/master/notebooks) GitHub repository directory contains a set of relevant, useful Jupyter notebooks that you can run and tweak, locally or on the cloud. These example notebooks cover Python, R and mixed-language cases.
 
+## Click on the Binder badge below to start an interactive Jupyter seesion with the course notebooks.
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ioos/BioData-Training-Workshop/master?filepath=notebooks)
 
 ## Setting up your local (your computer) Python and R environments
 
