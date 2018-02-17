@@ -1,4 +1,17 @@
-# U.S. Integrated Ocean Observing System (IOOS) Biological Data Training Workshop
+---
+title: "Workshop Agenda and Presentation Access"
+keywords: workshop
+#tags: [agenda, presentations]
+sidebar: mydoc_sidebar
+topnav: topnav
+toc: false
+#sidebar: home_sidebar
+#permalink: agenda_and_presentations.html
+summary: Workshop agenda with links to download or view presentations
+---
+
+
+## U.S. Integrated Ocean Observing System (IOOS) Biological Data Training Workshop
 
 ### February 8 – 9, 2018
 **University of Washington, Seattle, Washington  
