@@ -64,8 +64,8 @@ entries:
 
         subfolderitems:
 
-        - title: "Agenda"
-          url: /workshop.html#agenda
+        - title: "Agenda & Presentations"
+          url: /workshop.html#agenda-and-presentations
           output: web
 
         - title: "Needed for workshop"
