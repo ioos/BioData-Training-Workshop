@@ -1,6 +1,6 @@
 # U.S. Integrated Ocean Observing System (IOOS) Biological Data Training Workshop
 
-### Thursday, February 8 – Friday, February 9, 2018
+### February 8 – 9, 2018
 **University of Washington, Seattle, Washington  
 Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 
