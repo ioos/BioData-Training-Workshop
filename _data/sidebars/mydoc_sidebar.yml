@@ -96,3 +96,20 @@ entries:
     - title: "Group Dinner"
       url: /workshop.html#group-dinner
       output: web
+
+# -------- DOCUMENT 3 (AGENDA AND ACCESS TO PRESENTATIONS, agenda_and_presentations.md) --------
+
+# Always visible folder name that contains top-level menu items with links to 1st document/page
+  - title: "Agenda & Presentation Access"
+    output: web
+
+    folderitems:
+
+# Top-level menu item #1
+    - title: "Day 1"
+      url: /agenda_and_presentations.html#day-one-thursday-feb-8
+      output: web
+
+    - title: "Day 2"
+      url: /agenda_and_presentations.html#day-two-friday-feb-9
+      output: web
