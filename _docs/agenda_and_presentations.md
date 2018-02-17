@@ -1,13 +1,13 @@
 # U.S. Integrated Ocean Observing System (IOOS) Biological Data Training Workshop
 
-**Thursday, February 8 – Friday, February 9, 2018  
-University of Washington, Seattle, Washington  
+### Thursday, February 8 – Friday, February 9, 2018
+**University of Washington, Seattle, Washington  
 Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 
 
 **Final Agenda**
 
-### Day One - Thursday, Feb. 8, 2018
+### Day One - Thursday, Feb. 8
 - 8:30 - 9:30  Introductions and Workshop Overview
 	- Jan Newton: Welcome to the U. W., NANOOS
 	- Gabrielle Canonico, Jennifer Bosch [(Powerpoint)](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/IOOS_DataTraining_WrkshpFeb2018_Intro_Canonico_Bosch.pptx)
@@ -26,7 +26,7 @@ Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 - 2:45 - 3:15 DwC Alignment data demonstration (Marion Stoessel [(pdf)](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/MStoessel_DarwinCoreAlignment_Final.pdf) & Lynn DeWitt [(pdf)](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/dewitt_IOOS_Data_Workshop.pdf))
 - 3:15 - 5:00 Hands on work: Align your dataset to DwC
 
-### Day Two - Friday, Feb. 9, 2017
+### Day Two - Friday, Feb. 9
 
 - 8:30 - 9:00 Configuring Biological Data for ERDDAP (Kevin O'Brien [(Powerpoint)](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/ERDDAP_IOOS_MBON_OBrien.pptx))
 - 9:00 - 10:30  More Hands on
