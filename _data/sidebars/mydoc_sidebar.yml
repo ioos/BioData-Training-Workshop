@@ -107,9 +107,9 @@ entries:
 
 # Top-level menu item #1
     - title: "Day 1"
-      url: /agenda-and-presentations.html#day-one-thursday-feb-8
+      url: /agenda-and-presentations.html#day-one---thursday-february-8
       output: web
 
     - title: "Day 2"
-      url: /agenda-and-presentations.html#day-two-friday-feb-9
+      url: /agenda-and-presentations.html#day-two---friday-february-9
       output: web
