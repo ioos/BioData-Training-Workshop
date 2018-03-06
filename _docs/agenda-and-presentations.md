@@ -20,6 +20,8 @@ Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 
 **Final Agenda**
 
+*Note:* These presentations and related materials are also available at the [Ocean Teacher workshop site](http://classroom.oceanteacher.org/course/view.php?id=321).
+
 ## Day One - Thursday February 8
 - 8:30 - 9:30  Introductions and Workshop Overview
 	- Jan Newton: Welcome to the U. W., NANOOS
@@ -35,7 +37,7 @@ Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 - *12:00 - 1:00  Lunch (Catered)*
 - 1:00 - 1:45 OBIS Data, Taxonomic and Metadata Standards  (Ward Appeltans)
 - *1:45 - 2:00  Break*
-- 2:00 - 2:45 Darwin Core (DwC) - More than Occurrence and Abundance (Abby Benson)
+- 2:00 - 2:45 Darwin Core (DwC) - More than Occurrence and Abundance (Abby Benson [(Powerpoint)](http://classroom.oceanteacher.org/mod/resource/view.php?id=7906))
 - 2:45 - 3:15 DwC Alignment data demonstration (Marion Stoessel [(pdf)](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/MStoessel_DarwinCoreAlignment_Final.pdf) & Lynn DeWitt [(pdf)](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/dewitt_IOOS_Data_Workshop.pdf))
 - 3:15 - 5:00 Hands on work: Align your dataset to DwC
 
