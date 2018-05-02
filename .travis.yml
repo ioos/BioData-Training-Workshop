@@ -1,0 +1,53 @@
+language: generic
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/miniconda
+
+before_cache:
+  - rm -rf $HOME/miniconda/envs/IOOS
+
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+      env: TEST_TARGET=notebooks
+    - os: osx
+      env: TEST_TARGET=notebooks
+
+before_install:
+  - |
+    if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+      URL="https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh"
+    elif [ "$TRAVIS_OS_NAME" == "linux" ] ; then
+      URL="https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh"
+    fi
+    echo ""
+    if [ ! -f $HOME/miniconda/bin/conda ] ; then
+      echo "Fresh miniconda installation."
+      wget $URL -O miniconda.sh
+      rm -rf $HOME/miniconda
+      bash miniconda.sh -b -p $HOME/miniconda
+    fi
+    export PATH="$HOME/miniconda/bin:$PATH"
+    conda config --set always_yes yes --set changeps1 no --set show_channel_urls true
+    conda update conda
+
+  # GUI (R png figures).
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then export DISPLAY=:99.0 ; sh -e /etc/init.d/xvfb start ; fi
+
+install:
+  - conda env create --file environment.yml --name iooswkshp
+  - source activate iooswkshp
+
+  # Debug.
+  - conda info --all
+  - conda list
+
+script:
+  # Test published notebooks.
+  - if [ $TEST_TARGET == "notebooks" ]; then
+      python tests/test_notebooks.py ;
+    fi
