@@ -15,8 +15,9 @@ summary: IOOS Biological Data Workshop details and instructions
 
 This first IOOS Biological Data Training Workshop is in collaboration with U.S. OBIS, IOC’s OceanTeacher Global Academy, and OBIS international. The objective of this training workshop is to educate participants in the benefits, goals, technology and process to make biological data resources (and associated physical or chemical data) available in a format that can be ingested by OBIS and the MBON Portal. It will also expose participants to OBIS, IOOS and MBON tools for using those data.
 
-### Agenda
-[Draft Overview Agenda 12/28/17 - PDF](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/IOOS%20BioData%20Training%20Worshop%20Overview%20Draft%20Agenda_122817%20.pdf)
+### Agenda and Presentations
+- [See the final agenda and download or view the presentations](https://ioos.github.io/BioData-Training-Workshop/agenda-and-presentations.html)
+- [Final Workshop Overview Agenda (02/05/2018) as PDF document](https://github.com/ioos/BioData-Training-Workshop/blob/gh-pages/IOOS%20BioData%20Training%20Workshop%20Overview%20AgendaFINAL.pdf)
 
 ### What Participants Need for Workshop
 1. Laptop computer
@@ -25,7 +26,7 @@ This first IOOS Biological Data Training Workshop is in collaboration with U.S. 
 
 ### Workshop Participant Pre-work
 1. Review [OBIS online Darwin Core Course](http://classroom.oceanteacher.org/course/view.php?id=315)
-2. Review [Darwin Core Documentation](http://www.iobis.org/manual/darwincore/) that will be sent out before the meeting
+2. Review [Darwin Core Documentation](http://www.iobis.org/manual/darwincore/)
 3. Advise organizers on what dataset you will be working with during the training
 4. Participate in the pre-Workshop Webex (1-2 weeks prior to training) 
 
@@ -37,11 +38,23 @@ To get the most out of this hands on workshop you will need to bring a biologica
 
 Data may involve organisms ranging from fish, to invertebrates, phytoplankton and zooplankton, including HABs observations.
 
+### Python and R setups and resources for the workshop
+The workshop will rely heavily on R and Python for hands-on exercises and tools. We have set up R and Python instructions and resources to enable participants to set up environments for these programming languages both in participants' computers and on [the cloud (via JupyterHub and RStudio)](https://ioosbiodata.cloudmaven.org). All these resources are found on the workshop GitHub repository at [https://github.com/ioos/BioData-Training-Workshop](https://github.com/ioos/BioData-Training-Workshop). See the [instructions on the README.md file](https://github.com/ioos/BioData-Training-Workshop/blob/master/README.md) for full details.
+
+Note for JupyterHub: You will need to have a github username, and your username sent to us to be able to access the Jupyterhub. If you are having trouble accessing Jupyterhub please send an email to landungs@uw.edu with your github username.
+
 
 ## Venue
 
-The workshop will take place at the [University of Washington eScience Institute](http://escience.washington.edu/), Seattle, Washington
+The workshop will take place at the hotel where most participants are staying:   
+**[Residence Inn – Seattle University District](http://www.marriott.com/hotels/travel/seaud-residence-inn-seattle-university-district/)**    
+4501 12th Ave NE    
+Seattle, WA 98105
 
+Please go to **"The Rigger Room"** on the first floor off the lobby. If you're not staying at this hotel, see this map for directions:   
+![hotel map](./ResidenceInnHotel-Map.png)
+
+*(Note that this is a change in venue; previously the meeting was going to be held at the University of Washington eScience Institute.)*
 
 ## Lodging
 
@@ -67,3 +80,12 @@ Seattle, WA 98105
 ## Transportation to Portland, OR from Seattle, WA
 
 The [BoltBus.com](https://www.boltbus.com/) company offers service between Seattle, WA and Portland, OR 
+
+## Group Dinner
+
+A group dinner has been arranged for the first day (Feb 8). It will be at:    
+[Ivar's Salmon House](https://www.ivars.com/locations/salmon-house)    
+401 NE Northlake Way    
+Seattle, WA 98105
+
+This is a bit less than a mile south of the Residence Inn (see it [on Google Maps](https://goo.gl/maps/CfXd1a5QeBB2)). The reservation opens at 5:30pm, but it's ok to come in a bit later. Ask for the "IOOS BioDataWorkshop" group when you come in.

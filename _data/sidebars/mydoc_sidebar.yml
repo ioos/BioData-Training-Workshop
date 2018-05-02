@@ -64,8 +64,8 @@ entries:
 
         subfolderitems:
 
-        - title: "Agenda"
-          url: /workshop.html#agenda
+        - title: "Agenda & Presentations"
+          url: /workshop.html#agenda-and-presentations
           output: web
 
         - title: "Needed for workshop"
@@ -80,6 +80,10 @@ entries:
           url: /workshop.html#guidance-on-datasets
           output: web
 
+        - title: "Python and R setup"
+          url: /workshop.html#python-and-r-setups-and-resources-for-the-workshop
+          output: web
+
 
     - title: "Venue"
       url: /workshop.html#venue
@@ -87,4 +91,25 @@ entries:
 
     - title: "Lodging"
       url: /workshop.html#lodging
+      output: web
+
+    - title: "Group Dinner"
+      url: /workshop.html#group-dinner
+      output: web
+
+# -------- DOCUMENT 3 (AGENDA AND ACCESS TO PRESENTATIONS, agenda-and-presentations.md) --------
+
+# Always visible folder name that contains top-level menu items with links to 1st document/page
+  - title: "Agenda & Presentation Access"
+    output: web
+
+    folderitems:
+
+# Top-level menu item #1
+    - title: "Day 1"
+      url: /agenda-and-presentations.html#day-one---thursday-february-8
+      output: web
+
+    - title: "Day 2"
+      url: /agenda-and-presentations.html#day-two---friday-february-9
       output: web
