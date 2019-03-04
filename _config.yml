@@ -24,15 +24,15 @@ exclude:
   - .idea/
   - .gitignore
   - Gemfile*
-  - documentation-theme-jekyll/pages
-  #- documentation-theme-jekyll/posts
-  - documentation-theme-jekyll/Dockerfile
-  - documentation-theme-jekyll/Gemfile
-  - documentation-theme-jekyll/Gemfile.lock
-  - documentation-theme-jekyll/search.json
-  - documentation-theme-jekyll/update.sh
-  - documentation-theme-jekyll/pdf-*
-  #- documentation-theme-jekyll/
+  - theme/pages
+  #- theme/posts
+  - theme/Dockerfile
+  - theme/Gemfile
+  - theme/Gemfile.lock
+  - theme/search.json
+  - theme/update.sh
+  - theme/pdf-*
+  #- theme/
 
 # these are the files and directories that jekyll will exclude from the build
 
@@ -83,8 +83,8 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: home_sidebar
-      topnav: topnav
+      sidebar: sidebar_ioos
+      topnav: topnav_ioos
   -
     scope:
       path: ""
@@ -93,8 +93,8 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: home_sidebar
-      topnav: topnav
+      sidebar: sidebar_ioos
+      topnav: topnav_ioos
 
   -
     scope:
@@ -114,17 +114,13 @@ defaults:
       layout: "post"
       comments: true
       search: true
-      sidebar: home_sidebar
-      topnav: topnav
+      sidebar: sidebar_ioos
+      topnav: topnav_ioos
 
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
-- other
+- sidebar_ioos
 
 description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
 # the description is used in the feed.xml file
@@ -145,7 +141,7 @@ github_editme_path       : "ioos/BioData-Training-Workshop/blob/gh-pages/_docs"
 #Setup/config for 'ioos_jekyll_theme' git submodule:
 source                   : .
 destination              : _site
-plugins_dir              : documentation-theme-jekyll/_plugins
-layouts_dir              : documentation-theme-jekyll/_layouts
+plugins_dir              : theme/_plugins
+layouts_dir              : theme/_layouts
 data_dir                 : _data
-includes_dir             : documentation-theme-jekyll/_includes
+includes_dir             : theme/_includes

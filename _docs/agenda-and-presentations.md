@@ -2,8 +2,6 @@
 title: "Workshop Agenda and Presentation Access"
 keywords: workshop
 #tags: [agenda, presentations]
-sidebar: mydoc_sidebar
-topnav: topnav
 toc: false
 #sidebar: home_sidebar
 #permalink: agenda-and-presentations.html
@@ -48,12 +46,12 @@ Organized by IOOS, NANOOS, OBIS-USA, and OceanTeacher Global Academy**
 - *10:30 - 10:45  Break*
 - 10:45 - 11:30  Data Wrangling
 	- Samuel Bosch: [Obistools R notebook as HTML](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/obistools_qaqc.html)
-	- Ben Best, 
+	- Ben Best,
 	- Filipe Fernandes: [Python Jupyter notebook](http://nbviewer.jupyter.org/format/slides/github/ioos/BioData-Training-Workshop/blob/master/notebooks/intro_errdapy-IOOS.ipynb)
 - 11:30 - 12:00  More Hands on
 - *12:00 - 1:00  Lunch (Catered)*
-- 1:00 - 3:00  Data Access, Visualization, and Publication 
-- 1:00 - 2:00 MBON Portal Demonstration (Luc Mehl, Stacey Buckelew, Brian Stone) 
+- 1:00 - 3:00  Data Access, Visualization, and Publication
+- 1:00 - 2:00 MBON Portal Demonstration (Luc Mehl, Stacey Buckelew, Brian Stone)
 - 2:00 - 3:00 OBIS Portal User Interface Demonstration (Abby Benson & Samuel Bosch [(R notebook as HTML)](https://cdn.rawgit.com/ioos/BioData-Training-Workshop/gh-pages/Workshop_Presentations/obis_acces_visualization.html))
 - *3:00 - 3:15  Break*
 - 3:15 - 4:30  Hands-On and Wrap-Up

@@ -2,8 +2,6 @@
 title: "Workshop Details and Instructions"
 keywords: workshop
 #tags: [workshop_logistics, instructions]
-sidebar: mydoc_sidebar
-topnav: topnav
 toc: false
 #sidebar: home_sidebar
 #permalink: workshop.html
@@ -28,12 +26,12 @@ This first IOOS Biological Data Training Workshop is in collaboration with U.S. 
 1. Review [OBIS online Darwin Core Course](http://classroom.oceanteacher.org/course/view.php?id=315)
 2. Review [Darwin Core Documentation](http://www.iobis.org/manual/darwincore/)
 3. Advise organizers on what dataset you will be working with during the training
-4. Participate in the pre-Workshop Webex (1-2 weeks prior to training) 
+4. Participate in the pre-Workshop Webex (1-2 weeks prior to training)
 
 ### Guidance on Datasets
 To get the most out of this hands on workshop you will need to bring a biological dataset that, at a minimum, has:
 1. Lat/lon location of the sample
-2. Date the sample was collected 
+2. Date the sample was collected
 3. Species name(s)
 
 Data may involve organisms ranging from fish, to invertebrates, phytoplankton and zooplankton, including HABs observations.
@@ -79,7 +77,7 @@ Seattle, WA 98105
 
 ## Transportation to Portland, OR from Seattle, WA
 
-The [BoltBus.com](https://www.boltbus.com/) company offers service between Seattle, WA and Portland, OR 
+The [BoltBus.com](https://www.boltbus.com/) company offers service between Seattle, WA and Portland, OR
 
 ## Group Dinner
 

@@ -2,16 +2,14 @@
 title: "IOOS Biological Data Training Workshop"
 keywords: homepage
 tags: [getting_started, about, overview]
-sidebar: mydoc_sidebar
-topnav: topnav
 toc: false
 #sidebar: home_sidebar
 #permalink: index.html
-summary: IOOS Biological Data Workshop Home page 
+summary: IOOS Biological Data Workshop Home page
 ---
 
 **Thursday, February 8 – Friday, February 9, 2018**    
-University of Washington, Seattle, Washington 
+University of Washington, Seattle, Washington
 
 Organized by [IOOS](https://ioos.noaa.gov/), [NANOOS](http://nanoos.org) and [OBIS-USA](https://www1.usgs.gov/csas/obis-usa/)
 
@@ -33,13 +31,13 @@ See the [Workshop Details and Instructions page](https://ioos.github.io/BioData-
 - Expand the IOOS and OBIS network of collaborators
 - Improve marine biogeographic data quality
 - Increase awareness of standards and best practices for marine biological data
-- Increase amount of marine biological data published through IOOS and OBIS 
-- Increase availability of marine biological data for science, species conservation and ecosystem-based management 
+- Increase amount of marine biological data published through IOOS and OBIS
+- Increase availability of marine biological data for science, species conservation and ecosystem-based management
 
 
 ## Organizers
 
-This workshop is supported by [IOOS](https://ioos.noaa.gov/) and organized by [IOOS](https://ioos.noaa.gov/), [NANOOS](http://nanoos.org) and [OBIS-USA](https://www1.usgs.gov/csas/obis-usa/). 
+This workshop is supported by [IOOS](https://ioos.noaa.gov/) and organized by [IOOS](https://ioos.noaa.gov/), [NANOOS](http://nanoos.org) and [OBIS-USA](https://www1.usgs.gov/csas/obis-usa/).
 
 **Planning team:** Jennifer Bosch (IOOS), Gabrielle Canonico (IOOS), Emilio Mayorga (NANOOS / UW) and Abigail Benson (OBIS-USA / USGS)
 
