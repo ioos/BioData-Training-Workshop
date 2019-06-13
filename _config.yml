@@ -34,9 +34,8 @@ exclude:
   - theme/pdf-*
   #- theme/
 
-# these are the files and directories that jekyll will exclude from the build
-
-feedback_subject_line: Jekyll documentation theme
+feedback_subject_line: IOOS Biological Data Training Workshop
+# subject line prefix for feedback emails
 
 feedback_email: data.ioos@noaa.gov
 # used as a contact email for the Feedback link in the top navigation bar
