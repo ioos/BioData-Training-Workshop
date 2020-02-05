@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 _site/
 .sass-cache/
 .jekyll-metadata
@@ -6,11 +5,8 @@ _pdf
 .idea/
 .DS_Store
 temp
-=======
-.idea/
 .Rproj.user
 .Rhistory
-.DS_Store
 .*.ipynb
 .ipynb_checkpoints
->>>>>>> c9896ce655e9181bfc323bbc9a453686b9957119
+Gemfile.lock
