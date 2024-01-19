@@ -1,8 +1,13 @@
 # BioData-Training-Workshop - Python and R resources
 
-R and Python resources for the [IOOS Biological Data Training Workshop (February 2018)](https://ioos.github.io/BioData-Training-Workshop/).
+R and Python resources created for the [IOOS Biological Data Training Workshop (February 2018)](https://ioos.github.io/BioData-Training-Workshop/).
 
-The workshop will rely heavily on R and Python for hands-on exercises and tools. We have set up R and Python instructions and resources to enable participants to set up environments for these programming languages both in participants' computers and on the cloud (via JupyterHub and RStudio). All these resources are accessible here, on this workshop GitHub repository.
+This workshop helped pave the way towards creation of the [Standardizing Marine Biological Data Working Group](https://github.com/ioos/bio_data_guide) and a series of [BioData Mobilization Workshops](https://github.com/ioos/bio_mobilization_workshop). 
+Ongoing efforts are documented there.
+
+-----------------------------------------
+
+This workshop will rely heavily on R and Python for hands-on exercises and tools. We have set up R and Python instructions and resources to enable participants to set up environments for these programming languages both in participants' computers and on the cloud (via JupyterHub and RStudio). All these resources are accessible here, on this workshop GitHub repository.
 
 *Note:* The [notebooks](https://github.com/ioos/BioData-Training-Workshop/tree/master/notebooks) GitHub repository directory contains a set of relevant, useful Jupyter notebooks that you can run and tweak, locally or on the cloud. These example notebooks cover Python, R and mixed-language cases.
 
